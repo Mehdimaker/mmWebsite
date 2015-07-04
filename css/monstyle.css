@@ -1,0 +1,1428 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url(../img/bg/bbg.png);
+  background: cover;
+  font-family: "Myriad pro", sans-serif;
+}
+#container {
+  width: 1000px;
+  height: 509px;
+  margin: auto;
+  margin-top: 8%;
+}
+main {
+  width: 804px;
+  height: 100%;
+  margin-right: 18px;
+  margin-left: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.on {
+  display: block;
+}
+.off {
+  display: none;
+}
+.blocleft {
+  padding-right: 6px;
+}
+.bloccenter {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.blocright {
+  padding-left: 6px;
+}
+/******** NAV LEFT *********/
+#blocgauche {
+  width: 120px;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#blocgauche header {
+  height: 80px;
+  background-color: #18191b;
+  border-top-left-radius: 10px;
+}
+#blocgauche nav {
+  width: 120px;
+}
+#blocgauche nav ul li {
+  list-style-type: none;
+}
+#blocgauche nav li a {
+  margin-top: 2px;
+  padding: 12px 0 0 15px;
+  color: #949496;
+  width: 100%;
+  display: block;
+  height: 40px;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #18191b;
+  box-sizing: border-box;
+}
+#blocgauche nav li a:hover {
+  color: white;
+  text-decoration: none;
+}
+#blocgauche nav li a.active:hover {
+  color: #18191b;
+  opacity: 1;
+  text-decoration: none;
+  cursor: default;
+}
+#blocgauche nav li a.active {
+  font-weight: bold;
+  color: #18191b;
+  background-color: transparent;
+}
+#blocgauche nav li a.projects.active:hover {
+  cursor: pointer;
+}
+#blocgauche nav li a i {
+  width: 22px;
+}
+#blocgauche nav div.menuprojects {
+  overflow: hidden;
+  height: 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: none;
+  background-color: #18191b;
+}
+#blocgauche nav div.menuprojects a {
+  color: #949496;
+  font-size: 12px;
+  line-height: 20px;
+  height: 20px;
+  display: block;
+  padding-left: 45px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+#blocgauche nav div.menuprojects a:first-child {
+  padding-top: 10px;
+}
+#blocgauche nav div.menuprojects a:hover {
+  color: white;
+  text-decoration: none;
+}
+#blocgauche nav div.menuprojects a.active2 {
+  padding-left: 55px;
+  background-image: url(../img/arrowss.png);
+  background-repeat: no-repeat;
+  background-position: 45px 5px;
+  background-size: 8px;
+}
+#blocgauche nav div.menuprojects a.active2:first-child {
+  background-position: 45px 15px;
+}
+#blocgauche nav div.menuprojects a.active2:hover {
+  text-decoration: none;
+  background-image: url(../img/arrowsshover.png);
+}
+/********NAVRIGHT******/
+#blocdroit {
+  width: 40px;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: #949496;
+}
+#blocdroit div.langue {
+  position: absolute;
+}
+#blocdroit div.langue i.fa-flag {
+  width: 40px;
+  line-height: 40px;
+}
+#blocdroit div.langue .fa-flag:hover {
+  color: white;
+  cursor: pointer;
+}
+#blocdroit div.langue div.menulangue {
+  height: 80px;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 5px;
+}
+#blocdroit div.langue div.menulangue.cache {
+  height: 0px;
+}
+#blocdroit div.reseau {
+  position: absolute;
+  bottom: 0px;
+  width: 40px;
+}
+#blocdroit div.reseau i.fa-share-alt {
+  width: 40px;
+  line-height: 40px;
+}
+#blocdroit div.reseau .fa-share-alt:hover {
+  color: white;
+  cursor: pointer;
+}
+#blocdroit div.reseau div.menureseau {
+  height: 80px;
+  overflow: hidden;
+}
+#blocdroit div.reseau div.menureseau a {
+  display: block;
+  margin-top: 5px;
+}
+#blocdroit div.reseau div.menureseau a i.thing {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: -1px;
+}
+#blocdroit div.reseau div.menureseau.cache {
+  height: 0px;
+}
+#blocdroit div.blochaut {
+  border-top-right-radius: 10px;
+  background-color: #18191b;
+  height: 212.5px;
+}
+#blocdroit div.blocbas {
+  background-color: #18191b;
+  height: 100%;
+}
+#blocdroit div.navbtn {
+  z-index: 2;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 80px;
+}
+#blocdroit div.navbtn i {
+  line-height: 40px;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #18191b;
+  opacity: 1;
+}
+#blocdroit div.navbtn i:hover {
+  color: white;
+}
+#blocdroit div.navbtn i.cache {
+  opacity: 0.2;
+  background-color: #18191b;
+  cursor: default;
+}
+#blocdroit div.navbtn i.cache:hover {
+  background-color: #18191b;
+  color: #949496;
+}
+/******** FOOTER *********/
+footer {
+  margin-top: 2px;
+  background-color: #18191b;
+  height: 100%;
+}
+/******** HOME *********/
+#home div.presentation {
+  height: 293px;
+  box-sizing: border-box;
+  margin-bottom: 9px;
+}
+#home div.presentation blockquote {
+  height: 100%;
+  font-size: 20px;
+  opacity: 0.6;
+  background-color: #18191b;
+  color: #949496;
+  box-sizing: border-box;
+  padding: 20px 214px 20px 20px;
+}
+#home div.presentation blockquote h1 {
+  margin-top: 25px;
+  font-size: 42px;
+  line-height: 40px;
+}
+#home div.presentation div.photo {
+  z-index: 2;
+  position: relative;
+  height: 253px;
+  width: 174px;
+  float: right;
+  margin: 20px 0px 0 0;
+  background-image: url(../img/mehdi.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+#home div.recent {
+  height: 200px;
+  width: 268px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+#home div.recent h4 {
+  opacity: 0.6;
+  padding-left: 10px;
+  height: 27px;
+  color: #949496;
+  line-height: 27px;
+  font-size: 14px;
+  background-color: #18191b;
+}
+#home div.recent a {
+  background-color: #18191b;
+  height: 30px;
+  color: #949496;
+  opacity: 0.85;
+  display: block;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 98% 50%;
+}
+#home div.recent a span {
+  display: inline-block;
+}
+#home div.recent a span p {
+  display: block;
+}
+#home div.recent a span.title_projects {
+  line-height: 30px;
+  font-size: 14px;
+}
+#home div.recent a span.date {
+  height: 30px;
+  padding-top: 3px;
+  padding-right: 8px;
+  width: 70px;
+  float: right;
+  text-align: right;
+  box-sizing: border-box;
+}
+#home div.recent a span.date p.JJ {
+  width: 38px;
+  height: 20px;
+  line-height: 16px;
+  font-size: 20px;
+  padding-top: 4px;
+  margin-top: 2px;
+  float: left;
+}
+#home div.recent a span.date p.MM {
+  float: right;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: bold;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+#home div.recent a span.date p.AA {
+  float: right;
+  line-height: 10px;
+  font-size: 10px;
+}
+#home div.recent a:hover {
+  opacity: 0.95;
+  color: white;
+}
+#home div.recent a.apps {
+  background-image: url(../img/icoprojects/apps.png);
+}
+#home div.recent a.apps:hover {
+  background-image: url(../img/icoprojects/appshover.png);
+}
+#home div.recent a.websites {
+  background-image: url(../img/icoprojects/websites.png);
+}
+#home div.recent a.websites:hover {
+  background-image: url(../img/icoprojects/websiteshover.png);
+}
+#home div.recent a.graphics {
+  background-image: url(../img/icoprojects/graphics.png);
+}
+#home div.recent a.graphics:hover {
+  background-image: url(../img/icoprojects/graphicshover.png);
+}
+#home div.recent a.objects {
+  background-image: url(../img/icoprojects/objects.png);
+}
+#home div.recent a.objects:hover {
+  background-image: url(../img/icoprojects/objectshover.png);
+}
+#home div.recent a.videos {
+  background-image: url(../img/icoprojects/videos.png);
+}
+#home div.recent a.videos:hover {
+  background-image: url(../img/icoprojects/videoshover.png);
+}
+#home div.recent a.others {
+  background-image: url(../img/icoprojects/others.png);
+}
+#home div.recent a.others:hover {
+  background-image: url(../img/icoprojects/othershover.png);
+}
+#home div.recent div.comm {
+  height: 180px;
+  background-color: #18191b;
+  opacity: 0.85;
+}
+#home div.recent div.comm p {
+  color: #949496;
+  font-size: 12px;
+  padding: 5px 10px 5px 10px;
+}
+/****** ARTICLES *********/
+#articles {
+  overflow: hidden;
+  height: 100%;
+}
+#articles #listarticles {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#articles #listarticles a.article {
+  display: block;
+  height: 55.75px;
+  margin-bottom: 9px;
+  color: #949496;
+  opacity: 0.85;
+}
+#articles #listarticles a.article span {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+#articles #listarticles a.article span.title_article {
+  line-height: 55.75px;
+  width: 30%;
+  height: 100%;
+  padding-left: 10px;
+  float: left;
+  background-color: #18191b;
+  opacity: 1;
+}
+#articles #listarticles a.article span.resume_article {
+  height: 100%;
+  width: 60%;
+  line-height: 13px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 12px;
+  background-color: #18191b;
+  opacity: 0.8;
+}
+#articles #listarticles a.article span.date {
+  height: 100%;
+  padding-right: 10px;
+  padding-top: 16px;
+  width: 10%;
+  float: right;
+  text-align: right;
+  box-sizing: border-box;
+  background-color: #18191b;
+  opacity: 1;
+}
+#articles #listarticles a.article span.date p.JJ {
+  width: 43px;
+  height: 20px;
+  line-height: 16px;
+  font-size: 29px;
+  padding-top: 4px;
+  margin-top: 2px;
+  float: left;
+}
+#articles #listarticles a.article span.date p.MM {
+  float: right;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#articles #listarticles a.article span.date p.AA {
+  float: right;
+  line-height: 11px;
+  font-size: 12px;
+}
+#articles #listarticles a.article:hover {
+  opacity: 0.9;
+  color: white;
+}
+/******** PROJECTS *********/
+#projects div.rowproject {
+  height: 250px;
+  margin-bottom: 9px;
+}
+#projects div.rowproject a {
+  opacity: 0.85;
+  text-decoration: none;
+  width: 268px;
+  height: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  color: #949496;
+}
+#projects div.rowproject a:hover {
+  opacity: 0.9;
+  color: white;
+}
+#projects div.rowproject div.ctgproject {
+  height: 210px;
+  background-color: #18191b;
+  background-repeat: no-repeat;
+  background-position: center 90px;
+  display: block;
+  box-sizing: border-box;
+}
+#projects div.rowproject div.ctgproject p {
+  text-align: left;
+  padding: 10px 0 0 10px;
+  font-size: 16px;
+}
+#projects div.rowproject div.websites {
+  background-image: url(../img/icoprojects/websites.png);
+  background-size: 70px;
+}
+#projects div.rowproject div.websites:hover {
+  background-image: url(../img/icoprojects/websiteshover.png);
+}
+#projects div.rowproject div.apps {
+  background-image: url(../img/icoprojects/apps.png);
+  background-size: 70px;
+}
+#projects div.rowproject div.apps:hover {
+  background-image: url(../img/icoprojects/appshover.png);
+}
+#projects div.rowproject div.graphics {
+  background-image: url(../img/icoprojects/graphics.png);
+  background-size: 70px;
+}
+#projects div.rowproject div.graphics:hover {
+  background-image: url(../img/icoprojects/graphicshover.png);
+}
+#projects div.rowproject div.objects {
+  background-image: url(../img/icoprojects/objects.png);
+  background-size: 60px;
+}
+#projects div.rowproject div.objects:hover {
+  background-image: url(../img/icoprojects/objectshover.png);
+}
+#projects div.rowproject div.videos {
+  background-image: url(../img/icoprojects/videos.png);
+  background-size: 60px;
+}
+#projects div.rowproject div.videos:hover {
+  background-image: url(../img/icoprojects/videoshover.png);
+}
+#projects div.rowproject div.others {
+  background-image: url(../img/icoprojects/others.png);
+  background-size: 60px;
+}
+#projects div.rowproject div.others:hover {
+  background-image: url(../img/icoprojects/othershover.png);
+}
+#projects div.rowproject div.number {
+  background-color: #18191b;
+  height: 40px;
+  margin-right: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#projects div.rowproject div.number p {
+  height: 40px;
+  width: 40px;
+  background-color: #18191b;
+  opacity: 0.8;
+  margin-right: -40px;
+  margin-top: 0px;
+  float: right;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+#navapp #navlist {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 509px;
+  width: 100%;
+}
+#navapp #navlist #list {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  padding: 0px;
+  margin-left: 0px;
+}
+#navapp #navlist #list .ajaxload {
+  padding-top: 214.5px;
+  height: 80px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #18191b;
+}
+#navapp #navlist #list a {
+  border: none;
+  margin: 0px;
+  height: 420px;
+  opacity: 0.85;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: none;
+  white-space: normal;
+  text-decoration: none;
+  color: #949496;
+  text-align: center;
+  cursor: pointer;
+}
+#navapp #navlist #list a span {
+  display: block;
+}
+#navapp #navlist #list a span.thumbnail {
+  height: 190px;
+  background-color: #18191b;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+}
+#navapp #navlist #list a span.thumbnail img {
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+}
+#navapp #navlist #list a h1 {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #18191b;
+  height: 30px;
+}
+#navapp #navlist #list a span.resumepro {
+  background-color: #18191b;
+  opacity: 0.9;
+  height: 170px;
+  padding: 10px;
+}
+#navapp #navlist #list a span.resumepro p {
+  font-size: 12px;
+  text-align: justify;
+}
+#navapp #navlist #list a span.infopro {
+  padding: 10px;
+  background-color: #18191b;
+  height: 100%;
+}
+#navapp #navlist #list a span.infopro span.date {
+  height: 30px;
+  margin: auto;
+  margin-top: 15px;
+  width: 48px;
+  box-sizing: border-box;
+}
+#navapp #navlist #list a span.infopro span.date p.JJ {
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  font-size: 24px;
+  margin-top: 2px;
+}
+#navapp #navlist #list a span.infopro span.date p.MM {
+  float: right;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: bold;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+#navapp #navlist #list a span.infopro span.date p.AA {
+  float: right;
+  line-height: 10px;
+  font-size: 10px;
+}
+#navapp #navlist #list a:hover {
+  opacity: 0.90;
+  color: white;
+}
+/******** SERVICES *********/
+#services {
+  height: 100%;
+  background-color: #18191b;
+  opacity: 0.85;
+}
+#services p {
+  text-align: center;
+  color: #949496;
+  padding-top: 250px;
+}
+/******** CONTACT *********/
+#contact #apropos {
+  height: 509px;
+  background-color: #18191b;
+  opacity: 0.85;
+  width: 397.5px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  color: #949496;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+#contact #apropos h3 {
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+#contact #apropos div.links a {
+  margin-bottom: 2px;
+  text-decoration: none;
+  color: #949496;
+  font-style: none;
+  display: block;
+  font-family: "Myriad Pro";
+}
+#contact #apropos div.links a span.thingiverse {
+  position: absolute;
+  font-family: "Myriad pro";
+  font-size: 12px;
+  font-weight: bold;
+  left: 6px;
+  top: 2px;
+}
+#contact #apropos div.links a:hover {
+  color: white;
+}
+#contact form {
+  height: 509px;
+  width: 397.5px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  color: #949496;
+  position: relative;
+  margin-left: 9px;
+}
+#contact form fieldset {
+  background-color: #18191b;
+  opacity: 0.8;
+  height: 70px;
+  font-size: 13px;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#contact form fieldset i {
+  width: 50px;
+  height: 60px;
+  float: left;
+  margin-top: 10px;
+}
+#contact form label.textarea {
+  height: 230px;
+  margin-bottom: 9px;
+}
+#contact form label {
+  opacity: 0.85;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#contact form label p.help-block {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 11px;
+}
+#contact form label input,
+#contact form label textarea {
+  width: 100%;
+  line-height: 50px;
+  border: none;
+  padding-left: 60px;
+  padding-right: 35px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #949496;
+  background-color: #18191b;
+  font-family: "Myriad Pro";
+}
+#contact form label textarea {
+  height: 100%;
+  line-height: 14px;
+  padding-top: 17px;
+}
+#contact form label ::-webkit-input-placeholder {
+  color: #949496;
+  opacity: 0.3;
+  font-weight: bold;
+  font-style: italic;
+}
+#contact form label :-moz-placeholder {
+  color: #949496;
+  opacity: 035;
+  font-weight: bold;
+  font-style: italic;
+}
+#contact form label ::-moz-placeholder {
+  color: #949496;
+  opacity: 0.3;
+  font-weight: bold;
+  font-style: italic;
+}
+#contact form label :-ms-input-placeholder {
+  color: #949496;
+  opacity: 0.3;
+  font-weight: bold;
+  font-style: italic;
+}
+#contact form label span.ico {
+  position: absolute;
+  left: 0px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  color: #949496;
+  opacity: 0.3;
+}
+#contact form label span.icotextarea {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  color: #949496;
+  opacity: 0.3;
+}
+#contact form label span.valid i,
+#contact form label span.invalid i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  text-align: right;
+  opacity: 0.5;
+}
+#contact form label .valid {
+  color: green;
+}
+#contact form label .invalid {
+  color: red;
+}
+#contact form button {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  background-color: #18191b;
+  color: #949496;
+  opacity: 0.2;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+#contact form button:hover {
+  color: #949496;
+}
+#contact form button.btnvalid {
+  opacity: 0.85;
+}
+#contact form button.btnvalid:hover {
+  color: white;
+  cursor: pointer;
+}
+#present_project {
+  height: 122px;
+  margin-bottom: 9px;
+  color: #949496;
+}
+#present_project span,
+#present_project a {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+#present_project a.precedent {
+  height: 100%;
+  width: 40px;
+  opacity: 0.5;
+  background-color: #18191b;
+}
+#present_project span.thumbnail {
+  padding: 10px;
+  height: 100%;
+  width: 160px;
+  opacity: 0.85;
+  text-align: center;
+  background-color: #18191b;
+}
+#present_project span.thumbnail img {
+  height: 100%;
+  width: auto;
+  padding: 0px;
+}
+#present_project span.resumepro {
+  background-color: #18191b;
+  opacity: 0.6;
+  width: 524px;
+  height: 100%;
+  padding: 10px;
+}
+#present_project span.resumepro h1 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+#present_project span.resumepro span.date {
+  height: 25px;
+  padding-top: 0px;
+  width: 55px;
+  float: right;
+  text-align: right;
+  box-sizing: border-box;
+}
+#present_project span.resumepro span.date p.JJ {
+  width: 20px;
+  height: 20px;
+  line-height: 27px;
+  font-size: 27px;
+  padding-top: 0px;
+  margin-top: 2px;
+  float: left;
+}
+#present_project span.resumepro span.date p.MM {
+  float: right;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: bold;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+#present_project span.resumepro span.date p.AA {
+  float: right;
+  line-height: 11px;
+  font-size: 11px;
+}
+#present_project span.resumepro p {
+  font-size: 12px;
+  text-align: justify;
+}
+#present_project span.comment {
+  height: 38px;
+  margin-top: 84px;
+  border: none;
+  width: 120px;
+  background-color: #18191b;
+  opacity: 0.85;
+  font-size: 14px;
+  padding: 10px 10px 0 10px;
+  position: relative;
+}
+#present_project span.comment i {
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+#present_project span.comment p {
+  position: absolute;
+  color: #18191b;
+  right: 19px;
+  top: 7px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#present_project span.comment:hover {
+  color: white;
+  cursor: pointer;
+}
+#present_article {
+  height: 55.75px;
+  margin-bottom: 9px;
+  color: #949496;
+}
+#present_article span {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+#present_article span.title_article {
+  line-height: 55.75px;
+  width: 30%;
+  height: 100%;
+  padding-left: 10px;
+  float: left;
+  background-color: #18191b;
+  opacity: 0.85;
+}
+#present_article span.resume_article {
+  height: 100%;
+  width: 60%;
+  line-height: 13px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 12px;
+  background-color: #18191b;
+  opacity: 0.6;
+}
+#present_article span.date {
+  height: 100%;
+  padding-right: 10px;
+  padding-top: 16px;
+  width: 10%;
+  float: right;
+  text-align: right;
+  box-sizing: border-box;
+  background-color: #18191b;
+  opacity: 0.85;
+}
+#present_article span.date p.JJ {
+  width: 43px;
+  height: 20px;
+  line-height: 16px;
+  font-size: 29px;
+  padding-top: 4px;
+  margin-top: 2px;
+  float: left;
+}
+#present_article span.date p.MM {
+  float: right;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#present_article span.date p.AA {
+  float: right;
+  line-height: 11px;
+  font-size: 12px;
+}
+#mainpro {
+  color: #949496;
+  overflow: hidden;
+}
+#mainpro #etapes {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 100%;
+}
+#mainpro #etapes section:not(.comment) {
+  opacity: 0.85;
+}
+#mainpro #etapes section {
+  box-sizing: border-box;
+  vertical-align: top;
+  background-color: #18191b;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+#mainpro #etapes section div.description {
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  width: 426px;
+  padding-right: 20px;
+}
+#mainpro #etapes section div.descriptionbis {
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  width: 426px;
+  padding-right: 0px;
+  float: right;
+  text-align: right;
+}
+#mainpro #etapes section div.illustration {
+  float: right;
+  height: 338px;
+  width: 338px;
+  display: inline-block;
+  margin-right: -20px;
+  text-align: center;
+}
+#mainpro #etapes section div.illustration img {
+  height: 100%;
+  width: 100%;
+}
+#mainpro #etapes section div.illustrationbis {
+  height: 338px;
+  width: 338px;
+  display: inline-block;
+  margin-left: -20px;
+  text-align: center;
+}
+#mainpro #etapes section div.illustrationbis img {
+  height: 100%;
+  width: 100%;
+}
+#mainpro #etapes section.pres {
+  position: relative;
+  padding: 0;
+}
+#mainpro #etapes section.pres span.bgtechno {
+  background-color: #18191b;
+  width: 100%;
+  display: block;
+  height: 65px;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0.85;
+}
+#mainpro #etapes section.pres div.techno {
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0px;
+  padding: 10px;
+  display: block;
+}
+#mainpro #etapes section.pres div.techno div {
+  display: inline-block;
+  vertical-align: top;
+}
+#mainpro #etapes section.pres div.techno div p {
+  font-size: 13px;
+  line-height: 10px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  color: #949496;
+}
+#mainpro #etapes section.pres div.techno div span {
+  vertical-align: top;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+  background-size: cover;
+}
+#mainpro #etapes section.pres div.techno div span:last-child {
+  margin-right: 0px;
+}
+#mainpro #etapes section.pres div.techno div span.html {
+  background-image: url(../img/techno/html.png);
+}
+#mainpro #etapes section.pres div.techno div span.css {
+  background-image: url(../img/techno/css.png);
+}
+#mainpro #etapes section.pres div.techno div span.js {
+  background-image: url(../img/techno/js.png);
+}
+#mainpro #etapes section.pres div.techno div span.php {
+  background-image: url(../img/techno/php.png);
+}
+#mainpro #etapes section.pres div.techno div span.mysql {
+  background-image: url(../img/techno/mysql.png);
+}
+#mainpro #etapes section.pres div.techno div span.ruby {
+  background-image: url(../img/techno/ruby.png);
+}
+#mainpro #etapes section.pres div.techno div span.python {
+  background-image: url(../img/techno/python.png);
+}
+#mainpro #etapes section.pres div.techno div span.jquery {
+  background-image: url(../img/techno/jquery.png);
+}
+#mainpro #etapes section.pres div.techno div span.bootstrap {
+  background-image: url(../img/techno/bootstrap.png);
+}
+#mainpro #etapes section.pres div.techno div span.angular {
+  background-image: url(../img/techno/angular.png);
+}
+#mainpro #etapes section.pres div.techno div span.rails {
+  background-image: url(../img/techno/rails.png);
+}
+#mainpro #etapes section.pres div.techno div span.terminal {
+  background-image: url(../img/techno/terminal.png);
+}
+#mainpro #etapes section.pres div.techno div span.ff {
+  background-image: url(../img/techno/ff.png);
+}
+#mainpro #etapes section.pres div.techno div span.sublime {
+  background-image: url(../img/techno/sublime.png);
+}
+#mainpro #etapes section.pres div.techno div span.openscad {
+  background-image: url(../img/techno/openscad.png);
+}
+#mainpro #etapes section.pres div.techno div span.photoshop {
+  background-image: url(../img/techno/photoshop.png);
+}
+#mainpro #etapes section.pres div.techno div span.illustrator {
+  background-image: url(../img/techno/illustrator.png);
+}
+#mainpro #etapes section.pres div.techno div span.makerbot {
+  background-image: url(../img/techno/makerbot.png);
+}
+#mainpro #etapes section.pres div.techno div:last-child {
+  text-align: right;
+  float: right;
+}
+#mainpro #etapes section.pres img {
+  height: 100%;
+  width: 100%;
+}
+#mainpro #etapes section.comment {
+  padding: 0px;
+  background-color: transparent;
+}
+#mainpro #etapes section.comment #listsComments {
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  color: #949496;
+  background-color: #18191b;
+  opacity: 0.8;
+}
+#mainpro #etapes section.comment #listsComments ul {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#mainpro #etapes section.comment #listsComments li {
+  padding: 10px;
+  position: relative;
+  list-style-type: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+#mainpro #etapes section.comment #listsComments li time {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  font-size: 14px;
+}
+#mainpro #etapes section.comment #listsComments li section.comment-content {
+  margin-top: 5px;
+}
+#mainpro #etapes section.comment #listsComments li section.comment-content p {
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+#mainpro #etapes section.comment #listsComments li div.reply a {
+  color: #949496;
+}
+#mainpro #etapes section.comment #listsComments li div.reply a:hover {
+  color: white;
+}
+#mainpro #etapes section.comment #FormComments {
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  padding-right: 9px;
+  width: 40%;
+  height: 100%;
+}
+#mainpro #etapes section.comment #FormComments div.titlereponse {
+  background-color: #18191b;
+  padding: 10px 10px 10px 60px;
+  opacity: 0.8;
+  position: relative;
+  height: 60px;
+  box-sizing: border-box;
+}
+#mainpro #etapes section.comment #FormComments div.titlereponse i {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+#mainpro #etapes section.comment #FormComments div.titlereponse p {
+  font-size: 12px;
+}
+#mainpro #etapes section.comment #FormComments form {
+  position: relative;
+}
+#mainpro #etapes section.comment #FormComments form label.textarea {
+  margin-bottom: 9px;
+}
+#mainpro #etapes section.comment #FormComments form label {
+  opacity: 0.85;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#mainpro #etapes section.comment #FormComments form label p.help-block {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 11px;
+}
+#mainpro #etapes section.comment #FormComments form label input,
+#mainpro #etapes section.comment #FormComments form label textarea {
+  width: 100%;
+  line-height: 50px;
+  border: none;
+  padding-left: 60px;
+  padding-right: 35px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #949496;
+  background-color: #18191b;
+  font-family: "Myriad Pro";
+}
+#mainpro #etapes section.comment #FormComments form label textarea {
+  line-height: 14px;
+  padding-top: 17px;
+  height: 100%;
+}
+#mainpro #etapes section.comment #FormComments form label ::-webkit-input-placeholder {
+  color: #949496;
+  opacity: 0.3;
+  font-weight: bold;
+  font-style: italic;
+}
+#mainpro #etapes section.comment #FormComments form label :-moz-placeholder {
+  color: #949496;
+  opacity: 035;
+  font-weight: bold;
+  font-style: italic;
+}
+#mainpro #etapes section.comment #FormComments form label ::-moz-placeholder {
+  color: #949496;
+  opacity: 0.3;
+  font-weight: bold;
+  font-style: italic;
+}
+#mainpro #etapes section.comment #FormComments form label :-ms-input-placeholder {
+  color: #949496;
+  opacity: 0.3;
+  font-weight: bold;
+  font-style: italic;
+}
+#mainpro #etapes section.comment #FormComments form label span.ico {
+  position: absolute;
+  left: 0px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  color: #949496;
+  opacity: 0.3;
+}
+#mainpro #etapes section.comment #FormComments form label span.icotextarea {
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  color: #949496;
+  opacity: 0.3;
+}
+#mainpro #etapes section.comment #FormComments form label span.valid i,
+#mainpro #etapes section.comment #FormComments form label span.invalid i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  text-align: right;
+  opacity: 0.5;
+}
+#mainpro #etapes section.comment #FormComments form label .valid {
+  color: green;
+}
+#mainpro #etapes section.comment #FormComments form label .invalid {
+  color: red;
+}
+#mainpro #etapes section.comment #FormComments form button {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  background-color: #18191b;
+  color: #949496;
+  opacity: 0.2;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+#mainpro #etapes section.comment #FormComments form button:hover {
+  color: #949496;
+}
+#mainpro #etapes section.comment #FormComments form button.btnvalid {
+  opacity: &op1;
+}
+#mainpro #etapes section.comment #FormComments form button.btnvalid:hover {
+  color: white;
+  cursor: pointer;
+}
+#mainpro #etapes div.infos {
+  opacity: 0.85;
+  background-color: #18191b;
+  width: 120px;
+  height: 84px;
+  font-size: 14px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  box-sizing: border-box;
+}
+#mainpro #etapes div.infos a {
+  box-sizing: border-box;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0px;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  text-align: left;
+}
+#mainpro #etapes div.infos a i {
+  float: right;
+}
+#mainpro #etapes div.infos a i span {
+  position: absolute;
+  font-family: "Myriad pro";
+  font-size: 10px;
+  font-weight: bold;
+  left: 5px;
+  top: 1px;
+}
+#mainpro #etapes div.infos a:hover {
+  color: white;
+}
