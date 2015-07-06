@@ -1,6 +1,8 @@
 <?php get_header();?>
 
-<body>
+<body class="cbp-spmenu-push">
+
+    <?php include_once 'navmobile.php';?>
     <div id="container">
 
 <?php include_once 'blocgauche.php';?><!--
@@ -45,9 +47,9 @@ comments_number('0', '0 Comment', '%');
     <?php the_content(); ?>
    
             <section class="comment" > 
-        
+                     
 <?php comments_template(); ?>
-               
+         
             </section>
     <?php endwhile; ?>
         </div>
@@ -61,14 +63,13 @@ comments_number('0', '0 Comment', '%');
    
     <script type="text/javascript">
           //FORMM COMMENTS
-                comapp = angular.module('comapp', []);
+        comapp = angular.module('comapp', []);
 
         comapp.controller('comappCtrl', ['$scope', '$http', function ($scope, $http) {
             $scope.sendMessage = function (message) {
-                alert($scope.name + " " + $scope.mail + " " + $scope.message);
+            //    alert($scope.name + " " + $scope.mail + " " + $scope.message);
             }
-}]);
-            
+}]);    
         
         jQuery(function ($) {
             
@@ -131,6 +132,20 @@ comments_number('0', '0 Comment', '%');
 
             });
         });
+
+//MOBILE PUSH MENU
+            var 
+                menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+            
+                showTop = document.getElementById( 'showTop' ),
+                
+                body = document.body;
+
+    
+            showTop.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( menuTop, 'cbp-spmenu-open' );
+            };
     </script>
 
 </body>

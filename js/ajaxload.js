@@ -7,7 +7,7 @@ jQuery(function ($) {
 
 
     $('body').on('click', '.loadctg', function toto() {
-
+        $("#list").css("margin-left", 0 + "px");
         var keyword = $(this).attr("name");
         $('.list').html("<div class='ajaxload'><i class='fa  fa-5x fa-cog fa-spin'></i></div>");
         

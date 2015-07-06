@@ -1,6 +1,6 @@
 <div id="blocgauche">
    <header></header>
-    <nav>
+    <nav >
         <ul>
             <li>
                 <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-home"></i><span>Home</span></a>

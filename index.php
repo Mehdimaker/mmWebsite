@@ -1,14 +1,31 @@
 <?php get_header();?>
 
-<body>
+<body >
+    <nav  id="navbar">
+          <ul>
+            <li>
+                <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
+            </li>
+
+            <li>
+                <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
+            </li>
+            <li>
+                <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
+            
+            </li>   
+            <li>
+                <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
+            </li>
+            <li>
+                <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
+            </li>
+        </ul>
+        </nav>
+
     <div id="container">
-
-
-
         <?php include_once 'blocgauche.php';?><!--
         
-
-            
         --><main>
 
             <div id="home">
@@ -96,10 +113,10 @@
 
             <div id="projects" class="off">
 
-                <div class="rowproject">
+                <div class="rowproject rowprojecttop">
 
 
-                    <a name="websites" class="loadctg websites blocleft" onclick="show('navapp')">
+                    <span class="blocleft"><a name="websites" class="loadctg websites " onclick="show('navapp')">
 
                         <div class="websites ctgproject">
                             <p>Websites </p>
@@ -109,10 +126,10 @@
                                 <?php echo count_cat_post( 'websites' ); ?>
                             </p>
                         </div>
-                    </a><!--
+                    </a></span><!--
 
 
-                    --><a class="loadctg apps bloccenter" name="apps" onclick="show('navapp')">
+                    --><span class="bloccenter"><a class="loadctg apps " name="apps" onclick="show('navapp')">
 
                         <div class="apps ctgproject">
                             <p>Apps mobile </p>
@@ -122,9 +139,9 @@
                                 <?php echo count_cat_post( 'apps' ); ?>
                             </p>
                         </div>
-                    </a><!--
+                    </a></span><!--
 
-                    --><a name="graphics" class="loadctg graphics blocright" onclick="show('navapp')">
+                    --><span class="blocright"><a name="graphics" class="loadctg graphics" onclick="show('navapp')">
 
                         <div class="graphics ctgproject">
                             <p>Graphics Design </p>
@@ -134,12 +151,12 @@
                                 <?php echo count_cat_post( 'graphics' ); ?>
                             </p>
                         </div>
-                    </a>
+                    </a></span>
 
                 </div>
 
-                <div class="rowproject">
-                    <a name="objects" class="loadctg objects blocleft" onclick="show('navapp')">
+                <div class="rowproject rowprojectbottom" >
+                    <span class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
 
                         <div class="objects ctgproject">
                             <p>Objects 3d </p>
@@ -149,9 +166,9 @@
                                 <?php echo count_cat_post( 'objects' ); ?>
                             </p>
                         </div>
-                    </a><!--
+                    </a></span><!--
 
-                    --><a name="videos" class="loadctg videos bloccenter" onclick="show('navapp')">
+                    --><span class="bloccenter"><a name="videos" class="loadctg videos" onclick="show('navapp')">
 
                         <div class="videos ctgproject">
                             <p>Videos </p>
@@ -161,8 +178,8 @@
                                 <?php echo count_cat_post( 'videos' ); ?>
                             </p>
                         </div>
-                    </a><!--
-                    --><a name="others" class="loadctg others blocright" onclick="show('navapp')">
+                    </a></span><!--
+                    --><span class="blocright"><a name="others" class="loadctg others" onclick="show('navapp')">
 
                         <div class="others ctgproject">
                             <p>Others </p>
@@ -172,7 +189,7 @@
                                 <?php echo count_cat_post( 'others' ); ?>
                             </p>
                         </div>
-                    </a>
+                    </a></span>
 
 
 
@@ -207,8 +224,8 @@
             <div id="contact" class="off">
              
                        
-                       <div ng-app="app">
-        <div ng-controller="appCtrl">
+                      <div class="height100"ng-app="app">
+        <div class="height100" ng-controller="appCtrl">
             
             
              <div id="apropos">
@@ -256,7 +273,7 @@
                     <p ng-show="FormContact.name.$invalid && FormContact.name.$touched " class="help-block">Indiquez votre nom</p>
                 </label>
                 <label>
-                    <span class="ico"><i class="fa fa-lg fa-phone"></i></span><!--
+                    <span class="ico"><i class="fa fa-lg fa-phone-square"></i></span><!--
                 --><input placeholder="Votre numéro (facultatif)" name="number" ng-model="number" ng-pattern="/[0-9 ]+/" ng-required="true">
                     <span ng-show="FormContact.number.$valid && FormContact.number.$touched " class="valid"><i class="fa fa-check"></i></span>
                    <span ng-show="FormContact.number.$invalid && FormContact.number.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -281,7 +298,7 @@
 
                  </label>
 
-<button type="submit" ng-class="{ btnvalid : FormContact.name.$valid && FormContact.mail.$valid && FormContact.message.$valid  }" >Envoyer </button>
+<button type="submit" ng-class="{ btnvalid : FormContact.name.$valid && FormContact.mail.$valid && FormContact.message.$valid  }"  >Envoyer </button>
         
 
             </form>
@@ -302,6 +319,8 @@
 
 
     <script type="text/javascript">
+
+    
          app = angular.module('app', []);
 
         app.controller('appCtrl', ['$scope', '$http', function ($scope, $http) {
@@ -344,6 +363,8 @@
                 localStorage.setItem("redirection", null);
             }
         });
+
+
     </script>
 </body>
 
