@@ -1,18 +1,17 @@
 <?php get_header();?>
 
-<body >
+
+<body>
     <nav  id="navbar">
           <ul>
             <li>
                 <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
             </li>
-
             <li>
                 <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
             </li>
             <li>
                 <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
-            
             </li>   
             <li>
                 <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
@@ -21,7 +20,7 @@
                 <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
             </li>
         </ul>
-        </nav>
+    </nav>
 
     <div id="container">
         <?php include_once 'blocgauche.php';?><!--
@@ -98,7 +97,7 @@
             --><a class="article" href="<?php the_permalink() ?>" rel="bookmark">
                         <span class="title_article"><?php the_title(); ?></span>
                         <span class="resume_article"><?php the_excerpt() ;?></span>
-                        <span class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></span>
+                        <span class="containdate"><div class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></div></span>
                     </a><!--
             <?php endwhile; ?>
             --></div>
@@ -117,8 +116,8 @@
 
 
                     <span class="blocleft"><a name="websites" class="loadctg websites " onclick="show('navapp')">
-
-                        <div class="websites ctgproject">
+                        <i class="websites"></i>
+                        <div class="ctgproject">
                             <p>Websites </p>
                         </div>
                         <div class="number">
@@ -130,8 +129,8 @@
 
 
                     --><span class="bloccenter"><a class="loadctg apps " name="apps" onclick="show('navapp')">
-
-                        <div class="apps ctgproject">
+                        <i class="apps"></i>
+                        <div class="ctgproject">
                             <p>Apps mobile </p>
                         </div>
                         <div class="number">
@@ -142,8 +141,8 @@
                     </a></span><!--
 
                     --><span class="blocright"><a name="graphics" class="loadctg graphics" onclick="show('navapp')">
-
-                        <div class="graphics ctgproject">
+                        <i class="graphics"></i>
+                        <div class="ctgproject">
                             <p>Graphics Design </p>
                         </div>
                         <div class="number">
@@ -157,8 +156,8 @@
 
                 <div class="rowproject rowprojectbottom" >
                     <span class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
-
-                        <div class="objects ctgproject">
+                        <i class="objects"></i>
+                        <div class="ctgproject">
                             <p>Objects 3d </p>
                         </div>
                         <div class="number">
@@ -169,8 +168,8 @@
                     </a></span><!--
 
                     --><span class="bloccenter"><a name="videos" class="loadctg videos" onclick="show('navapp')">
-
-                        <div class="videos ctgproject">
+                        <i class="videos"></i>
+                        <div class="ctgproject">
                             <p>Videos </p>
                         </div>
                         <div class="number">
@@ -180,8 +179,8 @@
                         </div>
                     </a></span><!--
                     --><span class="blocright"><a name="others" class="loadctg others" onclick="show('navapp')">
-
-                        <div class="others ctgproject">
+                        <i class="others"></i>
+                        <div class="ctgproject">
                             <p>Others </p>
                         </div>
                         <div class="number">

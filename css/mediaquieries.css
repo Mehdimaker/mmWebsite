@@ -49,6 +49,9 @@
   #home div.presentation blockquote {
     font-size: 16px;
   }
+  #home div.recent a span.title_projects {
+    font-size: 11px;
+  }
   #navapp #navlist {
     overflow: inherit;
     white-space: normal;
@@ -130,11 +133,69 @@
     opacity: 0.90;
     color: #ffffff;
   }
+  /**************** ARTICLES ****************/
   #articles {
     overflow: inherit;
   }
+  #articles #listarticles a.article {
+    display: block;
+    height: 55.75px;
+    margin-bottom: 9px;
+    color: #949496;
+    opacity: 0.85;
+  }
+  #articles #listarticles a.article span {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+  }
+  #articles #listarticles a.article span.title_article {
+    line-height: 55.75px;
+    width: 35%;
+    height: 100%;
+    padding-left: 10px;
+    float: left;
+    background-color: #18191b;
+    opacity: 1;
+  }
+  #articles #listarticles a.article span.resume_article {
+    height: 100%;
+    width: 55%;
+    line-height: 13px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 12px;
+    background-color: #18191b;
+    opacity: 0.8;
+  }
+  #articles #listarticles a.article span.containdate div.date p.JJ {
+    width: 46px ;
+    height: 20px;
+    line-height: 16px;
+    font-size: 28px;
+    padding-top: 3px;
+    margin-top: 2px;
+    float: left;
+  }
+  #articles #listarticles a.article span.containdate div.date p.MM {
+    float: right;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #articles #listarticles a.article span.containdate div.date p.AA {
+    float: right;
+    line-height: 11px;
+    font-size: 10px;
+  }
+  #articles #listarticles a.article:hover {
+    opacity: 0.9;
+    color: #ffffff;
+  }
 }
-@media all and (max-width: 550px) {
+@media all and (max-width: 700px) {
+  /**************** NAVBAR ****************/
   nav#navbar ul li {
     display: inline-block;
   }
@@ -143,18 +204,22 @@
     height: 40px;
     width: 40px;
     display: block;
-    font-size: 12px;
+    font-size: 10px;
   }
+  nav#navbar ul li a i {
+    display: none;
+  }
+  /**************** HOME ****************/
   #home div.presentation {
     height: 243px;
   }
   #home div.presentation blockquote {
     font-size: 12px;
-    padding: 20px 160px 20px 20px;
+    padding: 20px 125px 20px 10px;
   }
   #home div.presentation blockquote h1 {
     margin-top: 0px;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 20px;
   }
   #home div.presentation div.photo {
@@ -178,6 +243,16 @@
     width: 100%;
     margin-bottom: 9px;
   }
+  #home div.recent h4 {
+    opacity: 0.6;
+    padding-left: 10px;
+    height: 27px;
+    color: #949496;
+    line-height: 27px;
+    font-size: 14px;
+    background-color: #18191b;
+  }
+  /**************** PROJECT ****************/
   #projects div.rowprojecttop {
     padding-bottom: 2.25px;
   }
@@ -193,5 +268,122 @@
   }
   #projects .blocright {
     padding-left: 3px;
+  }
+  #projects div.rowproject span {
+    padding-bottom: 20px;
+  }
+  #projects div.rowproject span a i {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+  }
+  #projects div.rowproject span a div.ctgproject {
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #18191b;
+  }
+  #projects div.rowproject span a div.ctgproject p {
+    text-align: left;
+    padding: 10px 0 0 10px;
+    font-size: 12px;
+  }
+  #projects div.rowproject span a div.number {
+    background-color: #18191b;
+    height: 20px;
+    margin-right: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #projects div.rowproject span a div.number p {
+    height: 100%;
+    width: 20px;
+    background-color: #18191b;
+    opacity: 0.8;
+    margin-right: -20px;
+    margin-top: 0px;
+    float: right;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  #projects div.rowproject span i.websites {
+    background-size: 40px;
+  }
+  #projects div.rowproject span i.apps {
+    background-size: 35px;
+  }
+  #projects div.rowproject span i.graphics {
+    background-size: 40px;
+  }
+  #projects div.rowproject span i.objects {
+    background-size: 30px;
+  }
+  #projects div.rowproject span i.videos {
+    background-size: 30px;
+  }
+  #projects div.rowproject span i.others {
+    background-size: 30px;
+  }
+  /**************** ARTICLES ****************/
+  #articles {
+    overflow: inherit;
+  }
+  #articles #listarticles a.article {
+    margin-bottom: 4.5px;
+  }
+  #articles #listarticles a.article span {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+  }
+  #articles #listarticles a.article span.title_article {
+    font-size: 12px;
+    line-height: 100%;
+    padding: 5px;
+  }
+  #articles #listarticles a.article span.resume_article {
+    height: 100%;
+    width: 53%;
+    line-height: 11px;
+    padding: 5px;
+    text-align: left;
+    font-size: 10px;
+    background-color: #18191b;
+    opacity: 0.8;
+  }
+  #articles #listarticles a.article span.containdate {
+    width: 12%;
+    padding-right: 5px;
+  }
+  #articles #listarticles a.article span.containdate div.date p.JJ {
+    width: 49px ;
+    height: 20px;
+    line-height: 16px;
+    font-size: 21px;
+    padding-top: 3px;
+    margin-top: 2px;
+    float: left;
+  }
+  #articles #listarticles a.article span.containdate div.date p.MM {
+    padding-top: 4px;
+    float: right;
+    font-size: 9px;
+    line-height: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #articles #listarticles a.article span.containdate div.date p.AA {
+    float: right;
+    line-height: 7px;
+    font-size: 9px;
+  }
+  #articles #listarticles a.article:hover {
+    opacity: 0.9;
+    color: #ffffff;
   }
 }
