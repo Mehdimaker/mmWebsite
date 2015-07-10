@@ -3,25 +3,10 @@
 
 
       //ARTICLE NAVLIST
-
       var nbarticles = $('#listarticles a').length;
       var decalagearticle = ($('#listarticles a').height()) + 9;
       var margintop = 0;
       var positionarticles = 0;
-
-addopacityarticles();
-
-      
-
-        $('nav li a.articles').on("click", function () {
-        $("#listarticles").css("margin-top", 0 + "px");
-        positionarticles = 0;
-        margintop = 0;
-        addopacityarticles();
-
-          
-      });
-
 
       function addopacityarticles() {
           if (positionarticles == 0 && nbarticles <= 8) {
@@ -37,8 +22,16 @@ addopacityarticles();
                   $(".btnbottom").addClass("cache");
               }
           }
-
       }
+
+      addopacityarticles();
+
+      $('nav li a.articles').on("click", function () {
+        $("#listarticles").css("margin-top", 0 + "px");
+        positionarticles = 0;
+        margintop = 0;
+        addopacityarticles();
+      });
 
       $('.btnbottom').on("click", function () {
           if (nbarticles > 8 && positionarticles < (nbarticles - 8)) {
@@ -47,7 +40,6 @@ addopacityarticles();
               $("#listarticles").css("margin-top", margintop + "px");
           } else {}
           addopacityarticles();
-
       });
       $('.btntop').on("click", function () {
           if (positionarticles > 0) {
@@ -56,7 +48,6 @@ addopacityarticles();
               $("#listarticles").css("margin-top", margintop + "px");
           } else {}
           addopacityarticles();
-
       });
 
 
@@ -64,32 +55,31 @@ addopacityarticles();
       //PROJECT NAVLIST
       $position = 1;
       $marginleftlist = 0;
-      $marginrightbloc = 9;
-      $pages = 0;
 
       function addopacity() {
-          if ($position == 1 && $position == $pages) {
-              $(".btnleft").addClass("cache");
-              $(".btnright").addClass("cache");
-          } else if ($position == 1) {
-              $(".btnleft").addClass("cache");
-              $(".btnright").removeClass("cache");
-          } else if ($position == $pages) {
-              $(".btnright").addClass("cache");
-              $(".btnleft").removeClass("cache");
+          if ($position == 1 && $positionprojmax <=$position) {
+              $(".btnleft").addClass('cache');
+              $(".btnright").addClass('cache');
+          }else if($position > 1 && $position < $positionprojmax){
+              $(".btnleft").removeClass('cache');
+              $(".btnright").removeClass('cache');
+          }else if ($position == 1) {
+              $(".btnleft").addClass('cache');
+              $(".btnright").removeClass('cache');
+          } else if ($position == $positionprojmax) {
+              $(".btnright").addClass('cache');
+              $(".btnleft").removeClass('cache');
           }
       }
 
-
       $('.btnright').on("click", function () {
-          if ($position < $pages) {
+          if ($position < $positionprojmax) {
               $marginleftlist -= $decalage;
               $position++;
               $("#list").css("margin-left", $marginleftlist + "px");
           } else {}
           addopacity();
       });
-
       $('.btnleft').on("click", function () {
           if ($position > 1) {
               $marginleftlist += $decalage;

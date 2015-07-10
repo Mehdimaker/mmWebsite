@@ -10,6 +10,8 @@
        wp_register_script('handle3', get_bloginfo('template_directory') . '/js/navlist.js', false, null, false);
        wp_register_script('handle4', get_bloginfo('template_directory') . '/js/angular.min.js', false, null, false);
 
+
+
     wp_enqueue_script('handle'); wp_enqueue_script('handle2');wp_enqueue_script('handle3');wp_enqueue_script('handle4');
 }
 add_action('wp_enqueue_scripts', 'jm_scripts', 100);
@@ -233,9 +235,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),
 		'cancel_reply_link'    => __( 'Cancel reply' ),
 		'label_submit'         => __( 'Post Comment' ),
-		'submit_button'        => '
-        
-        <button name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" ng-class="{ btnvalid : FormComment.$valid}" >Envoyer</button>
+		'submit_button'        => '<button name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" ng-class="{ btnvalid : FormComment.$valid}" >Envoyer</button>
         ',
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',

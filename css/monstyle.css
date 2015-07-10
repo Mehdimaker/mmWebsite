@@ -3,8 +3,8 @@
   padding: 0px;
 }
 body {
-  background-image: url(../img/bg/bbg.png);
-  background: cover;
+  background-image: url(../img/bg/test92.jpg);
+  background: contain;
   font-family: "Myriad pro", sans-serif;
 }
 #container {
@@ -18,6 +18,7 @@ main {
   height: 100%;
   margin-right: 18px;
   margin-left: 18px;
+  background-image: url(../img/maps1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,6 +26,9 @@ main {
   display: inline-block;
   vertical-align: top;
   position: relative;
+}
+nav#navbar {
+  display: none;
 }
 .on {
   display: block;
@@ -41,6 +45,29 @@ main {
 }
 .blocright {
   padding-left: 6px;
+}
+/******** NAV Mobile *********/
+.cbp-spmenu {
+  text-align: center;
+  position: absolute;
+  padding-top: 18px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cbp-spmenu-horizontal {
+  width: 100%;
+  height: 70px;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+.cbp-spmenu-top {
+  top: -70px;
+}
+.cbp-spmenu-top.cbp-spmenu-open {
+  top: 0px;
 }
 /******** NAV LEFT *********/
 #blocgauche {
@@ -79,7 +106,7 @@ main {
   box-sizing: border-box;
 }
 #blocgauche nav li a:hover {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 #blocgauche nav li a.active:hover {
@@ -123,7 +150,7 @@ main {
   padding-top: 10px;
 }
 #blocgauche nav div.menuprojects a:hover {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 #blocgauche nav div.menuprojects a.active2 {
@@ -161,7 +188,7 @@ main {
   line-height: 40px;
 }
 #blocdroit div.langue .fa-flag:hover {
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 #blocdroit div.langue div.menulangue {
@@ -183,7 +210,7 @@ main {
   line-height: 40px;
 }
 #blocdroit div.reseau .fa-share-alt:hover {
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 #blocdroit div.reseau div.menureseau {
@@ -227,7 +254,7 @@ main {
   opacity: 1;
 }
 #blocdroit div.navbtn i:hover {
-  color: white;
+  color: #ffffff;
 }
 #blocdroit div.navbtn i.cache {
   opacity: 0.2;
@@ -257,7 +284,7 @@ footer {
   background-color: #18191b;
   color: #949496;
   box-sizing: border-box;
-  padding: 20px 214px 20px 20px;
+  padding: 20px 214px 20px 10px;
 }
 #home div.presentation blockquote h1 {
   margin-top: 25px;
@@ -277,8 +304,8 @@ footer {
   opacity: 0.8;
 }
 #home div.recent {
-  height: 200px;
-  width: 268px;
+  height: 100%;
+  width: 33.33333%;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -301,7 +328,7 @@ footer {
   padding-left: 10px;
   background-repeat: no-repeat;
   background-size: 20px;
-  background-position: 98% 50%;
+  background-position: 96% 50%;
 }
 #home div.recent a span {
   display: inline-block;
@@ -311,42 +338,42 @@ footer {
 }
 #home div.recent a span.title_projects {
   line-height: 30px;
-  font-size: 14px;
+  font-size: 12px;
 }
 #home div.recent a span.date {
   height: 30px;
   padding-top: 3px;
   padding-right: 8px;
-  width: 70px;
+  width: 57px;
   float: right;
   text-align: right;
   box-sizing: border-box;
 }
 #home div.recent a span.date p.JJ {
-  width: 38px;
+  width: 28px;
   height: 20px;
   line-height: 16px;
-  font-size: 20px;
+  font-size: 21px;
   padding-top: 4px;
-  margin-top: 2px;
+  margin-top: 1px;
   float: left;
 }
 #home div.recent a span.date p.MM {
   float: right;
-  font-size: 11px;
-  line-height: 11px;
+  font-size: 9px;
+  line-height: 8px;
   font-weight: bold;
-  padding-top: 3px;
+  padding-top: 4px;
   text-transform: uppercase;
 }
 #home div.recent a span.date p.AA {
   float: right;
-  line-height: 10px;
-  font-size: 10px;
+  line-height: 7px;
+  font-size: 9px;
 }
 #home div.recent a:hover {
   opacity: 0.95;
-  color: white;
+  color: #ffffff;
 }
 #home div.recent a.apps {
   background-image: url(../img/icoprojects/apps.png);
@@ -419,7 +446,7 @@ footer {
 }
 #articles #listarticles a.article span.title_article {
   line-height: 55.75px;
-  width: 30%;
+  width: 35%;
   height: 100%;
   padding-left: 10px;
   float: left;
@@ -428,134 +455,121 @@ footer {
 }
 #articles #listarticles a.article span.resume_article {
   height: 100%;
-  width: 60%;
+  width: 55%;
   line-height: 13px;
   padding: 10px;
-  text-align: justify;
+  text-align: left;
   font-size: 12px;
   background-color: #18191b;
   opacity: 0.8;
 }
-#articles #listarticles a.article span.date {
+#articles #listarticles a.article span.containdate {
+  width: 10%;
   height: 100%;
   padding-right: 10px;
-  padding-top: 16px;
-  width: 10%;
   float: right;
   text-align: right;
   box-sizing: border-box;
   background-color: #18191b;
   opacity: 1;
 }
-#articles #listarticles a.article span.date p.JJ {
-  width: 43px;
+#articles #listarticles a.article span.containdate div.date {
+  height: 100%;
+  padding-top: 16px;
+  width: 70px;
+  float: right;
+  text-align: right;
+  box-sizing: border-box;
+}
+#articles #listarticles a.article span.containdate div.date p.JJ {
+  width: 43px ;
   height: 20px;
   line-height: 16px;
-  font-size: 29px;
-  padding-top: 4px;
+  font-size: 31px;
+  padding-top: 3px;
   margin-top: 2px;
   float: left;
 }
-#articles #listarticles a.article span.date p.MM {
+#articles #listarticles a.article span.containdate div.date p.MM {
   float: right;
   font-size: 13px;
   line-height: 13px;
   font-weight: bold;
   text-transform: uppercase;
 }
-#articles #listarticles a.article span.date p.AA {
+#articles #listarticles a.article span.containdate div.date p.AA {
   float: right;
   line-height: 11px;
   font-size: 12px;
 }
 #articles #listarticles a.article:hover {
   opacity: 0.9;
-  color: white;
+  color: #ffffff;
 }
 /******** PROJECTS *********/
-#projects div.rowproject {
-  height: 250px;
-  margin-bottom: 9px;
-}
-#projects div.rowproject a {
-  opacity: 0.85;
-  text-decoration: none;
-  width: 268px;
+#projects {
   height: 100%;
-  cursor: pointer;
+}
+#projects div.rowprojecttop {
+  padding-bottom: 4.5px;
+}
+#projects div.rowprojectbottom {
+  padding-top: 4.5px;
+}
+#projects div.rowproject {
+  height: 50%;
   box-sizing: border-box;
+}
+#projects div.rowproject span {
   display: inline-block;
   vertical-align: top;
-  color: #949496;
+  box-sizing: border-box;
+  width: 33.33333333333%;
+  height: 100%;
+  padding-bottom: 40px;
+  position: relative;
 }
-#projects div.rowproject a:hover {
+#projects div.rowproject span a:hover {
   opacity: 0.9;
-  color: white;
+  color: #ffffff;
 }
-#projects div.rowproject div.ctgproject {
-  height: 210px;
-  background-color: #18191b;
+#projects div.rowproject span a {
+  opacity: 0.85;
+  text-decoration: none;
+  height: 100%;
+  cursor: pointer;
+  color: #949496;
+  display: block;
+}
+#projects div.rowproject span a i {
   background-repeat: no-repeat;
-  background-position: center 90px;
+  background-position: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+#projects div.rowproject span a div.ctgproject {
+  height: 100%;
   display: block;
   box-sizing: border-box;
+  background-color: #18191b;
 }
-#projects div.rowproject div.ctgproject p {
+#projects div.rowproject span a div.ctgproject p {
   text-align: left;
   padding: 10px 0 0 10px;
   font-size: 16px;
 }
-#projects div.rowproject div.websites {
-  background-image: url(../img/icoprojects/websites.png);
-  background-size: 70px;
-}
-#projects div.rowproject div.websites:hover {
-  background-image: url(../img/icoprojects/websiteshover.png);
-}
-#projects div.rowproject div.apps {
-  background-image: url(../img/icoprojects/apps.png);
-  background-size: 70px;
-}
-#projects div.rowproject div.apps:hover {
-  background-image: url(../img/icoprojects/appshover.png);
-}
-#projects div.rowproject div.graphics {
-  background-image: url(../img/icoprojects/graphics.png);
-  background-size: 70px;
-}
-#projects div.rowproject div.graphics:hover {
-  background-image: url(../img/icoprojects/graphicshover.png);
-}
-#projects div.rowproject div.objects {
-  background-image: url(../img/icoprojects/objects.png);
-  background-size: 60px;
-}
-#projects div.rowproject div.objects:hover {
-  background-image: url(../img/icoprojects/objectshover.png);
-}
-#projects div.rowproject div.videos {
-  background-image: url(../img/icoprojects/videos.png);
-  background-size: 60px;
-}
-#projects div.rowproject div.videos:hover {
-  background-image: url(../img/icoprojects/videoshover.png);
-}
-#projects div.rowproject div.others {
-  background-image: url(../img/icoprojects/others.png);
-  background-size: 60px;
-}
-#projects div.rowproject div.others:hover {
-  background-image: url(../img/icoprojects/othershover.png);
-}
-#projects div.rowproject div.number {
+#projects div.rowproject span a div.number {
   background-color: #18191b;
   height: 40px;
   margin-right: 40px;
   text-align: center;
   box-sizing: border-box;
 }
-#projects div.rowproject div.number p {
-  height: 40px;
+#projects div.rowproject span a div.number p {
+  height: 100%;
   width: 40px;
   background-color: #18191b;
   opacity: 0.8;
@@ -567,37 +581,82 @@ footer {
   padding-top: 8px;
   box-sizing: border-box;
 }
+#projects div.rowproject span i.websites {
+  background-image: url(../img/icoprojects/websites.png);
+  background-size: 70px;
+}
+#projects div.rowproject span a.websites:hover i.websites {
+  background-image: url(../img/icoprojects/websiteshover.png);
+}
+#projects div.rowproject span i.apps {
+  background-image: url(../img/icoprojects/apps.png);
+  background-size: 65px;
+}
+#projects div.rowproject span a.apps:hover i.apps {
+  background-image: url(../img/icoprojects/appshover.png);
+}
+#projects div.rowproject span i.graphics {
+  background-image: url(../img/icoprojects/graphics.png);
+  background-size: 70px;
+}
+#projects div.rowproject span a.graphics:hover i.graphics {
+  background-image: url(../img/icoprojects/graphicshover.png);
+}
+#projects div.rowproject span i.objects {
+  background-image: url(../img/icoprojects/objects.png);
+  background-size: 60px;
+}
+#projects div.rowproject span a.objects:hover i.objects {
+  background-image: url(../img/icoprojects/objectshover.png);
+}
+#projects div.rowproject span i.videos {
+  background-image: url(../img/icoprojects/videos.png);
+  background-size: 60px;
+}
+#projects div.rowproject span a.videos:hover i.videos {
+  background-image: url(../img/icoprojects/videoshover.png);
+}
+#projects div.rowproject span i.others {
+  background-image: url(../img/icoprojects/others.png);
+  background-size: 60px;
+}
+#projects div.rowproject span a.others:hover i.others {
+  background-image: url(../img/icoprojects/othershover.png);
+}
 #navapp #navlist {
   overflow: hidden;
   white-space: nowrap;
   height: 509px;
   width: 100%;
+  position: relative;
 }
 #navapp #navlist #list {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   padding: 0px;
-  margin-left: 0px;
 }
 #navapp #navlist #list .ajaxload {
-  padding-top: 214.5px;
-  height: 80px;
+  height: 100%;
   width: 100%;
-  margin: auto;
   text-align: center;
   color: #18191b;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 25%;
+  box-sizing: border-box;
 }
 #navapp #navlist #list a {
+  margin-right: 9px;
   border: none;
-  margin: 0px;
+  width: 195px;
   height: 420px;
   opacity: 0.85;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
-  white-space: none;
   white-space: normal;
   text-decoration: none;
   color: #949496;
@@ -608,7 +667,7 @@ footer {
   display: block;
 }
 #navapp #navlist #list a span.thumbnail {
-  height: 190px;
+  height: auto;
   background-color: #18191b;
   padding: 10px 20px 10px 20px;
   box-sizing: border-box;
@@ -670,7 +729,7 @@ footer {
 }
 #navapp #navlist #list a:hover {
   opacity: 0.90;
-  color: white;
+  color: #ffffff;
 }
 /******** SERVICES *********/
 #services {
@@ -684,11 +743,17 @@ footer {
   padding-top: 250px;
 }
 /******** CONTACT *********/
+#contact {
+  height: 100%;
+}
+#contact div.height100 {
+  height: 100%;
+}
 #contact #apropos {
-  height: 509px;
+  height: 100%;
   background-color: #18191b;
   opacity: 0.85;
-  width: 397.5px;
+  width: 50%;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -717,17 +782,18 @@ footer {
   top: 2px;
 }
 #contact #apropos div.links a:hover {
-  color: white;
+  color: #ffffff;
 }
 #contact form {
-  height: 509px;
-  width: 397.5px;
+  height: 100%;
+  width: 50%;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
   color: #949496;
   position: relative;
-  margin-left: 9px;
+  padding-left: 9px;
+  overflow: hidden;
 }
 #contact form fieldset {
   background-color: #18191b;
@@ -745,8 +811,9 @@ footer {
   margin-top: 10px;
 }
 #contact form label.textarea {
-  height: 230px;
-  margin-bottom: 9px;
+  height: 100%;
+  padding-bottom: 279px;
+  box-sizing: border-box;
 }
 #contact form label {
   opacity: 0.85;
@@ -813,7 +880,6 @@ footer {
   opacity: 0.3;
 }
 #contact form label span.icotextarea {
-  height: 100%;
   position: absolute;
   left: 0px;
   line-height: 50px;
@@ -840,16 +906,16 @@ footer {
   color: red;
 }
 #contact form button {
+  position: absolute;
+  bottom: 0px;
   height: 50px;
   width: 100%;
-  position: absolute;
-  right: 0px;
   background-color: #18191b;
   color: #949496;
   opacity: 0.2;
-  border: none;
   text-align: center;
   font-size: 14px;
+  border: none;
 }
 #contact form button:hover {
   color: #949496;
@@ -858,7 +924,7 @@ footer {
   opacity: 0.85;
 }
 #contact form button.btnvalid:hover {
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 #present_project {
@@ -965,7 +1031,7 @@ footer {
   font-weight: bold;
 }
 #present_project span.comment:hover {
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 #present_article {
@@ -1094,6 +1160,7 @@ footer {
 #mainpro #etapes section.pres {
   position: relative;
   padding: 0;
+  opacity: 1;
 }
 #mainpro #etapes section.pres span.bgtechno {
   background-color: #18191b;
@@ -1102,7 +1169,7 @@ footer {
   height: 65px;
   position: absolute;
   bottom: 0px;
-  opacity: 0.85;
+  opacity: 0.65;
 }
 #mainpro #etapes section.pres div.techno {
   width: 100%;
@@ -1246,7 +1313,7 @@ footer {
   color: #949496;
 }
 #mainpro #etapes section.comment #listsComments li div.reply a:hover {
-  color: white;
+  color: #ffffff;
 }
 #mainpro #etapes section.comment #FormComments {
   box-sizing: border-box;
@@ -1385,10 +1452,10 @@ footer {
   color: #949496;
 }
 #mainpro #etapes section.comment #FormComments form button.btnvalid {
-  opacity: &op1;
+  opacity: 0.85;
 }
 #mainpro #etapes section.comment #FormComments form button.btnvalid:hover {
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 #mainpro #etapes div.infos {
@@ -1424,5 +1491,5 @@ footer {
   top: 1px;
 }
 #mainpro #etapes div.infos a:hover {
-  color: white;
+  color: #ffffff;
 }

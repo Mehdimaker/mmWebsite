@@ -1,14 +1,30 @@
 <?php get_header();?>
 
+
 <body>
+    <nav  id="navbar">
+          <ul>
+            <li>
+                <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
+            </li>
+            <li>
+                <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
+            </li>
+            <li>
+                <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
+            </li>   
+            <li>
+                <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
+            </li>
+            <li>
+                <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
+            </li>
+        </ul>
+    </nav>
+
     <div id="container">
-
-
-
         <?php include_once 'blocgauche.php';?><!--
         
-
-            
         --><main>
 
             <div id="home">
@@ -81,7 +97,7 @@
             --><a class="article" href="<?php the_permalink() ?>" rel="bookmark">
                         <span class="title_article"><?php the_title(); ?></span>
                         <span class="resume_article"><?php the_excerpt() ;?></span>
-                        <span class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></span>
+                        <span class="containdate"><div class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></div></span>
                     </a><!--
             <?php endwhile; ?>
             --></div>
@@ -96,12 +112,12 @@
 
             <div id="projects" class="off">
 
-                <div class="rowproject">
+                <div class="rowproject rowprojecttop">
 
 
-                    <a name="websites" class="loadctg websites blocleft" onclick="show('navapp')">
-
-                        <div class="websites ctgproject">
+                    <span class="blocleft"><a name="websites" class="loadctg websites " onclick="show('navapp')">
+                        <i class="websites"></i>
+                        <div class="ctgproject">
                             <p>Websites </p>
                         </div>
                         <div class="number">
@@ -109,12 +125,12 @@
                                 <?php echo count_cat_post( 'websites' ); ?>
                             </p>
                         </div>
-                    </a><!--
+                    </a></span><!--
 
 
-                    --><a class="loadctg apps bloccenter" name="apps" onclick="show('navapp')">
-
-                        <div class="apps ctgproject">
+                    --><span class="bloccenter"><a class="loadctg apps " name="apps" onclick="show('navapp')">
+                        <i class="apps"></i>
+                        <div class="ctgproject">
                             <p>Apps mobile </p>
                         </div>
                         <div class="number">
@@ -122,11 +138,11 @@
                                 <?php echo count_cat_post( 'apps' ); ?>
                             </p>
                         </div>
-                    </a><!--
+                    </a></span><!--
 
-                    --><a name="graphics" class="loadctg graphics blocright" onclick="show('navapp')">
-
-                        <div class="graphics ctgproject">
+                    --><span class="blocright"><a name="graphics" class="loadctg graphics" onclick="show('navapp')">
+                        <i class="graphics"></i>
+                        <div class="ctgproject">
                             <p>Graphics Design </p>
                         </div>
                         <div class="number">
@@ -134,14 +150,14 @@
                                 <?php echo count_cat_post( 'graphics' ); ?>
                             </p>
                         </div>
-                    </a>
+                    </a></span>
 
                 </div>
 
-                <div class="rowproject">
-                    <a name="objects" class="loadctg objects blocleft" onclick="show('navapp')">
-
-                        <div class="objects ctgproject">
+                <div class="rowproject rowprojectbottom" >
+                    <span class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
+                        <i class="objects"></i>
+                        <div class="ctgproject">
                             <p>Objects 3d </p>
                         </div>
                         <div class="number">
@@ -149,11 +165,11 @@
                                 <?php echo count_cat_post( 'objects' ); ?>
                             </p>
                         </div>
-                    </a><!--
+                    </a></span><!--
 
-                    --><a name="videos" class="loadctg videos bloccenter" onclick="show('navapp')">
-
-                        <div class="videos ctgproject">
+                    --><span class="bloccenter"><a name="videos" class="loadctg videos" onclick="show('navapp')">
+                        <i class="videos"></i>
+                        <div class="ctgproject">
                             <p>Videos </p>
                         </div>
                         <div class="number">
@@ -161,10 +177,10 @@
                                 <?php echo count_cat_post( 'videos' ); ?>
                             </p>
                         </div>
-                    </a><!--
-                    --><a name="others" class="loadctg others blocright" onclick="show('navapp')">
-
-                        <div class="others ctgproject">
+                    </a></span><!--
+                    --><span class="blocright"><a name="others" class="loadctg others" onclick="show('navapp')">
+                        <i class="others"></i>
+                        <div class="ctgproject">
                             <p>Others </p>
                         </div>
                         <div class="number">
@@ -172,7 +188,7 @@
                                 <?php echo count_cat_post( 'others' ); ?>
                             </p>
                         </div>
-                    </a>
+                    </a></span>
 
 
 
@@ -207,8 +223,8 @@
             <div id="contact" class="off">
              
                        
-                       <div ng-app="app">
-        <div ng-controller="appCtrl">
+                      <div class="height100"ng-app="app">
+        <div class="height100" ng-controller="appCtrl">
             
             
              <div id="apropos">
@@ -256,7 +272,7 @@
                     <p ng-show="FormContact.name.$invalid && FormContact.name.$touched " class="help-block">Indiquez votre nom</p>
                 </label>
                 <label>
-                    <span class="ico"><i class="fa fa-lg fa-phone"></i></span><!--
+                    <span class="ico"><i class="fa fa-lg fa-phone-square"></i></span><!--
                 --><input placeholder="Votre numéro (facultatif)" name="number" ng-model="number" ng-pattern="/[0-9 ]+/" ng-required="true">
                     <span ng-show="FormContact.number.$valid && FormContact.number.$touched " class="valid"><i class="fa fa-check"></i></span>
                    <span ng-show="FormContact.number.$invalid && FormContact.number.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -281,7 +297,7 @@
 
                  </label>
 
-<button type="submit" ng-class="{ btnvalid : FormContact.name.$valid && FormContact.mail.$valid && FormContact.message.$valid  }" >Envoyer </button>
+<button type="submit" ng-class="{ btnvalid : FormContact.name.$valid && FormContact.mail.$valid && FormContact.message.$valid  }"  >Envoyer </button>
         
 
             </form>
@@ -302,6 +318,8 @@
 
 
     <script type="text/javascript">
+
+    
          app = angular.module('app', []);
 
         app.controller('appCtrl', ['$scope', '$http', function ($scope, $http) {
@@ -344,6 +362,8 @@
                 localStorage.setItem("redirection", null);
             }
         });
+
+
     </script>
 </body>
 
