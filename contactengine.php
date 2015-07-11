@@ -3,9 +3,9 @@
 $EmailFrom = "New contact from: mehdimaker.com !";
 $EmailTo = "contact@mehdimaker.com";
 $Subject = "Nouveau message !";
-$Name = Trim(stripslashes($_POST['name'])); 
-$Email = Trim(stripslashes($_POST['mail'])); 
-$Message = Trim(stripslashes($_POST['message'])); 
+$Name = @trim(stripslashes($_POST['name'])); 
+$Email = @trim(stripslashes($_POST['mail'])); 
+$Message = @trim(stripslashes($_POST['message'])); 
 
 // validation
 $validationOK=true;
