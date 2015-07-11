@@ -264,7 +264,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 			<div id="respond" class="comment-respond">
 			<div class="titlereponse">
 				<i class="fa fa-2x fa-flip-horizontal fa-comment-o"></i>
-				<h4 id="reply-title" class="comment-reply-title"><?php comment_form_title( $args['title_reply'], $args['title_reply_to'] ); ?> <small><?php cancel_comment_reply_link( $args['cancel_reply_link'] ); ?></small></h4>
+				<h4 >Laisser un Commentaire</h4>
 			<p>Votre adresse e-mail ne sera pas publié.</p>	
             </div>
 				<?php if ( get_option( 'comment_registration' ) && !is_user_logged_in() ) : ?>
