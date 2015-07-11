@@ -259,7 +259,7 @@
                   </div><!--
              
               
-            --><form method="post" name="FormContact" ng-submit="sendMessage()" novalidate action="<?php echo get_bloginfo('template_directory')?>/contactengine.php">
+            --><form method="post" name="FormContact"  novalidate action="<?php echo get_bloginfo('template_directory')?>/contactengine.php">
                      <fieldset>             <i class="fa fa-2x fa-paper-plane"></i>
                         <h3>Contacter moi par mail.</h4>
                             N'hésitez pas à me contacter en remplissant ce formulaire, <br>Je répondrais au plus vite.</fieldset>
