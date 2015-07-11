@@ -7,7 +7,8 @@ $Name = Trim(stripslashes($_POST['name']));
 $Email = Trim(stripslashes($_POST['mail'])); 
 $Message = Trim(stripslashes($_POST['message'])); 
 print_r($_POST['name']);
-
+print_r($_POST['mail']);
+print_r($_POST['message']);
 // validation
 $validationOK=true;
 if (!$validationOK) {
