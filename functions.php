@@ -16,7 +16,6 @@
 }
 add_action('wp_enqueue_scripts', 'jm_scripts', 100);
 
-
 //// Suprime la admin bar pour tous les utilisateurs
 function my_function_admin_bar(){
     return false;
@@ -24,9 +23,23 @@ function my_function_admin_bar(){
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 
 
-//// Charge le fichier clean.php qui effacera quelques contenue de wp head
-require_once locate_template('/inc/clean.php');
-// require_once locate_template('clean.php'); si le fichier est à la racine de votre thème.
+/* On supprime les fonctions inutiles de l'entête
+*/
+add_action('init', 'clean_head');
+function clean_head () {
+    remove_action( 'wp_head', 'feed_links', 2 ); // Affiche les liens des flux RSS pour les Articles et les commentaires.
+    remove_action( 'wp_head', 'feed_links_extra', 3 ); // Affiche les liens des flux RSS supplémentaires comme les catégories de vos articles.
+    remove_action( 'wp_head', 'rsd_link' ); // Affiche le lien RSD (Really Simple Discovery). Je ne l'ai jamais utilisé mais si vous êtes certain d'en avoir besoin, laissez-le.
+    remove_action( 'wp_head', 'wlwmanifest_link' ); // Affiche le lien xml dont a besoin Windows Live Writer pour accéder à votre blog. Si vous ne publiez pas vos articles avec ce logiciel, il ne vous sert à rien.
+    remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 ); // Affiche les liens relatifs vers les articles suivants et précédents. (<kbd>      				<link title=" href=" rel="prev" /></kbd> et <kbd>       				<link title="" href=""" rel="next" /></kbd>). Ces liens peuvent parfois affecter votre SEO.
+    remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 ); // Affiche l'url raccourcie de la page ou vous vous situez.
+
+    /**
+    * On en profite pour supprimer le style en trop ajouté par le widget "Commentaires récents"
+    */
+    global $wp_widget_factory;
+    remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ));
+}
 
 
 

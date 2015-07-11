@@ -1,7 +1,7 @@
 <?php
 
-$EmailFrom = "Mehdi.maizate.free.fr";
-$EmailTo = "mehdi.maizate@gmail.com";
+$EmailFrom = "New contact from: mehdimaker.com !";
+$EmailTo = "contact@mehdimaker.com";
 $Subject = "Nouveau message !";
 $Name = Trim(stripslashes($_POST['name'])); 
 $Email = Trim(stripslashes($_POST['mail'])); 
@@ -27,8 +27,8 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
-
+mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+/*
 // redirect to success page 
 if ($success){
   print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
@@ -36,4 +36,5 @@ if ($success){
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
 }
+*/
 ?>
