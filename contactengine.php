@@ -27,7 +27,16 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
-mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+ if(mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>")) {
+        echo 'yes';
+    }else{
+
+ echo 'no';
+    }
+
+
+
+
 /*
 // redirect to success page 
 if ($success){
