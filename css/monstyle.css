@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body {
-  background-image: url(../img/bg/test92.jpg);
+  background-color: #3498db;
   background: contain;
   font-family: "Myriad pro", sans-serif;
 }
@@ -18,7 +18,7 @@ main {
   height: 100%;
   margin-right: 18px;
   margin-left: 18px;
-  background-image: url(../img/maps1.png);
+  background-image: url(../img/maps0.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -46,28 +46,16 @@ nav#navbar {
 .blocright {
   padding-left: 6px;
 }
-/******** NAV Mobile *********/
-.cbp-spmenu {
-  text-align: center;
-  position: absolute;
-  padding-top: 18px;
-  box-sizing: border-box;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.cbp-spmenu-horizontal {
+span.bgop {
+  z-index: -1;
+  background-color: #18191b;
+  opacity: 0.6;
+  height: 100%;
   width: 100%;
-  height: 70px;
-  left: 0;
-  z-index: 5;
-  overflow: hidden;
-}
-.cbp-spmenu-top {
-  top: -70px;
-}
-.cbp-spmenu-top.cbp-spmenu-open {
+  display: block;
   top: 0px;
+  left: 0px;
+  position: absolute;
 }
 /******** NAV LEFT *********/
 #blocgauche {
@@ -94,7 +82,7 @@ nav#navbar {
 #blocgauche nav li a {
   margin-top: 2px;
   padding: 12px 0 0 15px;
-  color: #949496;
+  color: #3498db;
   width: 100%;
   display: block;
   height: 40px;
@@ -136,7 +124,7 @@ nav#navbar {
   background-color: #18191b;
 }
 #blocgauche nav div.menuprojects a {
-  color: #949496;
+  color: #3498db;
   font-size: 12px;
   line-height: 20px;
   height: 20px;
@@ -178,7 +166,7 @@ nav#navbar {
   overflow: hidden;
   position: relative;
   text-align: center;
-  color: #949496;
+  color: #3498db;
 }
 #blocdroit div.langue {
   position: absolute;
@@ -188,7 +176,7 @@ nav#navbar {
   line-height: 40px;
 }
 #blocdroit div.langue .fa-flag:hover {
-  color: #ffffff;
+  color: #3498db;
   cursor: pointer;
 }
 #blocdroit div.langue div.menulangue {
@@ -276,12 +264,15 @@ footer {
   height: 293px;
   box-sizing: border-box;
   margin-bottom: 9px;
+  position: relative;
+  z-index: 1;
+}
+#home div.presentation span.bgop {
+  opacity: 0.6;
 }
 #home div.presentation blockquote {
   height: 100%;
   font-size: 20px;
-  opacity: 0.6;
-  background-color: #18191b;
   color: #949496;
   box-sizing: border-box;
   padding: 20px 214px 20px 10px;
@@ -301,7 +292,7 @@ footer {
   background-image: url(../img/mehdi.jpg);
   background-size: cover;
   box-sizing: border-box;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 #home div.recent {
   height: 100%;
@@ -482,7 +473,7 @@ footer {
   box-sizing: border-box;
 }
 #articles #listarticles a.article span.containdate div.date p.JJ {
-  width: 43px ;
+  width: 43px;
   height: 20px;
   line-height: 16px;
   font-size: 31px;
@@ -503,7 +494,7 @@ footer {
   font-size: 12px;
 }
 #articles #listarticles a.article:hover {
-  opacity: 0.9;
+  opacity: 0.95;
   color: #ffffff;
 }
 /******** PROJECTS *********/
@@ -530,7 +521,7 @@ footer {
   position: relative;
 }
 #projects div.rowproject span a:hover {
-  opacity: 0.9;
+  opacity: 0.95;
   color: #ffffff;
 }
 #projects div.rowproject span a {
@@ -691,7 +682,7 @@ footer {
   padding: 10px;
 }
 #navapp #navlist #list a span.resumepro p {
-  font-size: 12px;
+  font-size: 14px;
   text-align: justify;
 }
 #navapp #navlist #list a span.infopro {
@@ -728,8 +719,7 @@ footer {
   font-size: 10px;
 }
 #navapp #navlist #list a:hover {
-  opacity: 0.90;
-  color: #ffffff;
+  opacity: 0.95;
 }
 /******** SERVICES *********/
 #services {
@@ -948,9 +938,12 @@ footer {
   padding: 10px;
   height: 100%;
   width: 160px;
-  opacity: 0.85;
   text-align: center;
-  background-color: #18191b;
+  position: relative;
+  z-index: 1;
+}
+#present_project span.thumbnail span.bgop {
+  opacity: 0.85;
 }
 #present_project span.thumbnail img {
   height: 100%;
@@ -958,11 +951,14 @@ footer {
   padding: 0px;
 }
 #present_project span.resumepro {
-  background-color: #18191b;
-  opacity: 0.6;
   width: 524px;
   height: 100%;
   padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+#present_project span.resumepro span.bgop {
+  opacity: 0.6;
 }
 #present_project span.resumepro h1 {
   height: 30px;
@@ -1003,7 +999,7 @@ footer {
   font-size: 11px;
 }
 #present_project span.resumepro p {
-  font-size: 12px;
+  font-size: 14px;
   text-align: justify;
 }
 #present_project span.comment {
@@ -1012,6 +1008,7 @@ footer {
   border: none;
   width: 120px;
   background-color: #18191b;
+  color: #3498db;
   opacity: 0.85;
   font-size: 14px;
   padding: 10px 10px 0 10px;
@@ -1058,7 +1055,7 @@ footer {
   width: 60%;
   line-height: 13px;
   padding: 10px;
-  text-align: justify;
+  text-align: left;
   font-size: 12px;
   background-color: #18191b;
   opacity: 0.6;
@@ -1106,17 +1103,18 @@ footer {
   transition: all 0.5s ease;
   height: 100%;
 }
-#mainpro #etapes section:not(.comment) {
-  opacity: 0.85;
-}
 #mainpro #etapes section {
   box-sizing: border-box;
   vertical-align: top;
-  background-color: #18191b;
   width: 100%;
   height: 100%;
   padding: 20px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+#mainpro #etapes section span.bgop {
+  opacity: 0.85;
 }
 #mainpro #etapes section div.description {
   box-sizing: border-box;
@@ -1235,6 +1233,9 @@ footer {
 }
 #mainpro #etapes section.pres div.techno div span.rails {
   background-image: url(../img/techno/rails.png);
+}
+#mainpro #etapes section.pres div.techno div span.fa {
+  background-image: url(../img/techno/fa.png);
 }
 #mainpro #etapes section.pres div.techno div span.terminal {
   background-image: url(../img/techno/terminal.png);
@@ -1449,13 +1450,13 @@ footer {
   font-size: 14px;
 }
 #mainpro #etapes section.comment #FormComments form button:hover {
-  color: #949496;
+  color: #ffffff;
 }
 #mainpro #etapes section.comment #FormComments form button.btnvalid {
   opacity: 0.85;
 }
 #mainpro #etapes section.comment #FormComments form button.btnvalid:hover {
-  color: #ffffff;
+  color: #3498db;
   cursor: pointer;
 }
 #mainpro #etapes div.infos {

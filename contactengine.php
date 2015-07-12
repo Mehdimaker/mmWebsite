@@ -6,9 +6,7 @@ $Subject = "Nouveau message !";
 $Name = Trim(stripslashes($_POST['name'])); 
 $Email = Trim(stripslashes($_POST['mail'])); 
 $Message = Trim(stripslashes($_POST['message'])); 
-print_r($_POST['name']);
-print_r($_POST['mail']);
-print_r($_POST['message']);
+
 // validation
 $validationOK=true;
 if (!$validationOK) {
@@ -29,15 +27,7 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
- if(mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>")) {
-        echo 'yes';
-    }else{
-
- echo 'no';
-    }
-
-
-
+ mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>")) 
 
 /*
 // redirect to success page 

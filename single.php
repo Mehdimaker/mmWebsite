@@ -20,9 +20,9 @@
 <div id="present_project">
        
     <?php 
-    echo "<span class='thumbnail'>";
+    echo "<span class='thumbnail'><span class='bgop'></span>";
     the_post_thumbnail('full');
-    echo "</span><span class='resumepro'><h1>";
+    echo "</span><span class='resumepro'><span class='bgop'></span><h1>";
     the_title();
     echo "</h1>";
     ?>

@@ -2,6 +2,58 @@
 
 
 
+// TEXTE PAR DEFAUT DANS NOUVELLE ARTICLES
+function texte_post_par_defaut( $content )
+{
+global $post_type;
+if ( 'post' == $post_type )
+{
+$content = "<div class='infos'>
+	<a><span>View all</span><i class='fa fa-lg fa-search'></i> </a>
+	<a> <span>Github</span><i class='fa fa-lg fa-github'></i> </a>
+	<a><i class='fa fa-circle-o fa-lg'><span>T</span></i>Thingiverse</a>
+	<a><span>Download</span><i class='fa fa-lg fa-download'></i> </a> 
+</div>
+
+<section class='pres'>
+
+<span class='bgtechno'></span><div class='techno'><div ><p>Languages</p>
+	<span class='html'></span>
+	<span class='css'></span>
+	<span class='js'></span>
+</div><div><p>Tools</p>
+	<span class='ff'></span>
+	<span class='sublime'></span>
+</div></div></section>
+
+
+<section> <span class='bgop'></span><div class='description'>
+<h3> </h3>
+
+</div><div class='illustration'>
+
+</div></section>
+
+
+<section> <span class='bgop'></span><div class='description'>
+<h3> </h3>
+
+</div><div class='illustration'>
+
+</div></section>
+
+
+<section> <span class='bgop'></span><div class='description'>
+<h3> </h3>
+
+</div><div class='illustration'>
+
+</div></section> ";
+return $content;
+}
+}
+add_filter('default_content', 'texte_post_par_defaut');
+
 //// Ajoute les scripts js
    function jm_scripts() {
        

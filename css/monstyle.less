@@ -1,14 +1,18 @@
 @1:#18191b;
 @2:#949496;
-@3:#FFF;
+@3:#3498db;
+@4:#FFF;
 @op1:0.85;
+@op2:0.6;
+@ophover: 0.95;
 
 * {
     margin: 0px;
     padding: 0px;
 }
 body {
-    background-image: url(../img/bg/test92.jpg);
+    // background-image: url(../img/bg/test92.jpg);
+    background-color: #3498db;
     background: contain;
     // font: 76%/150% "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
     font-family: "Myriad pro", sans-serif;
@@ -24,7 +28,7 @@ main {
     height: 100%;
     margin-right: 18px;
     margin-left: 18px;
-    background-image: url(../img/maps1.png);
+    background-image: url(../img/maps0.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -53,29 +57,16 @@ nav#navbar {
 .blocright {
     padding-left: 6px;
 }
-
-/******** NAV Mobile *********/
-.cbp-spmenu {
-    text-align: center;
-    position: absolute;
-    padding-top: 18px;
-    box-sizing: border-box;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-.cbp-spmenu-horizontal {
+span.bgop {
+    z-index: -1;
+    background-color: @1;
+    opacity: @op2;
+    height: 100%;
     width: 100%;
-    height: 70px;
-    left: 0;
-    z-index: 5;
-    overflow: hidden;
-}
-.cbp-spmenu-top {
-    top: -70px;
-}
-.cbp-spmenu-top.cbp-spmenu-open {
+    display: block;
     top: 0px;
+    left: 0px;
+    position: absolute;
 }
 
 /******** NAV LEFT *********/
@@ -103,7 +94,7 @@ nav#navbar {
         li a {
             margin-top: 2px;
             padding: 12px 0 0 15px;
-            color: @2;
+            color: @3;
             width: 100%;
             display: block;
             height: 40px;
@@ -115,7 +106,7 @@ nav#navbar {
             box-sizing: border-box;
         }
         li a:hover {
-            color: @3;
+            color: @4;
             text-decoration: none;
         }
         li a.active:hover {
@@ -145,7 +136,7 @@ nav#navbar {
             background-color: @1;
 
             a {
-                color: @2;
+                color: @3;
                 font-size: 12px;
                 line-height: 20px;
                 height: 20px;
@@ -159,7 +150,7 @@ nav#navbar {
                 padding-top: 10px;
             }
             a:hover {
-                color: @3;
+                color: @4;
                 text-decoration: none;
             }
             a.active2 {
@@ -191,7 +182,7 @@ nav#navbar {
     overflow: hidden;
     position: relative;
     text-align: center;
-    color: @2;
+    color: @3;
 
     div.langue {
         position: absolute;
@@ -224,7 +215,7 @@ nav#navbar {
             line-height: 40px;
         }
         .fa-share-alt:hover {
-            color: @3;
+            color: @4;
             cursor: pointer;
         }
         div.menureseau {
@@ -271,7 +262,7 @@ nav#navbar {
             opacity: 1;
         }
         i:hover {
-            color: @3;
+            color: @4;
         }
         i.cache {
             opacity: 0.2;
@@ -298,12 +289,16 @@ footer {
         height: 293px;
         box-sizing: border-box;
         margin-bottom: 9px;
+        position: relative;
+        z-index: 1;
 
+        span.bgop {
+            opacity: @op2;
+         
+        }
         blockquote {
             height: 100%;
             font-size: 20px;
-            opacity: 0.6;
-            background-color: @1;
             color: @2;
             box-sizing: border-box;
             padding: 20px 214px 20px 10px;
@@ -324,7 +319,7 @@ footer {
             background-image: url(../img/mehdi.jpg);
             background-size: cover;
             box-sizing: border-box;
-            opacity: 0.8;
+            opacity: 0.9;
         }
     }
     div.recent {
@@ -365,7 +360,7 @@ footer {
                 line-height: 30px;
                 font-size: 12px;
             }
-               span.date {
+            span.date {
                 height: 30px;
                 padding-top: 3px;
                 padding-right: 8px;
@@ -399,8 +394,8 @@ footer {
             }
         }
         a:hover {
-            opacity: 0.95;
-            color: @3;
+            opacity: @ophover;
+            color: @4;
         }
         a.apps {
             background-image: url(../img/icoprojects/apps.png);
@@ -493,55 +488,52 @@ footer {
                 font-size: 12px;
                 background-color: @1;
                 opacity: 0.8;
-           
             }
-            span.containdate{
-                 width: 10%;
-                  height: 100%;
+            span.containdate {
+                width: 10%;
+                height: 100%;
                 padding-right: 10px;
-                
-               
                 float: right;
                 text-align: right;
                 box-sizing: border-box;
                 background-color: @1;
                 opacity: 1;
-            div.date {
-                height: 100%;
-                
-                padding-top: 16px;
-               width: 70px;
-                float: right;
-                text-align: right;
-                box-sizing: border-box;
 
+                div.date {
+                    height: 100%;
+                    padding-top: 16px;
+                    width: 70px;
+                    float: right;
+                    text-align: right;
+                    box-sizing: border-box;
 
-                p.JJ {
-                           width: 43px ;
-                       height:20px;
-                    line-height: 16px;
-                    font-size: 31px;
-                    padding-top: 3px;
-                    margin-top: 2px;
-                    float: left;
+                    p.JJ {
+                        width: 43px;
+                        height: 20px;
+                        line-height: 16px;
+                        font-size: 31px;
+                        padding-top: 3px;
+                        margin-top: 2px;
+                        float: left;
+                    }
+                    p.MM {
+                        float: right;
+                        font-size: 13px;
+                        line-height: 13px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                    p.AA {
+                        float: right;
+                        line-height: 11px;
+                        font-size: 12px;
+                    }
                 }
-                p.MM {
-                    float: right;
-                    font-size: 13px;
-                    line-height: 13px;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                }
-                p.AA {
-                    float: right;
-                    line-height: 11px;
-                    font-size: 12px;
-                }
-            }}
+            }
         }
         a.article:hover {
-            opacity: 0.9;
-            color: @3;
+            opacity: @ophover;
+            color: @4;
         }
     }
 }
@@ -570,8 +562,8 @@ footer {
             position: relative;
 
             a:hover {
-                opacity: 0.9;
-                color: @3;
+                opacity: @ophover;
+                color: @4;
             }
             a {
                 opacity: @op1;
@@ -622,50 +614,50 @@ footer {
                         padding-top: 8px;
                         box-sizing: border-box;
                     }
-                }   
+                }
             }
-             i.websites {
-                    background-image: url(../img/icoprojects/websites.png);
-                    background-size: 70px;
-                }
-                a.websites:hover i.websites {
-                    background-image: url(../img/icoprojects/websiteshover.png);
-                }
-                i.apps {
-                    background-image: url(../img/icoprojects/apps.png);
-                    background-size: 65px;
-                }
-                a.apps:hover i.apps {
-                    background-image: url(../img/icoprojects/appshover.png);
-                }
-                i.graphics {
-                    background-image: url(../img/icoprojects/graphics.png);
-                    background-size: 70px;
-                }
-                a.graphics:hover i.graphics {
-                    background-image: url(../img/icoprojects/graphicshover.png);
-                }
-                i.objects {
-                    background-image: url(../img/icoprojects/objects.png);
-                    background-size: 60px;
-                }
-                a.objects:hover i.objects {
-                    background-image: url(../img/icoprojects/objectshover.png);
-                }
-                i.videos {
-                    background-image: url(../img/icoprojects/videos.png);
-                    background-size: 60px;
-                }
-                a.videos:hover i.videos {
-                    background-image: url(../img/icoprojects/videoshover.png);
-                }
-                i.others {
-                    background-image: url(../img/icoprojects/others.png);
-                    background-size: 60px;
-                }
-                a.others:hover i.others {
-                    background-image: url(../img/icoprojects/othershover.png);
-                }
+            i.websites {
+                background-image: url(../img/icoprojects/websites.png);
+                background-size: 70px;
+            }
+            a.websites:hover i.websites {
+                background-image: url(../img/icoprojects/websiteshover.png);
+            }
+            i.apps {
+                background-image: url(../img/icoprojects/apps.png);
+                background-size: 65px;
+            }
+            a.apps:hover i.apps {
+                background-image: url(../img/icoprojects/appshover.png);
+            }
+            i.graphics {
+                background-image: url(../img/icoprojects/graphics.png);
+                background-size: 70px;
+            }
+            a.graphics:hover i.graphics {
+                background-image: url(../img/icoprojects/graphicshover.png);
+            }
+            i.objects {
+                background-image: url(../img/icoprojects/objects.png);
+                background-size: 60px;
+            }
+            a.objects:hover i.objects {
+                background-image: url(../img/icoprojects/objectshover.png);
+            }
+            i.videos {
+                background-image: url(../img/icoprojects/videos.png);
+                background-size: 60px;
+            }
+            a.videos:hover i.videos {
+                background-image: url(../img/icoprojects/videoshover.png);
+            }
+            i.others {
+                background-image: url(../img/icoprojects/others.png);
+                background-size: 60px;
+            }
+            a.others:hover i.others {
+                background-image: url(../img/icoprojects/othershover.png);
+            }
         }
     }
 }
@@ -739,7 +731,7 @@ footer {
                     padding: 10px;
 
                     p {
-                        font-size: 12px;
+                        font-size: 14px;
                         text-align: justify;
                     }
                 }
@@ -780,8 +772,8 @@ footer {
                 }
             }
             a:hover {
-                opacity: 0.90;
-                color: @3;
+                opacity: @ophover;
+                //color: @4;
             }
         }
     }
@@ -842,7 +834,7 @@ footer {
                 }
             }
             a:hover {
-                color: @3;
+                color: @4;
             }
         }
     }
@@ -986,7 +978,7 @@ footer {
             opacity: @op1;
         }
         button.btnvalid:hover {
-            color: @3;
+            color: @4;
             cursor: pointer;
         }
     }
@@ -1011,10 +1003,13 @@ footer {
         padding: 10px;
         height: 100%;
         width: 160px;
-        opacity: @op1;
         text-align: center;
-        background-color: @1;
+        position: relative;
+        z-index: 1;
 
+        span.bgop {
+            opacity: @op1;
+        }
         img {
             height: 100%;
             width: auto;
@@ -1022,12 +1017,15 @@ footer {
         }
     }
     span.resumepro {
-        background-color: @1;
-        opacity: 0.6;
         width: 524px;
         height: 100%;
         padding: 10px;
+        position: relative;
+        z-index: 1;
 
+        span.bgop {
+            opacity: @op2;
+        }
         h1 {
             height: 30px;
             line-height: 30px;
@@ -1068,7 +1066,7 @@ footer {
             }
         }
         p {
-            font-size: 12px;
+            font-size: 14px;
             text-align: justify;
         }
     }
@@ -1078,6 +1076,7 @@ footer {
         border: none;
         width: 120px;
         background-color: @1;
+        color: @3;
         opacity: @op1;
         font-size: 14px;
         padding: 10px 10px 0 10px;
@@ -1098,7 +1097,7 @@ footer {
         }
     }
     span.comment:hover {
-        color: @3;
+        color: @4;
         cursor: pointer;
     }
 }
@@ -1126,7 +1125,7 @@ footer {
         width: 60%;
         line-height: 13px;
         padding: 10px;
-        text-align: justify;
+        text-align: left;
         font-size: 12px;
         background-color: @1;
         opacity: 0.6;
@@ -1176,18 +1175,19 @@ footer {
         transition: all 0.5s ease;
         height: 100%;
 
-        section:not(.comment) {
-            opacity: @op1;
-        }
         section {
             box-sizing: border-box;
             vertical-align: top;
-            background-color: @1;
             width: 100%;
             height: 100%;
             padding: 20px;
             overflow: hidden;
+            position: relative;
+            z-index: 1;
 
+            span.bgop {
+                opacity: @op1;
+            }
             div.description {
                 box-sizing: border-box;
                 vertical-align: top;
@@ -1311,6 +1311,9 @@ footer {
                     span.rails {
                         background-image: url(../img/techno/rails.png)
                     }
+                    span.fa {
+                        background-image: url(../img/techno/fa.png)
+                    }
                     //OUTILS
                     span.terminal {
                         background-image: url(../img/techno/terminal.png)
@@ -1396,7 +1399,7 @@ footer {
                             color: @2;
                         }
                         a:hover {
-                            color: @3;
+                            color: @4;
                         }
                     }
                 }
@@ -1535,7 +1538,7 @@ footer {
                         font-size: 14px;
                     }
                     button:hover {
-                        color: @2;
+                        color: @4;
                     }
                     button.btnvalid {
                         opacity: @op1;
@@ -1582,7 +1585,7 @@ footer {
                 }
             }
             a:hover {
-                color: @3;
+                color: @4;
             }
         }
     }
