@@ -1463,6 +1463,8 @@ footer {
   height: 20px;
   cursor: pointer;
   text-align: left;
+  text-decoration: none;
+  color: #3498db;
 }
 #mainpro #etapes div.infos a i {
   float: right;
