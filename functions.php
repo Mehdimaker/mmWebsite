@@ -9,10 +9,10 @@ global $post_type;
 if ( 'post' == $post_type )
 {
 $content = "<div class='infos'>
-	<a><span>View all</span><i class='fa fa-lg fa-search'></i> </a>
-	<a> <span>Github</span><i class='fa fa-lg fa-github'></i> </a>
-	<a><i class='fa fa-circle-o fa-lg'><span>T</span></i>Thingiverse</a>
-	<a><span>Download</span><i class='fa fa-lg fa-download'></i> </a> 
+	<a href=''target='_blank'><span>View all</span><i class='fa fa-lg fa-search'></i> </a>
+	<ahref=''target='_blank'><span>Github</span><i class='fa fa-lg fa-github'></i> </a>
+	<ahref=''target='_blank'><i class='fa fa-circle-o fa-lg'><span>T</span></i>Thingiverse</a>
+	<ahref=''target='_blank'><span>Download</span><i class='fa fa-lg fa-download'></i> </a> 
 </div>
 
 <section class='pres'>

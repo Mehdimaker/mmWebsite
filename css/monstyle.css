@@ -1136,6 +1136,9 @@ footer {
   width: auto;
   float: right;
 }
+#mainpro #etapes section div.illustration img.website {
+  margin-right: -200px;
+}
 #mainpro #etapes section.pres {
   position: relative;
   padding: 0;
