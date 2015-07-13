@@ -127,7 +127,7 @@ function loadctg() {
 		
     echo "<a class='loadarticle' href='";
         the_permalink();
-    echo "'><span class='thumbnail'>";
+    echo "'><span class='thumbnail'><span class='bgop'></span>";
         the_post_thumbnail( 'full' );     
     echo "</span><h1>";
         the_title();

@@ -251,7 +251,7 @@ span.bgop {
 }
 #blocdroit div.navbtn i.cache:hover {
   background-color: #18191b;
-  color: #949496;
+  color: #b6b6b6;
 }
 /******** FOOTER *********/
 footer {
@@ -273,7 +273,7 @@ footer {
 #home div.presentation blockquote {
   height: 100%;
   font-size: 20px;
-  color: #949496;
+  color: #b6b6b6;
   box-sizing: border-box;
   padding: 20px 214px 20px 10px;
 }
@@ -305,7 +305,7 @@ footer {
   opacity: 0.6;
   padding-left: 10px;
   height: 27px;
-  color: #949496;
+  color: #b6b6b6;
   line-height: 27px;
   font-size: 14px;
   background-color: #18191b;
@@ -313,7 +313,7 @@ footer {
 #home div.recent a {
   background-color: #18191b;
   height: 30px;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.85;
   display: block;
   padding-left: 10px;
@@ -408,7 +408,7 @@ footer {
   opacity: 0.85;
 }
 #home div.recent div.comm p {
-  color: #949496;
+  color: #b6b6b6;
   font-size: 12px;
   padding: 5px 10px 5px 10px;
 }
@@ -427,7 +427,7 @@ footer {
   display: block;
   height: 55.75px;
   margin-bottom: 9px;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.85;
 }
 #articles #listarticles a.article span {
@@ -452,7 +452,7 @@ footer {
   text-align: left;
   font-size: 12px;
   background-color: #18191b;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 #articles #listarticles a.article span.containdate {
   width: 10%;
@@ -529,7 +529,7 @@ footer {
   text-decoration: none;
   height: 100%;
   cursor: pointer;
-  color: #949496;
+  color: #b6b6b6;
   display: block;
 }
 #projects div.rowproject span a i {
@@ -563,7 +563,7 @@ footer {
   height: 100%;
   width: 40px;
   background-color: #18191b;
-  opacity: 0.8;
+  opacity: 0.75;
   margin-right: -40px;
   margin-top: 0px;
   float: right;
@@ -644,13 +644,13 @@ footer {
   border: none;
   width: 195px;
   height: 420px;
-  opacity: 0.85;
+  opacity: ;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   white-space: normal;
   text-decoration: none;
-  color: #949496;
+  color: #b6b6b6;
   text-align: center;
   cursor: pointer;
 }
@@ -659,9 +659,13 @@ footer {
 }
 #navapp #navlist #list a span.thumbnail {
   height: auto;
-  background-color: #18191b;
   padding: 10px 20px 10px 20px;
   box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+}
+#navapp #navlist #list a span.thumbnail span.bgop {
+  opacity: 1;
 }
 #navapp #navlist #list a span.thumbnail img {
   margin-top: 0px;
@@ -674,10 +678,11 @@ footer {
   text-align: center;
   background-color: #18191b;
   height: 30px;
+  opacity: 0.85;
 }
 #navapp #navlist #list a span.resumepro {
   background-color: #18191b;
-  opacity: 0.9;
+  opacity: 0.75;
   height: 170px;
   padding: 10px;
 }
@@ -689,6 +694,7 @@ footer {
   padding: 10px;
   background-color: #18191b;
   height: 100%;
+  opacity: 1;
 }
 #navapp #navlist #list a span.infopro span.date {
   height: 30px;
@@ -719,7 +725,7 @@ footer {
   font-size: 10px;
 }
 #navapp #navlist #list a:hover {
-  opacity: 0.95;
+  opacity: 1.5;
 }
 /******** SERVICES *********/
 #services {
@@ -729,7 +735,7 @@ footer {
 }
 #services p {
   text-align: center;
-  color: #949496;
+  color: #b6b6b6;
   padding-top: 250px;
 }
 /******** CONTACT *********/
@@ -747,7 +753,7 @@ footer {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  color: #949496;
+  color: #b6b6b6;
   padding: 10px 10px 10px 10px;
   text-align: center;
 }
@@ -758,7 +764,7 @@ footer {
 #contact #apropos div.links a {
   margin-bottom: 2px;
   text-decoration: none;
-  color: #949496;
+  color: #b6b6b6;
   font-style: none;
   display: block;
   font-family: "Myriad Pro";
@@ -780,7 +786,7 @@ footer {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  color: #949496;
+  color: #b6b6b6;
   position: relative;
   padding-left: 9px;
   overflow: hidden;
@@ -826,7 +832,7 @@ footer {
   padding-right: 35px;
   box-sizing: border-box;
   font-size: 14px;
-  color: #949496;
+  color: #b6b6b6;
   background-color: #18191b;
   font-family: "Myriad Pro";
 }
@@ -836,25 +842,25 @@ footer {
   padding-top: 17px;
 }
 #contact form label ::-webkit-input-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
   font-weight: bold;
   font-style: italic;
 }
 #contact form label :-moz-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 035;
   font-weight: bold;
   font-style: italic;
 }
 #contact form label ::-moz-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
   font-weight: bold;
   font-style: italic;
 }
 #contact form label :-ms-input-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
   font-weight: bold;
   font-style: italic;
@@ -866,7 +872,7 @@ footer {
   line-height: 50px;
   text-align: center;
   width: 50px;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
 }
 #contact form label span.icotextarea {
@@ -875,7 +881,7 @@ footer {
   line-height: 50px;
   text-align: center;
   width: 50px;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
 }
 #contact form label span.valid i,
@@ -901,14 +907,14 @@ footer {
   height: 50px;
   width: 100%;
   background-color: #18191b;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.2;
   text-align: center;
   font-size: 14px;
   border: none;
 }
 #contact form button:hover {
-  color: #949496;
+  color: #b6b6b6;
 }
 #contact form button.btnvalid {
   opacity: 0.85;
@@ -920,7 +926,7 @@ footer {
 #present_project {
   height: 122px;
   margin-bottom: 9px;
-  color: #949496;
+  color: #b6b6b6;
 }
 #present_project span,
 #present_project a {
@@ -1034,7 +1040,7 @@ footer {
 #present_article {
   height: 55.75px;
   margin-bottom: 9px;
-  color: #949496;
+  color: #b6b6b6;
 }
 #present_article span {
   box-sizing: border-box;
@@ -1093,7 +1099,7 @@ footer {
   font-size: 12px;
 }
 #mainpro {
-  color: #949496;
+  color: #b6b6b6;
   overflow: hidden;
 }
 #mainpro #etapes {
@@ -1137,7 +1143,7 @@ footer {
   float: right;
 }
 #mainpro #etapes section div.illustration img.website {
-  margin-right: -200px;
+  margin-right: -133px;
 }
 #mainpro #etapes section.pres {
   position: relative;
@@ -1175,7 +1181,7 @@ footer {
   line-height: 10px;
   margin-bottom: 5px;
   font-weight: normal;
-  color: #949496;
+  color: #b6b6b6;
 }
 #mainpro #etapes section.pres div.techno div span {
   vertical-align: top;
@@ -1260,7 +1266,7 @@ footer {
   display: inline-block;
   width: 60%;
   height: 100%;
-  color: #949496;
+  color: #b6b6b6;
   background-color: #18191b;
   opacity: 0.8;
 }
@@ -1295,7 +1301,7 @@ footer {
   margin-bottom: 10px;
 }
 #mainpro #etapes section.comment #listsComments li div.reply a {
-  color: #949496;
+  color: #b6b6b6;
 }
 #mainpro #etapes section.comment #listsComments li div.reply a:hover {
   color: #ffffff;
@@ -1351,7 +1357,7 @@ footer {
   padding-right: 35px;
   box-sizing: border-box;
   font-size: 14px;
-  color: #949496;
+  color: #b6b6b6;
   background-color: #18191b;
   font-family: "Myriad Pro";
 }
@@ -1361,25 +1367,25 @@ footer {
   height: 100%;
 }
 #mainpro #etapes section.comment #FormComments form label ::-webkit-input-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
   font-weight: bold;
   font-style: italic;
 }
 #mainpro #etapes section.comment #FormComments form label :-moz-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 035;
   font-weight: bold;
   font-style: italic;
 }
 #mainpro #etapes section.comment #FormComments form label ::-moz-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
   font-weight: bold;
   font-style: italic;
 }
 #mainpro #etapes section.comment #FormComments form label :-ms-input-placeholder {
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
   font-weight: bold;
   font-style: italic;
@@ -1391,7 +1397,7 @@ footer {
   line-height: 50px;
   text-align: center;
   width: 50px;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
 }
 #mainpro #etapes section.comment #FormComments form label span.icotextarea {
@@ -1401,7 +1407,7 @@ footer {
   line-height: 50px;
   text-align: center;
   width: 50px;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.3;
 }
 #mainpro #etapes section.comment #FormComments form label span.valid i,
@@ -1427,7 +1433,7 @@ footer {
   position: absolute;
   right: 0px;
   background-color: #18191b;
-  color: #949496;
+  color: #b6b6b6;
   opacity: 0.2;
   border: none;
   text-align: center;
