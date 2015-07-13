@@ -75,7 +75,7 @@
                     <div class="comm">
                         <p>Vous recherchez un développeur ? <br>Quelqu'un de sèrieux et compétent pour réaliser votre projet ?<br><br>
                         Ne cherchez pas plus loin... <br>Je suis la personne qu'il vous faut !<br><br>
-                        Je vous invite à discuter autour d'un café, d'une éventuelle collaboration !<br><br>
+                        Je vous invite à me rencontrer, afin de discuter d'une éventuelle collaboration !<br><br>
                         A très bientôt !   
                         </p>
                     </div>
