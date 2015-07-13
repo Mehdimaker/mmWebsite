@@ -157,7 +157,7 @@
                     <span class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
                         <i class="objects"></i>
                         <div class="ctgproject">
-                            <p>Objects 3d </p>
+                            <p>Objects 3D </p>
                         </div>
                         <div class="number">
                             <p>

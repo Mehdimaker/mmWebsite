@@ -1,0 +1,953 @@
+//Déclaration
+@1: #c7c7c7;
+@2: #777777;
+@3: #333333;
+@4: #dc2829;
+@5: #7a1617;
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: @3;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: @3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: @4;
+}
+/********************* NAV *********************/
+
+nav {
+    opacity: 0.9;
+    font-size: 12px;
+    font-family: 'Aldrich';
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    float: none;
+    display: table;
+}
+
+.navbar-default {
+    border-bottom: none;
+    background-color: @3;
+}
+
+nav a {
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -ms-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+
+.navbar {
+    -webkit-transition: .50s;
+    -moz-transition: .50s;
+    -ms-transition: .50s;
+    -o-transition: .50s;
+    transition: .50s;
+}
+
+.navbar-nav li span {
+    display: inline;
+    margin-right: 5px;
+}
+
+img.cornet {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    .navbar-nav li span {
+        display: inline;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .side-collapse-container {
+        width: 100%;
+        position: relative;
+        right: 0;
+        transition: right .4s;
+    }
+    .side-collapse-container.out {
+        right: 170px;
+    }
+    .side-collapse {
+        background: @1;
+        top: 40px;
+        bottom: 0;
+        right: 0;
+        width: 170px;
+        position: fixed;
+        overflow: hidden;
+        transition: width .4s;
+        z-index: -2;
+    }
+    .side-collapse.in {
+        width: 0;
+        z-index: -2;
+    }
+    img.cornet {
+        display: inherit;
+        width: 15px;
+    }
+    .navbar-collapse {
+        border: none;
+        margin-top: -15px;
+        padding-top: 15px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: @3;
+        width: 170px;
+        font-weight: bold;
+    }
+    .navbar-default .navbar-nav > li > a:hover {
+        color: @3;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: @4;
+    }
+}
+/********************* SECTION *********************/
+
+section {
+    padding-top: 7%;
+    background-color: @3;
+}
+
+#menu1,
+#menu2,
+#menu3,
+#menu4 {
+    padding-bottom: 200px;
+}
+
+#titresection {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    section {
+        padding-top: 40px;
+    }
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4 {
+        padding-bottom: 100px;
+    }
+    #titresection {
+        display: inherit;
+        font-family: 'Aldrich';
+        color: @1;
+        text-align: center;
+        margin-top: 25px;
+        line-height: inherit;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #titresection span.glyphicon {
+        font-size: 28px;
+        margin-right: 10px;
+        position: static;
+    }
+}
+/********************* ACCUEIL *********************/
+
+video {
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+#title {
+    background-color: @2;
+    color: @3;
+    margin-top: 20px;
+    height: 120px;
+    border-left: 20px solid @3;
+    padding: 0px;
+    text-align: center;
+    p.mm {
+        height: 44px;
+        border-bottom: 4px solid @3;
+        font-size: 56px;
+        font-family: 'Aldrich';
+        padding: 0px;
+        margin-left: -4px;
+        line-height: 52px;
+        background-color: @3;
+        color: @2;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    p.mm span.cv {
+        color: @2;
+        float: right;
+        margin-right: 0px;
+    }
+    p.designer {
+        float: left;
+        font-size: 16px;
+        line-height: 14px;
+        margin: 7px 0 0 4px;
+        font-weight: bold;
+    }
+    p.developer {
+        float: right;
+        font-size: 16px;
+        position: absolute;
+        right: 0px;
+        margin: 4px 4px 0 0;
+        font-weight: bold;
+    }
+    div.sepa {
+        padding-top: 6px;
+        width: 100%;
+    }
+    div.sepaleft {
+        border-top: 2px solid @3;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    div.separight {
+        border-bottom: 2px solid @3;
+        width: 50%;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+    p.and {
+        text-align: center;
+        font-size: 22px;
+        background-color: @3;
+        color: @2;
+        width: 26px;
+        height: 26px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 22px;
+        margin-bottom: -2px;
+        margin-top: -2px;
+        padding-top: 4px;
+    }
+}
+
+#logo {
+    background-image: url(../img/testlogoMflat2.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: @4;
+    height: 200px;
+    float: left;
+    border: 20px solid @3;
+}
+
+#photo {
+    background-image: url(../img/photomehdi.png);
+    background-position: center;
+    background-size: cover;
+    background-color: @1;
+    height: 200px;
+    margin-top: -60px;
+    border: 20px solid @3;
+}
+
+#quotation {
+    background-color: @5;
+    margin-top: 0px;
+    height: 120px;
+    color: @1;
+    padding: 5px;
+    border-right: 20px solid @3;
+    text-align: center;
+    p {
+        margin: 20px;
+        font-size: 16px;
+    }
+    img {
+        width: 15px;
+    }
+    img.left {
+        float: left;
+    }
+    img.right {
+        right: 5px;
+        float: right;
+        bottom: 5px;
+        position: absolute;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #title p.mm {
+        font-size: 44px;
+        height: 42px;
+        margin-left: -3px;
+        div.sepa {
+            margin-bottom: 2px;
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    #title p.mm {
+        font-size: 40px;
+        margin-left: -3px;
+        height: 40px;
+        div.sepa {
+            margin-top: 2px;
+            margin-bottom: 0px;
+        }
+        p.developer {
+            margin: 6px 4px 0 0;
+        }
+    }
+    #quotation {
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+@media all and (max-width: 768px) {
+    video {
+        margin: 10px 0 20px 0;
+    }
+    #haut {
+        margin-top: 40px;
+    }
+    #photo {
+        margin-top: -10px;
+        border: none;
+        border-right: 10px solid @3;
+    }
+    #quotation {
+        margin-top: 10px;
+        height: 180px;
+        border: none;
+        p {
+            margin: 15px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    #logo {
+        border: none;
+        border-left: 10px solid @3;
+    }
+    #title {
+        margin-top: 0px;
+        height: 180px;
+        border: none;
+        p.mm {
+            font-size: 19px;
+            line-height: 19px;
+            height: 19px;
+            margin-left: -2px;
+        }
+        div.sepa {
+            margin-top: 45px;
+        }
+        p.designer {
+            margin: 55px 0 0 4px;
+            font-size: 12px;
+        }
+        p.developer {
+            font-size: 12px;
+            margin: 4px 4px 0 0;
+        }
+        p.and {
+            font-size: 16px;
+            padding-top: 0px;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+/********************* EXPERIENCE *********************/
+
+.cursor {
+    background-color: @4;
+    height: 30px;
+    width: 30px;
+    margin-top: -30px;
+    float: right;
+}
+
+@media all and (max-width: 768px) {
+    .cursor {
+        height: 25px;
+        width: 25px;
+        margin-top: -25px;
+    }
+}
+
+.panel-group .panel-heading a {
+    display: block;
+    text-decoration: none;
+    color: @3;
+    font-weight: bold;
+    position: relative;
+}
+
+.panel-group .panel-heading a:after {
+    content: '-';
+    position: absolute;
+    right: 11px;
+    top: -1px;
+    font-size: 24px;
+}
+
+.panel-group .panel-heading a.collapsed:after {
+    content: '+';
+    position: absolute;
+    right: 7px;
+    top: -1px;
+    font-size: 24px;
+}
+
+@media all and (max-width: 768px) {
+    .panel-group .panel-heading a:after {
+        right: 9px;
+        top: -1px;
+        font-size: 20px;
+    }
+    .panel-group .panel-heading a.collapsed:after {
+        right: 6px;
+        top: -1px;
+        font-size: 20px;
+    }
+}
+
+.date {
+    background-color: @2;
+    color: @3;
+    height: 30px;
+    font-size: 18px;
+    padding-top: 4px;
+    width: 60px;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+    .date {
+        font-size: 14px;
+        width: 40px;
+        height: 25px;
+    }
+}
+
+.panel {
+    margin-bottom: 20px;
+}
+
+.panel-title {
+    margin: 0px 40px 0 70px;
+    background-color: @2;
+    color: @3;
+    height: 30px;
+    font-size: 18px;
+    padding: 4px 4px 4px 10px;
+    font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+    .panel {
+        margin-bottom: 10px;
+    }
+    .panel-title {
+        font-size: 14px;
+        margin: 0 30px 0 45px;
+        height: 25px;
+    }
+}
+
+.panel-sstitle {
+    margin: 2px 40px 2px 70px;
+    padding: 0px;
+    background-color: @3;
+    color: @2;
+    height: 20px;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+}
+
+@media all and (max-width: 768px) {
+    .panel-sstitle {
+        margin: 0 30px 0 45px;
+        font-size: 12px;
+    }
+}
+
+.panel-body {
+    border-top: 2px solid @3;
+    background-color: @2;
+    margin: 0 40px 0 70px;
+    color: @3;
+    font-size: 14px;
+    padding: 10px;
+}
+
+@media all and (max-width: 768px) {
+    .panel-body {
+        margin: 0 30px 0 45px;
+    }
+}
+
+.panel-body p {
+    margin: 0px;
+}
+
+@media all and (max-width: 768px) {
+    .panel-body p {
+        line-height: 14px;
+    }
+}
+/********************* COMPETENCES *********************/
+
+#ctg-title {
+    text-align: center;
+}
+
+#ctg-title h4 {
+    background: @2;
+    color: @3;
+    font-weight: bold;
+    margin: 4px 0 0 0;
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+#sstitle {
+    text-align: center;
+}
+
+#sstitle h4 {
+    background-color: @2;
+    color: @3;
+    margin: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+#ctg ul {
+    margin: 0px;
+}
+
+#infos {
+    height: 205px;
+}
+
+span.asterix {
+    color: @4;
+}
+
+#infos,
+#qualites,
+#outils {
+    padding: 10px 10px 0px 10px;
+}
+
+#infos p {
+    color: @2;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+#infos li {
+    color: @2;
+    list-style: none;
+    text-align: right;
+    line-height: normal;
+}
+
+#qualites p,
+#outils p {
+    color: @2;
+}
+
+#qualites span,
+#outils span {
+    float: right;
+}
+
+#qualites img {
+    height: 15px;
+    margin-top: -5px;
+}
+
+#outils img {
+    height: 25px;
+    margin-left: 2px;
+}
+
+@media all and (max-width: 991px) {
+    #ctg {
+        margin-bottom: 40px;
+    }
+    #infos {
+        height: 175px;
+    }
+    #infos p,
+    #qualites,
+    #outils {
+        font-weight: bold;
+    }
+    #infos li,
+    #infos p,
+    #qualites,
+    #outils {
+        font-size: 12px;
+    }
+    #ctg-title img {
+        width: 80px;
+    }
+    #outils img {
+        height: 20px;
+        margin-left: 4px;
+    }
+}
+/********************* PORTFOLIO *********************/
+
+.carousel-inner .item {
+    width: 100%;
+    height: 515px;
+}
+
+.ad1,
+.ad2,
+.ad3,
+.ad4,
+.ad5,
+.ad6 {
+    height: 400px;
+}
+
+.ad1 {
+    background: url(../img/rea/mmcvv1.jpg) no-repeat center center;
+    background-size: contain;
+    background-color: @2;
+}
+
+.ad2 {
+    background: url(../img/rea/mmcvv2.png) no-repeat center center;
+    background-size: contain;
+    background-color: @2;
+}
+
+.ad3 {
+    background: url(../img/rea/website.jpg) no-repeat center center;
+    background-size: contain;
+    background-color: @2;
+}
+
+.ad4 {
+    background: url(../img/rea/cv.jpg) no-repeat center center;
+    background-size: contain;
+    background-color: @2;
+}
+
+.ad5 {
+    background: url(../img/rea/africa.jpg) no-repeat center center;
+    background-size: contain;
+    background-color: @2;
+}
+
+.ad6 {
+    background: url(../img/rea/taxi.jpg) no-repeat center center;
+    background-size: contain;
+    background-color: @2;
+}
+
+.carousel-caption {
+    background-color: @3;
+    color: @2;
+    width: 100%;
+    left: 0px;
+    text-shadow: none;
+    height: 100px;
+    z-index: 0;
+    bottom: 0px;
+    padding: 0px 0 0 0;
+    h3 {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    p {
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+        font-style: italic;
+    }
+    a {
+        color: @4;
+        font-size: 18px;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    span.namebutton {
+        margin-left: 4px;
+        font-size: 12px;
+        color: @4;
+    }
+}
+
+.carousel-indicators {
+    bottom: -10px;
+    margin-left: auto;
+    width: 100%;
+    z-index: 1;
+    right: 0px;
+    li {
+        border-radius: 0;
+        border: none;
+        width: 10%;
+        border-bottom: 2px solid @2;
+    }
+    li.active {
+        height: 6px;
+        margin-bottom: 1px;
+        color: @2;
+        background-color: @2;
+        width: 10%;
+    }
+}
+
+a.arrowleft {
+    background-color: @4;
+    color: @3;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    font-size: 25px;
+    height: 100px;
+    span {
+        padding: 36px 0 0 3px;
+    }
+}
+
+a.arrowright {
+    background-color: @4;
+    color: @3;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    font-size: 25px;
+    height: 100px;
+    span {
+        padding: 36px 3px 0 0;
+    }
+}
+
+div.dl {
+    width: 100px;
+    border: 1px solid Blue;
+}
+
+@media all and (max-width: 768px) {
+    .carousel-indicators {
+        bottom: -16px;
+    }
+    .carousel-inner .item {
+        height: 415px;
+    }
+    .ad1,
+    .ad2,
+    .ad3,
+    .ad4,
+    .ad5,
+    .ad6 {
+        height: 300px;
+    }
+    .carousel-caption h3 {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    .carousel-caption p {
+        display: none;
+    }
+}
+/********************* CONTACT *********************/
+/*LITLEQUOTATION*/
+
+#litlequotation {
+    width: 100%;
+    min-height: 60px;
+    background-color: @5;
+    color: @1;
+    text-align: center;
+    padding: 5px;
+}
+
+#litlequotation p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+#litlequotation img {
+    width: 15px;
+}
+
+#litlequotation img.left {
+    float: left;
+}
+
+#litlequotation img.right {
+    float: right;
+}
+
+@media all and (max-width: 768px) {
+    #litlequotation p {
+        line-height: 16px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #litlequotation img {
+        width: 12px
+    }
+}
+
+#arrowquotation {
+    text-align: center;
+    margin-top: -8px;
+    color: @5;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+#arrowquotation span {
+    margin: 0px;
+    padding: 0px;
+}
+/*FORM*/
+
+#input {
+    height: 40px;
+    margin-bottom: 12px;
+    border: 4px solid @2;
+}
+
+#textarea {
+    height: 200px;
+    margin-bottom: 12px;
+    border: 4px solid @2;
+}
+
+@media all and (max-width: 768px) {
+    #textarea {
+        height: 100px;
+    }
+}
+
+form input,
+textarea {
+    background-color: @3;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: @1;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding-top: 7px;
+}
+
+form textarea {
+    padding-top: 10px;
+}
+
+input[type=submit] {
+    background-color: @4;
+    color: @3;
+    height: 30px;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 100px;
+    padding-top: 3px;
+}
+
+.left-inner-addon {
+    position: relative;
+}
+
+.left-inner-addon input,
+textarea {
+    padding-left: 50px;
+}
+
+.left-inner-addon i {
+    top: 0px;
+    position: absolute;
+    padding: 9px 0 0 10px;
+    pointer-events: none;
+    background-color: @2;
+    height: 100%;
+    width: 36px;
+    color: @3;
+}
+/* MAP */
+
+#mapcanvas {
+    height: 400px;
+    background-color: @3;
+}
+
+@media all and (max-width: 992px) {
+    #mapcanvas {
+        margin-bottom: 80px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #mapcanvas {
+        height: 300px;
+        margin-bottom: 80px;
+    }
+}
+/* Footer */
+
+footer {
+    color: @3;
+    background-color: @4;
+    height: 100px;
+    margin-top: 40px;
+    p {
+        text-align: center;
+        margin-top: 40px;
+    }
+    nav {
+        opacity: 1;
+    }
+    div.top {
+        float: right;
+        margin: -40px 0 0 0;
+        height: 40px;
+        width: 40px;
+        background-color: @4;
+    }
+}

@@ -1123,15 +1123,6 @@ footer {
   width: 426px;
   padding-right: 20px;
 }
-#mainpro #etapes section div.descriptionbis {
-  box-sizing: border-box;
-  vertical-align: top;
-  display: inline-block;
-  width: 426px;
-  padding-right: 0px;
-  float: right;
-  text-align: right;
-}
 #mainpro #etapes section div.illustration {
   float: right;
   height: 338px;
@@ -1142,23 +1133,17 @@ footer {
 }
 #mainpro #etapes section div.illustration img {
   height: 100%;
-  width: 100%;
-}
-#mainpro #etapes section div.illustrationbis {
-  height: 338px;
-  width: 338px;
-  display: inline-block;
-  margin-left: -20px;
-  text-align: center;
-}
-#mainpro #etapes section div.illustrationbis img {
-  height: 100%;
-  width: 100%;
+  width: auto;
+  float: right;
 }
 #mainpro #etapes section.pres {
   position: relative;
   padding: 0;
   opacity: 1;
+}
+#mainpro #etapes section.pres img {
+  height: 100%;
+  width: auto;
 }
 #mainpro #etapes section.pres span.bgtechno {
   background-color: #18191b;
@@ -1167,7 +1152,7 @@ footer {
   height: 65px;
   position: absolute;
   bottom: 0px;
-  opacity: 0.65;
+  opacity: 0.75;
 }
 #mainpro #etapes section.pres div.techno {
   width: 100%;
@@ -1261,10 +1246,6 @@ footer {
 #mainpro #etapes section.pres div.techno div:last-child {
   text-align: right;
   float: right;
-}
-#mainpro #etapes section.pres img {
-  height: 100%;
-  width: 100%;
 }
 #mainpro #etapes section.comment {
   padding: 0px;
