@@ -27,7 +27,7 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
- mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>") 
+ mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>"); 
 
 /*
 // redirect to success page 
