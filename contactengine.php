@@ -27,7 +27,16 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
- mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>"); 
+ $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>"); 
+
+if ($success){
+  echo "TRUE";
+}
+else{
+ echo "FALSE";
+}
+
+
 
 /*
 // redirect to success page 
