@@ -1,16 +1,20 @@
 <?php
 
+$data = json_decode(file_get_contents('php://input'), true);
+
 $EmailFrom = "New contact from: mehdimaker.com !";
 $EmailTo = "contact@mehdimaker.com";
 $Subject = "Nouveau message !";
-$Name = Trim(stripslashes($_POST['name'])); 
-$Email = Trim(stripslashes($_POST['mail'])); 
-$Message = Trim(stripslashes($_POST['message'])); 
 
+$Name = Trim(stripslashes($data[name])); 
+$Number = Trim(stripslashes($data[number])); 
+$Email = Trim(stripslashes($data[mail])); 
+$Message = Trim(stripslashes($data[message])); 
+ 
 // validation
 $validationOK=true;
 if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  echo "FALSE";
   exit;
 }
 
@@ -20,6 +24,9 @@ $Body .= "Name: ";
 $Body .= $Name;
 $Body .= "\n";
 $Body .= "Email: ";
+$Body .= $Number;
+$Body .= "\n";
+$Body .= "Email: ";
 $Body .= $Email;
 $Body .= "\n";
 $Body .= "Message: ";
@@ -27,7 +34,7 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
- $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>"); 
+$success = @mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>"); 
 
 if ($success){
   echo "TRUE";

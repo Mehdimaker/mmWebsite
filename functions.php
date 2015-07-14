@@ -246,7 +246,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 	$html5    = 'html5' === $args['format'];
 	$fields   =  array(
 		'author' => '<label>
-         <span class="ico"><i class="fa fa-lg fa-user"></i></span><!--
+         <span class="ico"><i class="fa fa-user"></i></span><!--
                 --><input placeholder="Votre nom *" ng-model="author" ng-required="true" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . $html_req . ' />
                     <span ng-show="FormComment.author.$valid && FormComment.author.$touched " class="valid"><i class="fa fa-check"></i></span>
                     <span ng-show="FormComment.author.$invalid && FormComment.author.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -257,7 +257,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
         
 		'email'  => '
             <label>
-                    <span class="ico"><i class="fa fa-lg  fa-envelope"></i></span><!--
+                    <span class="ico"><i class="fa  fa-envelope"></i></span><!--
                 --><input placeholder="Votre mail *" ng-model="email" ng-pattern="/^(\w[-._+\w]*\w@\w[-._\w]*\w\.\w{2,3})$/" ng-required="true" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-describedby="email-notes"' . $aria_req . $html_req  . ' />
                     <span ng-show="FormComment.email.$valid && FormComment.email.$touched " class="valid"><i class="fa fa-check"></i></span>
                  <span ng-show="FormComment.email.$invalid && FormComment.email.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -279,7 +279,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => '<label class="textarea">
-                    <span class="icotextarea"><i class="fa fa-lg fa-align-justify"></i></span><!--
+                    <span class="icotextarea"><i class="fa fa-align-justify"></i></span><!--
                 --><textarea id="comment" name="comment" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true" required="required" placeholder="Votre commentaire *" ng-model="message" ng-required="true"></textarea>
                  <span ng-show="FormComment.comment.$valid && FormComment.comment.$touched " class="valid"><i class="fa fa-check"></i></span>
                  <span ng-show="FormComment.comment.$invalid && FormComment.comment.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -300,7 +300,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),
 		'cancel_reply_link'    => __( 'Cancel reply' ),
 		'label_submit'         => __( 'Post Comment' ),
-		'submit_button'        => '<button name="%1$s" type="submit" id="%2$s" class="%3$s" value="%4$s" ng-class="{ btnvalid : FormComment.$valid}" >Envoyer</button>
+		'submit_button'        => '<button type="submit" id="%2$s" class="%3$s" value="%4$s" ng-disabled="FormComment.$invalid" ng-class="{ btnvalid : FormComment.$valid}" >Envoyer</button>
         ',
 		'submit_field'         => '<p class="form-submit">%1$s %2$s</p>',
 		'format'               => 'xhtml',
@@ -328,7 +328,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 			?>
 			<div id="respond" class="comment-respond">
 			<div class="titlereponse">
-				<i class="fa fa-2x fa-flip-horizontal fa-comment-o"></i>
+				<i class="fa fa-2x  fa-comment-o"></i>
 				<h4 >Laisser un Commentaire</h4>
 			<p>Votre adresse e-mail ne sera pas publié.</p>	
             </div>

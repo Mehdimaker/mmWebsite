@@ -1,9 +1,9 @@
 @1:#18191b;
-@2:#B6B6B6;//#b6b6b6
+@2:#b6b6b6;//#b6b6b6
 @3:#3498db;
-@4:#FFF;
-@op1:0.85;
-@op2:0.6;
+@4:#b6B6B6;
+@op2:0.85;
+@op1:0.75;
 @ophover: 0.95;
 
 * {
@@ -330,7 +330,7 @@ footer {
         vertical-align: top;
 
         h4 {
-            opacity: 0.6;
+            opacity: @op2;
             padding-left: 10px;
             height: 27px;
             color: @2;
@@ -463,7 +463,7 @@ footer {
             height: 55.75px;
             margin-bottom: 9px;
             color: @2;
-            opacity: @op1;
+            opacity: @op2;
 
             span {
                 box-sizing: border-box;
@@ -487,7 +487,7 @@ footer {
                 text-align: left;
                 font-size: 12px;
                 background-color: @1;
-                opacity: 0.75;
+                opacity: 0.90;
             }
             span.containdate {
                 width: 10%;
@@ -566,7 +566,7 @@ footer {
                 color: @4;
             }
             a {
-                opacity: @op1;
+                opacity: @op2;
                 text-decoration: none;
                 height: 100%;
                 cursor: pointer;
@@ -605,7 +605,7 @@ footer {
                         height: 100%;
                         width: 40px;
                         background-color: @1;
-                        opacity: 0.75;
+                        opacity: 0.85;
                         margin-right: -40px;
                         margin-top: 0px;
                         float: right;
@@ -692,7 +692,6 @@ footer {
                 border: none;
                 width: 195px;
                 height: 420px;
-                opacity: ;
                 box-sizing: border-box;
                 display: inline-block;
                 vertical-align: top;
@@ -711,7 +710,7 @@ footer {
                     box-sizing: border-box;
 z-index: 1;
 position: relative;
-span.bgop{opacity: 1;}
+span.bgop{opacity: @op1;}
                     img {
                         margin-top: 0px;
                         width: 100%;
@@ -728,12 +727,12 @@ span.bgop{opacity: 1;}
                 }
                 span.resumepro {
                     background-color: @1;
-                    opacity: 0.75;
+                    opacity: @op2;
                     height: 170px;
                     padding: 10px;
 
                     p {
-                        font-size: 14px;
+                        font-size: 12px;
                         text-align: justify;
                     }
                 }
@@ -741,7 +740,7 @@ span.bgop{opacity: 1;}
                     padding: 10px;
                     background-color: @1;
                     height: 100%;
-opacity: 1;
+opacity: @op1;
                     span.date {
                         height: 30px;
                         margin: auto;
@@ -773,8 +772,18 @@ opacity: 1;
                     }
                 }
             }
-            a:hover   {
-                opacity: 1.5;
+            a:hover span.thumbnail span.bgop {
+                opacity: 0.85;
+                //color: @4;
+            }
+              a:hover h1 {
+                opacity: 0.85;
+                //color: @4;
+            }  a:hover span.infopro {
+                opacity: 0.85;
+                //color: @4;
+            }a:hover span.resumepro{
+                opacity: 0.90;
                 //color: @4;
             }
         }
@@ -804,7 +813,7 @@ opacity: 1;
     #apropos {
         height: 100%;
         background-color: @1;
-        opacity: @op1;
+        opacity: @op2;
         width: 50%;
         display: inline-block;
         vertical-align: top;
@@ -814,18 +823,22 @@ opacity: 1;
         text-align: center;
 
         h3 {
-            margin-bottom: 5px;
+            margin-bottom: 9px;
             margin-top: 50px;
         }
         div.links {
             a {
-                margin-bottom: 2px;
+                margin-bottom: 4px;
                 text-decoration: none;
                 color: @2;
                 font-style: none;
                 display: block;
                 font-family: "Myriad Pro";
-
+                width: 60%;
+                text-align: right;
+                margin-right: auto;
+                margin-left: auto;
+i{float:left;}              
                 span.thingiverse {
                     position: absolute;
                     font-family: "Myriad pro";
@@ -848,16 +861,16 @@ opacity: 1;
         box-sizing: border-box;
         color: @2;
         position: relative;
-        padding-left: 9px;
         overflow: hidden;
+        
 
         fieldset {
             background-color: @1;
-            opacity: 0.8;
+            opacity: @op2;
             height: 70px;
-            font-size: 13px;
+            font-size: 12px;
             border: none;
-            padding: 10px;
+            padding: 10px 20px 10px 20px;
             box-sizing: border-box;
 
             i {
@@ -867,17 +880,23 @@ opacity: 1;
                 margin-top: 10px;
             }
         }
+        div.formcontain{
+       opacity: @op1;
+            padding: 18px;
+          background-color: @1;
+          height: 100%;
         label.textarea {
             height: 100%;
-            padding-bottom: 279px;
+            padding-bottom: 293px;
+            padding-left: 40px;
             box-sizing: border-box;
-        }
+
+            }
         label {
-            opacity: @op1;
             display: block;
             width: 100%;
             position: relative;
-
+            margin-bottom: 9px;
             p.help-block {
                 position: absolute;
                 top: 5px;
@@ -886,63 +905,55 @@ opacity: 1;
             }
             input, textarea {
                 width: 100%;
-                line-height: 50px;
+                height:40px;
+                line-height: 40px;
                 border: none;
-                padding-left: 60px;
+                padding-left: 46px;
                 padding-right: 35px;
                 box-sizing: border-box;
+                background-color: transparent;
                 font-size: 14px;
                 color: @2;
-                background-color: @1;
-                font-family: "Myriad Pro"
+                font-family: "Myriad Pro";
+                border: 2px solid @2;
+
             }
             textarea {
                 height: 100%;
                 line-height: 14px;
                 padding-top: 17px;
+                padding-left: 6px;
             }
             ::-webkit-input-placeholder {
                 color: @2;
-                opacity: 0.3;
-                font-weight: bold;
-                font-style: italic;
-            }
-            :-moz-placeholder {
-                color: @2;
-                opacity: 035;
-                font-weight: bold;
+             opacity: 0.4;
                 font-style: italic;
             }
             ::-moz-placeholder {
                 color: @2;
-                opacity: 0.3;
-                font-weight: bold;
-                font-style: italic;
-            }
-            :-ms-input-placeholder {
-                color: @2;
-                opacity: 0.3;
-                font-weight: bold;
+               opacity: 0.4;
                 font-style: italic;
             }
             span.ico {
                 position: absolute;
-                left: 0px;
-                height: 50px;
-                line-height: 50px;
+                height: 40px;
+                line-height: 44px;
                 text-align: center;
-                width: 50px;
-                color: @2;
-                opacity: 0.3;
+                width: 40px;
+                background-color: @2;
+                color:@1;
             }
             span.icotextarea {
                 position: absolute;
-                left: 0px;
-                line-height: 50px;
+                left:0px;
+                line-height: 44px;
                 text-align: center;
-                width: 50px;
-                color: @2;
-                opacity: 0.3;
+                width: 40px;
+                height:40px;
+                   background-color: @2;
+                color:@1;
+
+
             }
             span.valid i, span.invalid i {
                 width: 50px;
@@ -954,8 +965,11 @@ opacity: 1;
                 text-align: right;
                 opacity: 0.5;
             }
-            .valid {
+            span.valid i{  line-height: 40px;}
+            .valid i{
                 color: green;
+                              
+
             }
             .invalid {
                 color: red;
@@ -963,27 +977,31 @@ opacity: 1;
         }
         button {
             position: absolute;
-            bottom: 0px;
-            height: 50px;
-            width: 100%;
-            background-color: @1;
-            color: @2;
-            opacity: 0.2;
+            bottom: 18px;
+            right: 18px;
+            height: 30px;
+            width: 100px;
+            background-color: @2;
+            color: @1;
+            opacity: 0.1;
             text-align: center;
             font-size: 14px;
+            margin: auto;
             border: none;
+            
         }
         button:hover {
-            color: @2;
+            color: @1;
         }
         button.btnvalid {
-            opacity: @op1;
+            opacity: 1;
         }
         button.btnvalid:hover {
             color: @4;
             cursor: pointer;
         }
     }
+}
 }
 #present_project {
     height: 122px;
@@ -1068,7 +1086,7 @@ opacity: 1;
             }
         }
         p {
-            font-size: 14px;
+            font-size: 12px;
             text-align: justify;
         }
     }
@@ -1345,7 +1363,7 @@ opacity: 1;
                 height: 100%;
                 color: @2;
                 background-color: @1;
-                opacity: 0.8;
+                opacity: @op2;
 
                 ul {
                     -webkit-transition: all 0.5s ease;
@@ -1394,116 +1412,118 @@ opacity: 1;
                 box-sizing: border-box;
                 vertical-align: top;
                 display: inline-block;
-                padding-right: 9px;
                 width: 40%;
-                height: 100%;
 
                 div.titlereponse {
                     background-color: @1;
-                    padding: 10px 10px 10px 60px;
-                    opacity: 0.8;
+                    padding: 10px 10px 10px 20px;
+                    opacity: @op2;
                     position: relative;
                     height: 60px;
                     box-sizing: border-box;
 
                     i {
                         position: absolute;
-                        left: 10px;
+                        right: 18px;
                         top: 7px;
+                        display: none;
                     }
                     p {
                         font-size: 12px
                     }
                 }
                 form {
-                    position: relative;
+                    text-align: right;
+padding: 18px;
+
+                         background-color: @1;
+ opacity: @op1;
 
                     label.textarea {
                         margin-bottom: 9px;
+                        padding-left: 32px;
+                        box-sizing: border-box;
                     }
                     label {
-                        opacity: @op1;
+                       
                         display: block;
                         width: 100%;
                         position: relative;
+                        margin-bottom: 9px;
 
                         p.help-block {
                             position: absolute;
                             top: 5px;
                             right: 10px;
-                            font-size: 11px;
+                            font-size: 10px;
                         }
                         input, textarea {
                             width: 100%;
-                            line-height: 50px;
+                            line-height: 30px;
                             border: none;
-                            padding-left: 60px;
+                            padding-left: 45px;
                             padding-right: 35px;
                             box-sizing: border-box;
                             font-size: 14px;
                             color: @2;
-                            background-color: @1;
+                            background-color: transparent;
+                            border: 2px solid @2;
                             font-family: "Myriad Pro";
                         }
                         textarea {
+                            padding-left: 13px;
                             line-height: 14px;
-                            padding-top: 17px;
+                            padding-top: 10px;
                             height: 100%;
+                            width: 100%;
                         }
                         ::-webkit-input-placeholder {
                             color: @2;
-                            opacity: 0.3;
-                            font-weight: bold;
                             font-style: italic;
                         }
                         :-moz-placeholder {
                             color: @2;
-                            opacity: 035;
-                            font-weight: bold;
                             font-style: italic;
                         }
                         ::-moz-placeholder {
                             color: @2;
-                            opacity: 0.3;
-                            font-weight: bold;
                             font-style: italic;
                         }
                         :-ms-input-placeholder {
                             color: @2;
-                            opacity: 0.3;
-                            font-weight: bold;
                             font-style: italic;
                         }
                         span.ico {
                             position: absolute;
                             left: 0px;
-                            height: 50px;
-                            line-height: 50px;
+                            height: 32px;
+                            line-height: 36px;
                             text-align: center;
-                            width: 50px;
-                            color: @2;
-                            opacity: 0.3
+                            width: 32px;
+                            background-color: @2;
+                            color: @1;
                         }
                         span.icotextarea {
-                            height: 100%;
+                            height: 32px;
                             position: absolute;
                             left: 0px;
-                            line-height: 50px;
+                            line-height: 36px;
                             text-align: center;
-                            width: 50px;
-                            color: @2;
-                            opacity: 0.3
+                            width: 32px;
+                             background-color: @2;
+                            color: @1;
                         }
                         span.valid i, span.invalid i {
                             width: 50px;
                             height: 50px;
-                            line-height: 50px;
+                            line-height: 44px;
                             position: absolute;
                             right: 10px;
                             top: 0px;
                             text-align: right;
                             opacity: 0.5;
                         }
+                        span.valid i{line-height: 35px;}
                         .valid {
                             color: green;
                         }
@@ -1512,25 +1532,24 @@ opacity: 1;
                         }
                     }
                     button {
-                        height: 50px;
-                        width: 100%;
-                        position: absolute;
-                        right: 0px;
-                        background-color: @1;
-                        color: @2;
-                        opacity: 0.2;
+                        height: 30px;
+                        width: 100px;
+                        right: 18px;
+                        background-color: @2;
+                        color: @1;
+                        opacity: 0.1;
                         border: none;
                         text-align: center;
                         font-size: 14px;
                     }
                     button:hover {
-                        color: @4;
+                        color: @3;
                     }
                     button.btnvalid {
                         opacity: @op1;
                     }
                     button.btnvalid:hover {
-                        color: @3;
+                        color: @4;
                         cursor: pointer;
                     }
                 }

@@ -258,20 +258,22 @@
                   </div><!--
              
               
-            --><form method="post" name="FormContact" ng-submit="sendMessage()" novalidate action="<?php echo get_bloginfo('template_directory')?>/contactengine.php">
+            --><form name="FormContact" ng-submit="sendMessage()" novalidate >
                      <fieldset>             <i class="fa fa-2x fa-paper-plane"></i>
-                        <h3>Contacter moi par mail.</h4>
-                            N'hésitez pas à me contacter en remplissant ce formulaire, <br>Je répondrais au plus vite.</fieldset>
+                        <h3>Contacter moi par mail.</h3>
 
+                            N'hésitez pas à me contacter en remplissant ce formulaire, <br>Je répondrais au plus vite.</fieldset>
+                    <div class="formcontain">
+                        
                 <label>
-                    <span class="ico"><i class="fa fa-lg fa-user"></i></span><!--
+                    <span class="ico"><i class="fa fa-user"></i></span><!--
                 --><input placeholder="Votre nom *" name="name" ng-model="name" ng-required="true" />
                     <span ng-show="FormContact.name.$valid && FormContact.name.$touched " class="valid"><i class="fa fa-check"></i></span>
                     <span ng-show="FormContact.name.$invalid && FormContact.name.$touched " class="invalid"><i class="fa fa-remove"></i></span>
                     <p ng-show="FormContact.name.$invalid && FormContact.name.$touched " class="help-block">Indiquez votre nom</p>
                 </label>
                 <label>
-                    <span class="ico"><i class="fa fa-lg fa-phone-square"></i></span><!--
+                    <span class="ico"><i class="fa fa-phone-square"></i></span><!--
                 --><input placeholder="Votre numéro (facultatif)" name="number" ng-model="number" ng-pattern="/[0-9 ]+/" ng-required="true">
                     <span ng-show="FormContact.number.$valid && FormContact.number.$touched " class="valid"><i class="fa fa-check"></i></span>
                    <span ng-show="FormContact.number.$invalid && FormContact.number.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -279,7 +281,7 @@
 
                 </label>
                 <label>
-                    <span class="ico"><i class="fa fa-lg  fa-envelope"></i></span><!--
+                    <span class="ico"><i class="fa  fa-envelope"></i></span><!--
                 --><input placeholder="Votre mail *" name="mail" ng-model="mail" ng-pattern="/^(\w[-._+\w]*\w@\w[-._\w]*\w\.\w{2,3})$/" ng-required="true" />
                     <span ng-show="FormContact.mail.$valid && FormContact.mail.$touched " class="valid"><i class="fa fa-check"></i></span>
                  <span ng-show="FormContact.mail.$invalid && FormContact.mail.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -288,7 +290,7 @@
                 </label>
                
                 <label class="textarea">
-                    <span class="icotextarea"><i class="fa fa-lg fa-align-justify"></i></span><!--
+                    <span class="icotextarea"><i class="fa fa-align-justify"></i></span><!--
                 --><textarea placeholder="Votre message *" name="message" ng-model="message" ng-required="true"></textarea>
                  <span ng-show="FormContact.message.$valid && FormContact.message.$touched " class="valid"><i class="fa fa-check"></i></span>
                  <span ng-show="FormContact.message.$invalid && FormContact.message.$touched " class="invalid"><i class="fa fa-remove"></i></span>
@@ -296,9 +298,9 @@
 
                  </label>
 
-<button type="submit" ng-class="{ btnvalid : FormContact.name.$valid && FormContact.mail.$valid && FormContact.message.$valid  }"  >Envoyer </button>
+<button type="submit" ng-disabled="FormContact.name.$invalid && FormContact.mail.$invalid && FormContact.message.$invalid" ng-class="{ btnvalid : FormContact.name.$valid && FormContact.mail.$valid && FormContact.message.$valid  }"  >Envoyer </button>
         
-
+</div>
             </form>
 
 
@@ -322,10 +324,32 @@
          app = angular.module('app', []);
 
         app.controller('appCtrl', ['$scope', '$http', function ($scope, $http) {
-            $scope.sendMessage = function (message) {
-            //    alert($scope.name + " " + $scope.mail + " " + $scope.message);
-            }
+
+$scope.sendMessage = function () {
+  var method = 'POST';
+  var url = <?php echo "'"; echo get_bloginfo('template_directory');echo "/contactengine.php'";?>;
+  $scope.codeStatus = "";
+  var FormData = {
+      'name' : document.FormContact.name.value,
+      'number' : document.FormContact.number.value,
+      'mail' : document.FormContact.mail.value,
+      'message' : document.FormContact.message.value
+    };
+    var req = {
+      method: method,
+      url: url,
+      data: FormData,
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    }
+   $http(req).success(function(){alert("success");}).error(function(){alert("error");});
+    return false;
+  };           
+
 }]);
+
+
+
+
         jQuery(function ($) {
             //redirection ciblé via LocalStorage
 
