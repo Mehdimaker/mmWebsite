@@ -33,11 +33,11 @@
                     <div class="photo "></div>
                     <blockquote>
                        <h1>MEHDI MAKER </h1>
-                       DEVELOPER - DESIGNER - MAKER <br><br>
-                       Passionée d'informatique depuis l'enfance, <br>
+                      <span> DEVELOPER - DESIGNER - MAKER </span>
+                       <p>Passioné d'informatique depuis l'enfance, <br>
                        Actuellement développeur au sein de Simplon.co.<br>
-                       Découvrez ici toutes mes réalisations, site internet, applications mobile, ou encore objects connécté ... 
-                       
+                       Découvrez ici toutes mes réalisations, site internet, applications mobile, ou encore objects connectés ... 
+                       </p>
                        </blockquote>
                 </div>
 
@@ -73,7 +73,7 @@
                 --><div class="recent blocright">
                     <h4>Un Projet ?</h4>
                     <div class="comm">
-                        <p>Vous recherchez un développeur ? <br>Quelqu'un de sèrieux et compétent pour réaliser votre projet ?<br><br>
+                        <p>Vous recherchez un développeur ? <br>Quelqu'un de sérieux et compétent pour réaliser votre projet ?<br><br>
                         Ne cherchez pas plus loin... <br>Je suis la personne qu'il vous faut !<br><br>
                         Je vous invite à me rencontrer, afin de discuter d'une éventuelle collaboration !<br><br>
                         A très bientôt !   
@@ -264,7 +264,7 @@
 
                             N'hésitez pas à me contacter en remplissant ce formulaire, <br>Je répondrais au plus vite.</fieldset>
                     <div class="formcontain">
-                        
+
                 <label>
                     <span class="ico"><i class="fa fa-user"></i></span><!--
                 --><input placeholder="Votre nom *" name="name" ng-model="name" ng-required="true" />
@@ -360,7 +360,7 @@ $scope.sendMessage = function () {
                 $('nav li a.' + $direction).addClass('active');
                 localStorage.setItem("redirection", null);
                 if ($direction == "projects") {
-                    $(".menuprojects").css("height", "140px");
+                    $(".menuprojects").css("height", "130px");
                 } else if ($direction == "articles") {
 
                 }
@@ -368,7 +368,7 @@ $scope.sendMessage = function () {
                 show("navapp");
                 $('nav li a').removeClass('active');
                 $('nav li a.projects').addClass('active');
-                $(".menuprojects").css("height", "140px");
+                $(".menuprojects").css("height", "130px");
                 $("div.menuprojects a").removeClass('active2');
                 $("div.menuprojects a." + $direction).toggleClass("active2")
                 $('.list').html("<div class='ajaxload'><i class='fa  fa-5x fa-cog fa-spin'></div>");

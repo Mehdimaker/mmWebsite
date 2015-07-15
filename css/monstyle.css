@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body {
-  background-color: #3498db;
+  background-color: #ecf0f1;
   background: contain;
   font-family: "Myriad pro", sans-serif;
 }
@@ -18,7 +18,7 @@ main {
   height: 100%;
   margin-right: 18px;
   margin-left: 18px;
-  background-image: url(../img/maps0.png);
+  background-image: url(../img/maps1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -69,9 +69,16 @@ span.bgop {
   border-bottom-left-radius: 10px;
 }
 #blocgauche header {
-  height: 80px;
+  height: 90px;
   background-color: #18191b;
   border-top-left-radius: 10px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-image: url(../img/logo3.png);
+  background-size: 50px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #blocgauche nav {
   width: 120px;
@@ -80,9 +87,8 @@ span.bgop {
   list-style-type: none;
 }
 #blocgauche nav li a {
-  margin-top: 2px;
   padding: 12px 0 0 15px;
-  color: #3498db;
+  color: #ecf0f1;
   width: 100%;
   display: block;
   height: 40px;
@@ -92,9 +98,14 @@ span.bgop {
   font-size: 14px;
   background-color: #18191b;
   box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #blocgauche nav li a:hover {
-  color: #b6b6b6;
+  color: #ffffff;
+  opacity: 0.85;
   text-decoration: none;
 }
 #blocgauche nav li a.active:hover {
@@ -121,10 +132,9 @@ span.bgop {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: none;
-  background-color: #18191b;
 }
 #blocgauche nav div.menuprojects a {
-  color: #3498db;
+  color: #ecf0f1;
   font-size: 12px;
   line-height: 20px;
   height: 20px;
@@ -133,12 +143,18 @@ span.bgop {
   text-align: left;
   width: 100%;
   cursor: pointer;
+  background-color: #18191b;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #blocgauche nav div.menuprojects a:first-child {
   padding-top: 10px;
 }
 #blocgauche nav div.menuprojects a:hover {
-  color: #b6b6b6;
+  color: #ffffff;
+  padding-left: 55px;
   text-decoration: none;
 }
 #blocgauche nav div.menuprojects a.active2 {
@@ -147,6 +163,10 @@ span.bgop {
   background-repeat: no-repeat;
   background-position: 45px 5px;
   background-size: 8px;
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  -o-transition: all 0s ease;
+  transition: all 0s ease;
 }
 #blocgauche nav div.menuprojects a.active2:first-child {
   background-position: 45px 15px;
@@ -166,7 +186,7 @@ span.bgop {
   overflow: hidden;
   position: relative;
   text-align: center;
-  color: #3498db;
+  color: #ecf0f1;
 }
 #blocdroit div.langue {
   position: absolute;
@@ -176,7 +196,7 @@ span.bgop {
   line-height: 40px;
 }
 #blocdroit div.langue .fa-flag:hover {
-  color: #3498db;
+  color: #ecf0f1;
   cursor: pointer;
 }
 #blocdroit div.langue div.menulangue {
@@ -198,7 +218,7 @@ span.bgop {
   line-height: 40px;
 }
 #blocdroit div.reseau .fa-share-alt:hover {
-  color: #b6b6b6;
+  color: #ffffff;
   cursor: pointer;
 }
 #blocdroit div.reseau div.menureseau {
@@ -220,7 +240,7 @@ span.bgop {
 #blocdroit div.blochaut {
   border-top-right-radius: 10px;
   background-color: #18191b;
-  height: 212.5px;
+  height: 214.5px;
 }
 #blocdroit div.blocbas {
   background-color: #18191b;
@@ -228,9 +248,8 @@ span.bgop {
 }
 #blocdroit div.navbtn {
   z-index: 2;
-  margin-top: 2px;
-  margin-bottom: 2px;
   height: 80px;
+  background-color: #18191b;
 }
 #blocdroit div.navbtn i {
   line-height: 40px;
@@ -238,11 +257,16 @@ span.bgop {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #18191b;
-  opacity: 1;
+  background-color: #ecf0f1;
+  color: #18191b;
+  opacity: 0.8;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #blocdroit div.navbtn i:hover {
-  color: #b6b6b6;
+  opacity: 0.5;
 }
 #blocdroit div.navbtn i.cache {
   opacity: 0.2;
@@ -251,11 +275,11 @@ span.bgop {
 }
 #blocdroit div.navbtn i.cache:hover {
   background-color: #18191b;
-  color: #b6b6b6;
+  color: #ecf0f1;
+  opacity: 0.2;
 }
 /******** FOOTER *********/
 footer {
-  margin-top: 2px;
   background-color: #18191b;
   height: 100%;
 }
@@ -273,26 +297,30 @@ footer {
 #home div.presentation blockquote {
   height: 100%;
   font-size: 20px;
-  color: #b6b6b6;
+  color: #ecf0f1;
   box-sizing: border-box;
-  padding: 20px 214px 20px 10px;
+  padding: 18px 214px 18px 18px;
 }
 #home div.presentation blockquote h1 {
-  margin-top: 25px;
-  font-size: 42px;
+  font-size: 40px;
   line-height: 40px;
+}
+#home div.presentation blockquote span {
+  display: block;
+  line-height: 18px;
+  margin-bottom: 28px;
 }
 #home div.presentation div.photo {
   z-index: 2;
   position: relative;
-  height: 253px;
+  height: 257px;
   width: 174px;
   float: right;
-  margin: 20px 0px 0 0;
+  margin: 18px 0px 0 0;
   background-image: url(../img/mehdi.jpg);
   background-size: cover;
   box-sizing: border-box;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 #home div.recent {
   height: 100%;
@@ -305,7 +333,7 @@ footer {
   opacity: 0.85;
   padding-left: 10px;
   height: 27px;
-  color: #b6b6b6;
+  color: #ecf0f1;
   line-height: 27px;
   font-size: 14px;
   background-color: #18191b;
@@ -313,13 +341,17 @@ footer {
 #home div.recent a {
   background-color: #18191b;
   height: 30px;
-  color: #b6b6b6;
+  color: #ecf0f1;
   opacity: 0.75;
   display: block;
   padding-left: 10px;
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 96% 50%;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #home div.recent a span {
   display: inline-block;
@@ -364,43 +396,25 @@ footer {
 }
 #home div.recent a:hover {
   opacity: 0.95;
-  color: #b6b6b6;
+  color: #ffffff;
 }
 #home div.recent a.apps {
   background-image: url(../img/icoprojects/apps.png);
 }
-#home div.recent a.apps:hover {
-  background-image: url(../img/icoprojects/appshover.png);
-}
 #home div.recent a.websites {
   background-image: url(../img/icoprojects/websites.png);
-}
-#home div.recent a.websites:hover {
-  background-image: url(../img/icoprojects/websiteshover.png);
 }
 #home div.recent a.graphics {
   background-image: url(../img/icoprojects/graphics.png);
 }
-#home div.recent a.graphics:hover {
-  background-image: url(../img/icoprojects/graphicshover.png);
-}
 #home div.recent a.objects {
   background-image: url(../img/icoprojects/objects.png);
-}
-#home div.recent a.objects:hover {
-  background-image: url(../img/icoprojects/objectshover.png);
 }
 #home div.recent a.videos {
   background-image: url(../img/icoprojects/videos.png);
 }
-#home div.recent a.videos:hover {
-  background-image: url(../img/icoprojects/videoshover.png);
-}
 #home div.recent a.others {
   background-image: url(../img/icoprojects/others.png);
-}
-#home div.recent a.others:hover {
-  background-image: url(../img/icoprojects/othershover.png);
 }
 #home div.recent div.comm {
   height: 180px;
@@ -408,7 +422,7 @@ footer {
   opacity: 0.75;
 }
 #home div.recent div.comm p {
-  color: #b6b6b6;
+  color: #ecf0f1;
   font-size: 12px;
   padding: 5px 10px 5px 10px;
 }
@@ -427,8 +441,12 @@ footer {
   display: block;
   height: 55.75px;
   margin-bottom: 9px;
-  color: #b6b6b6;
+  color: #ecf0f1;
   opacity: 0.85;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #articles #listarticles a.article span {
   box-sizing: border-box;
@@ -495,7 +513,7 @@ footer {
 }
 #articles #listarticles a.article:hover {
   opacity: 0.95;
-  color: #b6b6b6;
+  color: #ffffff;
 }
 /******** PROJECTS *********/
 #projects {
@@ -522,15 +540,19 @@ footer {
 }
 #projects div.rowproject span a:hover {
   opacity: 0.95;
-  color: #b6b6b6;
+  color: #ffffff;
 }
 #projects div.rowproject span a {
   opacity: 0.85;
   text-decoration: none;
   height: 100%;
   cursor: pointer;
-  color: #b6b6b6;
+  color: #ecf0f1;
   display: block;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #projects div.rowproject span a i {
   background-repeat: no-repeat;
@@ -576,43 +598,25 @@ footer {
   background-image: url(../img/icoprojects/websites.png);
   background-size: 70px;
 }
-#projects div.rowproject span a.websites:hover i.websites {
-  background-image: url(../img/icoprojects/websiteshover.png);
-}
 #projects div.rowproject span i.apps {
   background-image: url(../img/icoprojects/apps.png);
   background-size: 65px;
-}
-#projects div.rowproject span a.apps:hover i.apps {
-  background-image: url(../img/icoprojects/appshover.png);
 }
 #projects div.rowproject span i.graphics {
   background-image: url(../img/icoprojects/graphics.png);
   background-size: 70px;
 }
-#projects div.rowproject span a.graphics:hover i.graphics {
-  background-image: url(../img/icoprojects/graphicshover.png);
-}
 #projects div.rowproject span i.objects {
   background-image: url(../img/icoprojects/objects.png);
   background-size: 60px;
-}
-#projects div.rowproject span a.objects:hover i.objects {
-  background-image: url(../img/icoprojects/objectshover.png);
 }
 #projects div.rowproject span i.videos {
   background-image: url(../img/icoprojects/videos.png);
   background-size: 60px;
 }
-#projects div.rowproject span a.videos:hover i.videos {
-  background-image: url(../img/icoprojects/videoshover.png);
-}
 #projects div.rowproject span i.others {
   background-image: url(../img/icoprojects/others.png);
   background-size: 60px;
-}
-#projects div.rowproject span a.others:hover i.others {
-  background-image: url(../img/icoprojects/othershover.png);
 }
 #navapp #navlist {
   overflow: hidden;
@@ -649,9 +653,13 @@ footer {
   vertical-align: top;
   white-space: normal;
   text-decoration: none;
-  color: #b6b6b6;
+  color: #ecf0f1;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #navapp #navlist #list a span {
   display: block;
@@ -664,7 +672,7 @@ footer {
   position: relative;
 }
 #navapp #navlist #list a span.thumbnail span.bgop {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #navapp #navlist #list a span.thumbnail img {
   margin-top: 0px;
@@ -677,11 +685,11 @@ footer {
   text-align: center;
   background-color: #18191b;
   height: 30px;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #navapp #navlist #list a span.resumepro {
   background-color: #18191b;
-  opacity: 0.85;
+  opacity: 0.75;
   height: 170px;
   padding: 10px;
 }
@@ -693,7 +701,7 @@ footer {
   padding: 10px;
   background-color: #18191b;
   height: 100%;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #navapp #navlist #list a span.infopro span.date {
   height: 30px;
@@ -724,16 +732,32 @@ footer {
   font-size: 10px;
 }
 #navapp #navlist #list a:hover span.thumbnail span.bgop {
-  opacity: 0.85;
+  opacity: 0.95;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #navapp #navlist #list a:hover h1 {
-  opacity: 0.85;
+  opacity: 0.95;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #navapp #navlist #list a:hover span.infopro {
-  opacity: 0.85;
+  opacity: 0.95;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #navapp #navlist #list a:hover span.resumepro {
-  opacity: 0.90;
+  opacity: 0.85;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 /******** SERVICES *********/
 #services {
@@ -743,7 +767,7 @@ footer {
 }
 #services p {
   text-align: center;
-  color: #b6b6b6;
+  color: #ecf0f1;
   padding-top: 250px;
 }
 /******** CONTACT *********/
@@ -756,12 +780,12 @@ footer {
 #contact #apropos {
   height: 100%;
   background-color: #18191b;
-  opacity: 0.85;
+  opacity: 0.75;
   width: 50%;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  color: #b6b6b6;
+  color: #ecf0f1;
   padding: 10px 10px 10px 10px;
   text-align: center;
 }
@@ -772,7 +796,7 @@ footer {
 #contact #apropos div.links a {
   margin-bottom: 4px;
   text-decoration: none;
-  color: #b6b6b6;
+  color: #ecf0f1;
   font-style: none;
   display: block;
   font-family: "Myriad Pro";
@@ -793,7 +817,7 @@ footer {
   top: 2px;
 }
 #contact #apropos div.links a:hover {
-  color: #b6b6b6;
+  color: #ffffff;
 }
 #contact form {
   height: 100%;
@@ -801,13 +825,13 @@ footer {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  color: #b6b6b6;
+  color: #ecf0f1;
   position: relative;
   overflow: hidden;
 }
 #contact form fieldset {
   background-color: #18191b;
-  opacity: 0.85;
+  opacity: 0.75;
   height: 70px;
   font-size: 12px;
   border: none;
@@ -821,15 +845,15 @@ footer {
   margin-top: 10px;
 }
 #contact form div.formcontain {
-  opacity: 0.75;
+  opacity: 0.85;
   padding: 18px;
   background-color: #18191b;
   height: 100%;
 }
 #contact form div.formcontain label.textarea {
   height: 100%;
-  padding-bottom: 293px;
-  padding-left: 40px;
+  padding-bottom: 303px;
+  padding-left: 38px;
   box-sizing: border-box;
 }
 #contact form div.formcontain label {
@@ -855,23 +879,23 @@ footer {
   box-sizing: border-box;
   background-color: transparent;
   font-size: 14px;
-  color: #b6b6b6;
+  color: #ecf0f1;
   font-family: "Myriad Pro";
-  border: 2px solid #b6b6b6;
+  border: 2px solid #ecf0f1;
 }
 #contact form div.formcontain label textarea {
   height: 100%;
   line-height: 14px;
-  padding-top: 17px;
-  padding-left: 6px;
+  padding-top: 12px;
+  padding-left: 8px;
 }
 #contact form div.formcontain label ::-webkit-input-placeholder {
-  color: #b6b6b6;
+  color: #ecf0f1;
   opacity: 0.4;
   font-style: italic;
 }
 #contact form div.formcontain label ::-moz-placeholder {
-  color: #b6b6b6;
+  color: #ecf0f1;
   opacity: 0.4;
   font-style: italic;
 }
@@ -881,7 +905,7 @@ footer {
   line-height: 44px;
   text-align: center;
   width: 40px;
-  background-color: #b6b6b6;
+  background-color: #ecf0f1;
   color: #18191b;
 }
 #contact form div.formcontain label span.icotextarea {
@@ -891,7 +915,7 @@ footer {
   text-align: center;
   width: 40px;
   height: 40px;
-  background-color: #b6b6b6;
+  background-color: #ecf0f1;
   color: #18191b;
 }
 #contact form div.formcontain label span.valid i,
@@ -918,15 +942,19 @@ footer {
   position: absolute;
   bottom: 18px;
   right: 18px;
-  height: 30px;
+  height: 40px;
   width: 100px;
-  background-color: #b6b6b6;
+  background-color: #ecf0f1;
   color: #18191b;
   opacity: 0.1;
   text-align: center;
   font-size: 14px;
   margin: auto;
   border: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #contact form div.formcontain button:hover {
   color: #18191b;
@@ -935,13 +963,13 @@ footer {
   opacity: 1;
 }
 #contact form div.formcontain button.btnvalid:hover {
-  color: #b6b6b6;
+  color: #ffffff;
   cursor: pointer;
 }
 #present_project {
   height: 122px;
   margin-bottom: 9px;
-  color: #b6b6b6;
+  color: #ecf0f1;
 }
 #present_project span,
 #present_project a {
@@ -1029,7 +1057,7 @@ footer {
   border: none;
   width: 120px;
   background-color: #18191b;
-  color: #3498db;
+  color: #ecf0f1;
   opacity: 0.75;
   font-size: 14px;
   padding: 10px 10px 0 10px;
@@ -1049,13 +1077,13 @@ footer {
   font-weight: bold;
 }
 #present_project span.comment:hover {
-  color: #b6b6b6;
+  color: #ffffff;
   cursor: pointer;
 }
 #present_article {
   height: 55.75px;
   margin-bottom: 9px;
-  color: #b6b6b6;
+  color: #ecf0f1;
 }
 #present_article span {
   box-sizing: border-box;
@@ -1114,7 +1142,7 @@ footer {
   font-size: 12px;
 }
 #mainpro {
-  color: #b6b6b6;
+  color: #ecf0f1;
   overflow: hidden;
 }
 #mainpro #etapes {
@@ -1196,7 +1224,7 @@ footer {
   line-height: 10px;
   margin-bottom: 5px;
   font-weight: normal;
-  color: #b6b6b6;
+  color: #ecf0f1;
 }
 #mainpro #etapes section.pres div.techno div span {
   vertical-align: top;
@@ -1281,9 +1309,9 @@ footer {
   display: inline-block;
   width: 60%;
   height: 100%;
-  color: #b6b6b6;
+  color: #ecf0f1;
   background-color: #18191b;
-  opacity: 0.85;
+  opacity: 0.75;
 }
 #mainpro #etapes section.comment #listsComments ul {
   -webkit-transition: all 0.5s ease;
@@ -1292,23 +1320,24 @@ footer {
   transition: all 0.5s ease;
 }
 #mainpro #etapes section.comment #listsComments li {
-  padding: 10px;
+  padding: 9px 18px 0px 18px;
   position: relative;
   list-style-type: none;
   width: 100%;
   box-sizing: border-box;
 }
 #mainpro #etapes section.comment #listsComments li time {
-  right: 10px;
-  top: 10px;
+  right: 18px;
+  top: 12px;
   position: absolute;
-  font-size: 14px;
+  font-size: 12px;
 }
 #mainpro #etapes section.comment #listsComments li section.comment-content {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 #mainpro #etapes section.comment #listsComments li section.comment-content p {
   display: block;
+  font-size: 12px;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -1316,10 +1345,10 @@ footer {
   margin-bottom: 10px;
 }
 #mainpro #etapes section.comment #listsComments li div.reply a {
-  color: #b6b6b6;
+  color: #ecf0f1;
 }
 #mainpro #etapes section.comment #listsComments li div.reply a:hover {
-  color: #b6b6b6;
+  color: #ffffff;
 }
 #mainpro #etapes section.comment #FormComments {
   box-sizing: border-box;
@@ -1330,7 +1359,7 @@ footer {
 #mainpro #etapes section.comment #FormComments div.titlereponse {
   background-color: #18191b;
   padding: 10px 10px 10px 20px;
-  opacity: 0.85;
+  opacity: 0.75;
   position: relative;
   height: 60px;
   box-sizing: border-box;
@@ -1348,11 +1377,11 @@ footer {
   text-align: right;
   padding: 18px;
   background-color: #18191b;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #mainpro #etapes section.comment #FormComments form label.textarea {
   margin-bottom: 9px;
-  padding-left: 32px;
+  padding-left: 30px;
   box-sizing: border-box;
 }
 #mainpro #etapes section.comment #FormComments form label {
@@ -1376,9 +1405,9 @@ footer {
   padding-right: 35px;
   box-sizing: border-box;
   font-size: 14px;
-  color: #b6b6b6;
+  color: #ecf0f1;
   background-color: transparent;
-  border: 2px solid #b6b6b6;
+  border: 2px solid #ecf0f1;
   font-family: "Myriad Pro";
 }
 #mainpro #etapes section.comment #FormComments form label textarea {
@@ -1389,19 +1418,19 @@ footer {
   width: 100%;
 }
 #mainpro #etapes section.comment #FormComments form label ::-webkit-input-placeholder {
-  color: #b6b6b6;
+  color: #ecf0f1;
   font-style: italic;
 }
 #mainpro #etapes section.comment #FormComments form label :-moz-placeholder {
-  color: #b6b6b6;
+  color: #ecf0f1;
   font-style: italic;
 }
 #mainpro #etapes section.comment #FormComments form label ::-moz-placeholder {
-  color: #b6b6b6;
+  color: #ecf0f1;
   font-style: italic;
 }
 #mainpro #etapes section.comment #FormComments form label :-ms-input-placeholder {
-  color: #b6b6b6;
+  color: #ecf0f1;
   font-style: italic;
 }
 #mainpro #etapes section.comment #FormComments form label span.ico {
@@ -1411,7 +1440,7 @@ footer {
   line-height: 36px;
   text-align: center;
   width: 32px;
-  background-color: #b6b6b6;
+  background-color: #ecf0f1;
   color: #18191b;
 }
 #mainpro #etapes section.comment #FormComments form label span.icotextarea {
@@ -1421,7 +1450,7 @@ footer {
   line-height: 36px;
   text-align: center;
   width: 32px;
-  background-color: #b6b6b6;
+  background-color: #ecf0f1;
   color: #18191b;
 }
 #mainpro #etapes section.comment #FormComments form label span.valid i,
@@ -1448,21 +1477,25 @@ footer {
   height: 30px;
   width: 100px;
   right: 18px;
-  background-color: #b6b6b6;
+  background-color: #ecf0f1;
   color: #18191b;
   opacity: 0.1;
   border: none;
   text-align: center;
   font-size: 14px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #mainpro #etapes section.comment #FormComments form button:hover {
-  color: #3498db;
+  color: #ecf0f1;
 }
 #mainpro #etapes section.comment #FormComments form button.btnvalid {
   opacity: 0.75;
 }
 #mainpro #etapes section.comment #FormComments form button.btnvalid:hover {
-  color: #b6b6b6;
+  color: #ffffff;
   cursor: pointer;
 }
 #mainpro #etapes div.infos {
@@ -1486,7 +1519,7 @@ footer {
   cursor: pointer;
   text-align: left;
   text-decoration: none;
-  color: #3498db;
+  color: #ecf0f1;
 }
 #mainpro #etapes div.infos a i {
   float: right;
@@ -1500,5 +1533,5 @@ footer {
   top: 1px;
 }
 #mainpro #etapes div.infos a:hover {
-  color: #b6b6b6;
+  color: #ffffff;
 }

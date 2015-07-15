@@ -1,5 +1,6 @@
 <div id="blocgauche">
-   <header></header>
+   <header>
+   </header>
     <nav >
         <ul>
             <li>

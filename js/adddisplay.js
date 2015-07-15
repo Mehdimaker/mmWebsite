@@ -40,7 +40,7 @@ jQuery(function ($) {
    
     $('nav li a.displaylistprojects').on("click", function () {
         $(".menuprojects").css("transition", "all 0.5s ease");
-        $(".menuprojects").css("height", "140px");
+        $(".menuprojects").css("height", "130px");
         $("div.menuprojects a").removeClass('active2');
     });
 

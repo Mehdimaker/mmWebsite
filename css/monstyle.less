@@ -1,7 +1,10 @@
 @1:#18191b;
-@2:#b6b6b6;//#b6b6b6
-@3:#3498db;
-@4:#b6B6B6;
+@2:#ecf0f1;
+//#b6b6b6
+@3:#ecf0f1;
+//#3498db
+@btn: @3;
+@4:#FFF;
 @op2:0.85;
 @op1:0.75;
 @ophover: 0.95;
@@ -12,7 +15,7 @@
 }
 body {
     // background-image: url(../img/bg/test92.jpg);
-    background-color: #3498db;
+    background-color: @3;
     background: contain;
     // font: 76%/150% "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
     font-family: "Myriad pro", sans-serif;
@@ -28,7 +31,7 @@ main {
     height: 100%;
     margin-right: 18px;
     margin-left: 18px;
-    background-image: url(../img/maps0.png);
+    background-image: url(../img/maps1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -81,9 +84,16 @@ span.bgop {
     border-bottom-left-radius: 10px;
 
     header {
-        height: 80px;
+        height: 90px;
         background-color: @1;
         border-top-left-radius: 10px;
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+        background-image: url(../img/logo3.png);
+        background-size: 50px 50px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     nav {
         width: 120px;
@@ -92,7 +102,6 @@ span.bgop {
             list-style-type: none;
         }
         li a {
-            margin-top: 2px;
             padding: 12px 0 0 15px;
             color: @3;
             width: 100%;
@@ -104,9 +113,14 @@ span.bgop {
             font-size: 14px;
             background-color: @1;
             box-sizing: border-box;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
         }
         li a:hover {
             color: @4;
+            opacity: @op2;
             text-decoration: none;
         }
         li a.active:hover {
@@ -133,7 +147,6 @@ span.bgop {
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             transition: none;
-            background-color: @1;
 
             a {
                 color: @3;
@@ -145,12 +158,18 @@ span.bgop {
                 text-align: left;
                 width: 100%;
                 cursor: pointer;
+                background-color: @1;
+                    -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
             }
             a:first-child {
                 padding-top: 10px;
             }
             a:hover {
                 color: @4;
+                padding-left: 55px;
                 text-decoration: none;
             }
             a.active2 {
@@ -159,6 +178,10 @@ span.bgop {
                 background-repeat: no-repeat;
                 background-position: 45px 5px;
                 background-size: 8px;
+                 -webkit-transition: all 0s ease;
+            -moz-transition: all 0s ease;
+            -o-transition: all 0s ease;
+            transition: all 0s ease;
             }
             a.active2:first-child {
                 background-position: 45px 15px;
@@ -240,7 +263,7 @@ span.bgop {
     div.blochaut {
         border-top-right-radius: 10px;
         background-color: @1;
-        height: 212.5px;
+        height: 214.5px;
     }
     div.blocbas {
         background-color: @1;
@@ -248,21 +271,24 @@ span.bgop {
     }
     div.navbtn {
         z-index: 2;
-        margin-top: 2px;
-        margin-bottom: 2px;
         height: 80px;
-
+background-color: @1;
         i {
             line-height: 40px;
             height: 40px;
             display: block;
             text-decoration: none;
             cursor: pointer;
-            background-color: @1;
-            opacity: 1;
+            background-color: @btn;
+            color: @1;
+            opacity: 0.8;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
         }
         i:hover {
-            color: @4;
+            opacity: 0.5;
         }
         i.cache {
             opacity: 0.2;
@@ -272,13 +298,13 @@ span.bgop {
         i.cache:hover {
             background-color: @1;
             color: @2;
+            opacity: 0.2;
         }
     }
 }
 
 /******** FOOTER *********/
 footer {
-    margin-top: 2px;
     background-color: @1;
     height: 100%;
 }
@@ -294,32 +320,35 @@ footer {
 
         span.bgop {
             opacity: @op2;
-         
         }
         blockquote {
             height: 100%;
             font-size: 20px;
             color: @2;
             box-sizing: border-box;
-            padding: 20px 214px 20px 10px;
+            padding: 18px 214px 18px 18px;
 
             h1 {
-                margin-top: 25px;
-                font-size: 42px;
+                font-size: 40px;
                 line-height: 40px;
+            }
+            span {
+                display: block;
+                line-height: 18px;
+                margin-bottom: 28px;
             }
         }
         div.photo {
             z-index: 2;
             position: relative;
-            height: 253px;
+            height: 257px;
             width: 174px;
             float: right;
-            margin: 20px 0px 0 0;
+            margin: 18px 0px 0 0;
             background-image: url(../img/mehdi.jpg);
             background-size: cover;
             box-sizing: border-box;
-            opacity: 0.9;
+            opacity: 0.8;
         }
     }
     div.recent {
@@ -348,6 +377,10 @@ footer {
             background-repeat: no-repeat;
             background-size: 20px;
             background-position: 96% 50%;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
 
             span {
                 display: inline-block;
@@ -400,38 +433,20 @@ footer {
         a.apps {
             background-image: url(../img/icoprojects/apps.png);
         }
-        a.apps:hover {
-            background-image: url(../img/icoprojects/appshover.png);
-        }
         a.websites {
             background-image: url(../img/icoprojects/websites.png);
-        }
-        a.websites:hover {
-            background-image: url(../img/icoprojects/websiteshover.png);
         }
         a.graphics {
             background-image: url(../img/icoprojects/graphics.png);
         }
-        a.graphics:hover {
-            background-image: url(../img/icoprojects/graphicshover.png);
-        }
         a.objects {
             background-image: url(../img/icoprojects/objects.png);
-        }
-        a.objects:hover {
-            background-image: url(../img/icoprojects/objectshover.png);
         }
         a.videos {
             background-image: url(../img/icoprojects/videos.png);
         }
-        a.videos:hover {
-            background-image: url(../img/icoprojects/videoshover.png);
-        }
         a.others {
             background-image: url(../img/icoprojects/others.png);
-        }
-        a.others:hover {
-            background-image: url(../img/icoprojects/othershover.png);
         }
         div.comm {
             height: 180px;
@@ -464,6 +479,10 @@ footer {
             margin-bottom: 9px;
             color: @2;
             opacity: @op2;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
 
             span {
                 box-sizing: border-box;
@@ -572,6 +591,10 @@ footer {
                 cursor: pointer;
                 color: @2;
                 display: block;
+                -webkit-transition: all 0.25s ease;
+                -moz-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+                transition: all 0.25s ease;
 
                 i {
                     background-repeat: no-repeat;
@@ -620,43 +643,25 @@ footer {
                 background-image: url(../img/icoprojects/websites.png);
                 background-size: 70px;
             }
-            a.websites:hover i.websites {
-                background-image: url(../img/icoprojects/websiteshover.png);
-            }
             i.apps {
                 background-image: url(../img/icoprojects/apps.png);
                 background-size: 65px;
-            }
-            a.apps:hover i.apps {
-                background-image: url(../img/icoprojects/appshover.png);
             }
             i.graphics {
                 background-image: url(../img/icoprojects/graphics.png);
                 background-size: 70px;
             }
-            a.graphics:hover i.graphics {
-                background-image: url(../img/icoprojects/graphicshover.png);
-            }
             i.objects {
                 background-image: url(../img/icoprojects/objects.png);
                 background-size: 60px;
-            }
-            a.objects:hover i.objects {
-                background-image: url(../img/icoprojects/objectshover.png);
             }
             i.videos {
                 background-image: url(../img/icoprojects/videos.png);
                 background-size: 60px;
             }
-            a.videos:hover i.videos {
-                background-image: url(../img/icoprojects/videoshover.png);
-            }
             i.others {
                 background-image: url(../img/icoprojects/others.png);
                 background-size: 60px;
-            }
-            a.others:hover i.others {
-                background-image: url(../img/icoprojects/othershover.png);
             }
         }
     }
@@ -700,6 +705,10 @@ footer {
                 color: @2;
                 text-align: center;
                 cursor: pointer;
+                -webkit-transition: all 0.25s ease;
+                -moz-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+                transition: all 0.25s ease;
 
                 span {
                     display: block;
@@ -708,9 +717,12 @@ footer {
                     height: auto;
                     padding: 10px 20px 10px 20px;
                     box-sizing: border-box;
-z-index: 1;
-position: relative;
-span.bgop{opacity: @op1;}
+                    z-index: 1;
+                    position: relative;
+
+                    span.bgop {
+                        opacity: @op2;
+                    }
                     img {
                         margin-top: 0px;
                         width: 100%;
@@ -723,11 +735,11 @@ span.bgop{opacity: @op1;}
                     text-align: center;
                     background-color: @1;
                     height: 30px;
-                    opacity: @op1;
+                    opacity: @op2;
                 }
                 span.resumepro {
                     background-color: @1;
-                    opacity: @op2;
+                    opacity: @op1;
                     height: 170px;
                     padding: 10px;
 
@@ -740,7 +752,8 @@ span.bgop{opacity: @op1;}
                     padding: 10px;
                     background-color: @1;
                     height: 100%;
-opacity: @op1;
+                    opacity: @op2;
+
                     span.date {
                         height: 30px;
                         margin: auto;
@@ -773,17 +786,31 @@ opacity: @op1;
                 }
             }
             a:hover span.thumbnail span.bgop {
-                opacity: 0.85;
+                opacity: @ophover;   -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
                 //color: @4;
             }
-              a:hover h1 {
-                opacity: 0.85;
+            a:hover h1 {
+                opacity: @ophover;   -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
                 //color: @4;
-            }  a:hover span.infopro {
-                opacity: 0.85;
+            }
+            a:hover span.infopro {
+                opacity: @ophover;   -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
                 //color: @4;
-            }a:hover span.resumepro{
-                opacity: 0.90;
+            }
+            a:hover span.resumepro {
+                opacity: 0.85;   -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
                 //color: @4;
             }
         }
@@ -813,7 +840,7 @@ opacity: @op1;
     #apropos {
         height: 100%;
         background-color: @1;
-        opacity: @op2;
+        opacity: @op1;
         width: 50%;
         display: inline-block;
         vertical-align: top;
@@ -838,7 +865,10 @@ opacity: @op1;
                 text-align: right;
                 margin-right: auto;
                 margin-left: auto;
-i{float:left;}              
+
+                i {
+                    float: left;
+                }
                 span.thingiverse {
                     position: absolute;
                     font-family: "Myriad pro";
@@ -862,11 +892,10 @@ i{float:left;}
         color: @2;
         position: relative;
         overflow: hidden;
-        
 
         fieldset {
             background-color: @1;
-            opacity: @op2;
+            opacity: @op1;
             height: 70px;
             font-size: 12px;
             border: none;
@@ -880,128 +909,129 @@ i{float:left;}
                 margin-top: 10px;
             }
         }
-        div.formcontain{
-       opacity: @op1;
+        div.formcontain {
+            opacity: @op2;
             padding: 18px;
-          background-color: @1;
-          height: 100%;
-        label.textarea {
+            background-color: @1;
             height: 100%;
-            padding-bottom: 293px;
-            padding-left: 40px;
-            box-sizing: border-box;
 
-            }
-        label {
-            display: block;
-            width: 100%;
-            position: relative;
-            margin-bottom: 9px;
-            p.help-block {
-                position: absolute;
-                top: 5px;
-                right: 10px;
-                font-size: 11px;
-            }
-            input, textarea {
-                width: 100%;
-                height:40px;
-                line-height: 40px;
-                border: none;
-                padding-left: 46px;
-                padding-right: 35px;
-                box-sizing: border-box;
-                background-color: transparent;
-                font-size: 14px;
-                color: @2;
-                font-family: "Myriad Pro";
-                border: 2px solid @2;
-
-            }
-            textarea {
+            label.textarea {
                 height: 100%;
-                line-height: 14px;
-                padding-top: 17px;
-                padding-left: 6px;
+                padding-bottom: 303px;
+                padding-left: 38px;
+                box-sizing: border-box;
             }
-            ::-webkit-input-placeholder {
-                color: @2;
-             opacity: 0.4;
-                font-style: italic;
+            label {
+                display: block;
+                width: 100%;
+                position: relative;
+                margin-bottom: 9px;
+
+                p.help-block {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                    font-size: 11px;
+                }
+                input, textarea {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    border: none;
+                    padding-left: 46px;
+                    padding-right: 35px;
+                    box-sizing: border-box;
+                    background-color: transparent;
+                    font-size: 14px;
+                    color: @2;
+                    font-family: "Myriad Pro";
+                    border: 2px solid @2;
+                }
+                textarea {
+                    height: 100%;
+                    line-height: 14px;
+                    padding-top: 12px;
+                    padding-left: 8px;
+                }
+                ::-webkit-input-placeholder {
+                    color: @2;
+                    opacity: 0.4;
+                    font-style: italic;
+                }
+                ::-moz-placeholder {
+                    color: @2;
+                    opacity: 0.4;
+                    font-style: italic;
+                }
+                span.ico {
+                    position: absolute;
+                    height: 40px;
+                    line-height: 44px;
+                    text-align: center;
+                    width: 40px;
+                    background-color: @2;
+                    color: @1;
+                }
+                span.icotextarea {
+                    position: absolute;
+                    left: 0px;
+                    line-height: 44px;
+                    text-align: center;
+                    width: 40px;
+                    height: 40px;
+                    background-color: @2;
+                    color: @1;
+                }
+                span.valid i, span.invalid i {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    position: absolute;
+                    right: 10px;
+                    top: 0px;
+                    text-align: right;
+                    opacity: 0.5;
+                }
+                span.valid i {
+                    line-height: 40px;
+                }
+                .valid i {
+                    color: green;
+                }
+                .invalid {
+                    color: red;
+                }
             }
-            ::-moz-placeholder {
-                color: @2;
-               opacity: 0.4;
-                font-style: italic;
-            }
-            span.ico {
+            button {
                 position: absolute;
+                bottom: 18px;
+                right: 18px;
                 height: 40px;
-                line-height: 44px;
-                text-align: center;
-                width: 40px;
+                width: 100px;
                 background-color: @2;
-                color:@1;
-            }
-            span.icotextarea {
-                position: absolute;
-                left:0px;
-                line-height: 44px;
+                color: @1;
+                opacity: 0.1;
                 text-align: center;
-                width: 40px;
-                height:40px;
-                   background-color: @2;
-                color:@1;
-
-
+                font-size: 14px;
+                margin: auto;
+                border: none;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.25s ease;
+                -o-transition: all 0.25s ease;
+                transition: all 0.25s ease;
             }
-            span.valid i, span.invalid i {
-                width: 50px;
-                height: 50px;
-                line-height: 50px;
-                position: absolute;
-                right: 10px;
-                top: 0px;
-                text-align: right;
-                opacity: 0.5;
+            button:hover {
+                color: @1;
             }
-            span.valid i{  line-height: 40px;}
-            .valid i{
-                color: green;
-                              
-
+            button.btnvalid {
+                opacity: 1;
             }
-            .invalid {
-                color: red;
+            button.btnvalid:hover {
+                color: @4;
+                cursor: pointer;
             }
-        }
-        button {
-            position: absolute;
-            bottom: 18px;
-            right: 18px;
-            height: 30px;
-            width: 100px;
-            background-color: @2;
-            color: @1;
-            opacity: 0.1;
-            text-align: center;
-            font-size: 14px;
-            margin: auto;
-            border: none;
-            
-        }
-        button:hover {
-            color: @1;
-        }
-        button.btnvalid {
-            opacity: 1;
-        }
-        button.btnvalid:hover {
-            color: @4;
-            cursor: pointer;
         }
     }
-}
 }
 #present_project {
     height: 122px;
@@ -1228,16 +1258,16 @@ i{float:left;}
                     width: auto;
                     float: right;
                 }
-                img.website{
+                img.website {
                     margin-right: -133px;
                 }
             }
-         
         }
         section.pres {
             position: relative;
             padding: 0;
             opacity: 1;
+
             img {
                 height: 100%;
                 width: auto;
@@ -1259,7 +1289,7 @@ i{float:left;}
                 bottom: 0px;
                 padding: 10px;
                 display: block;
-                
+
                 div {
                     display: inline-block;
                     vertical-align: top;
@@ -1349,7 +1379,6 @@ i{float:left;}
                     float: right;
                 }
             }
-           
         }
         section.comment {
             padding: 0px;
@@ -1363,7 +1392,7 @@ i{float:left;}
                 height: 100%;
                 color: @2;
                 background-color: @1;
-                opacity: @op2;
+                opacity: @op1;
 
                 ul {
                     -webkit-transition: all 0.5s ease;
@@ -1372,7 +1401,7 @@ i{float:left;}
                     transition: all 0.5s ease;
                 }
                 li {
-                    padding: 10px;
+                    padding: 9px 18px 0px 18px;
                     position: relative;
                     list-style-type: none;
                     width: 100%;
@@ -1381,16 +1410,17 @@ i{float:left;}
                     cite {
                     }
                     time {
-                        right: 10px;
-                        top: 10px;
+                        right: 18px;
+                        top: 12px;
                         position: absolute;
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                     section.comment-content {
-                        margin-top: 5px;
+                        margin-top: 0px;
 
                         p {
                             display: block;
+                            font-size: 12px;
                             box-sizing: border-box;
                             height: 100%;
                             width: 100%;
@@ -1417,7 +1447,7 @@ i{float:left;}
                 div.titlereponse {
                     background-color: @1;
                     padding: 10px 10px 10px 20px;
-                    opacity: @op2;
+                    opacity: @op1;
                     position: relative;
                     height: 60px;
                     box-sizing: border-box;
@@ -1434,18 +1464,16 @@ i{float:left;}
                 }
                 form {
                     text-align: right;
-padding: 18px;
-
-                         background-color: @1;
- opacity: @op1;
+                    padding: 18px;
+                    background-color: @1;
+                    opacity: @op2;
 
                     label.textarea {
                         margin-bottom: 9px;
-                        padding-left: 32px;
+                        padding-left: 30px;
                         box-sizing: border-box;
                     }
                     label {
-                       
                         display: block;
                         width: 100%;
                         position: relative;
@@ -1510,7 +1538,7 @@ padding: 18px;
                             line-height: 36px;
                             text-align: center;
                             width: 32px;
-                             background-color: @2;
+                            background-color: @2;
                             color: @1;
                         }
                         span.valid i, span.invalid i {
@@ -1523,7 +1551,9 @@ padding: 18px;
                             text-align: right;
                             opacity: 0.5;
                         }
-                        span.valid i{line-height: 35px;}
+                        span.valid i {
+                            line-height: 35px;
+                        }
                         .valid {
                             color: green;
                         }
@@ -1541,6 +1571,10 @@ padding: 18px;
                         border: none;
                         text-align: center;
                         font-size: 14px;
+                        -webkit-transition: all 0.5s ease;
+                        -moz-transition: all 0.25s ease;
+                        -o-transition: all 0.25s ease;
+                        transition: all 0.25s ease;
                     }
                     button:hover {
                         color: @3;

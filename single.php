@@ -2,7 +2,6 @@
 
 <body class="cbp-spmenu-push">
 
-    <?php include_once 'navmobile.php';?>
     <div id="container">
 
 <?php include_once 'blocgauche.php';?><!--
@@ -101,7 +100,7 @@ comments_number('0', '0 Comment', '%');
 
             } else {
                 $('nav li a.projects').addClass('active');
-                $(".menuprojects").css("height", "140px");
+                $(".menuprojects").css("height", "130px");
                 ctg = ctg.toLowerCase();  
                 $('div.menuprojects a.' + ctg).addClass('active2');       
                 $('#present_article').addClass('off');
