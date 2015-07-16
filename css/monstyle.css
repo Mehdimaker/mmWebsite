@@ -193,7 +193,7 @@ span.bgop {
 }
 #blocdroit div.langue i.fa-flag {
   width: 40px;
-  line-height: 40px;
+  margin-top: 16px;
 }
 #blocdroit div.langue .fa-flag:hover {
   color: #ecf0f1;
@@ -271,6 +271,7 @@ span.bgop {
 #blocdroit div.navbtn i.cache {
   opacity: 0.2;
   background-color: #18191b;
+  color: #ecf0f1;
   cursor: default;
 }
 #blocdroit div.navbtn i.cache:hover {

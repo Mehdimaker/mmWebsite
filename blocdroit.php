@@ -1,6 +1,6 @@
 <div id="blocdroit">
 
-    <div class="langue off">
+    <div class="langue ">
         <i class=" fa  fa-flag"></i>
         <div class="menulangue cache">
             <a>
