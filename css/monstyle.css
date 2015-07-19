@@ -316,16 +316,14 @@ footer {
   line-height: 40px;
 }
 #home div.presentation blockquote pre.fullstack {
-  color: #18191b;
-  font-style: italic;
+  color: #ffffff;
   font-size: 14px;
   display: block;
   line-height: 18px;
   width: 300px;
   text-align: right;
-  font-weight: bold;
   font-family: "Myriad Pro";
-  opacity: 0.6;
+  opacity: 1;
 }
 #home div.presentation blockquote p {
   margin-top: 80px;
@@ -1101,7 +1099,6 @@ footer {
 #present_project span.comment:hover {
   color: #ffffff;
   cursor: pointer;
-  opacity: 0.7;
 }
 #present_article {
   height: 55.75px;
@@ -1524,6 +1521,19 @@ footer {
   position: absolute;
   box-sizing: border-box;
 }
+#mainpro #etapes div.infos h6 {
+  box-sizing: border-box;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 28px;
+  text-align: left;
+  color: #ecf0f1;
+  background-color: #18191b;
+  font-weight: normal;
+  opacity: 0.85;
+  font-size: 14px;
+}
 #mainpro #etapes div.infos a {
   box-sizing: border-box;
   padding: 10px 10px 0 10px;
@@ -1551,5 +1561,4 @@ footer {
 }
 #mainpro #etapes div.infos a:hover {
   color: #ffffff;
-  opacity: 0.7;
 }

@@ -33,7 +33,7 @@
                     <div class="photo "></div>
                     <blockquote>
                       <span class="titlemm"></span>
-                    <pre class="fullstack">-- developer ------------- designer ------------- maker -- </pre>
+                    <pre class="fullstack">---- developer ------------ designer ------------ maker ---- </pre>
                        <p>Passionné des nouvelles technologies  <br>
                        Actuellement développeur au sein de Simplon.co<br>
                        Découvrez ici toutes mes réalisations<br> websites, applis mobile, ou encore objets connectés . . .

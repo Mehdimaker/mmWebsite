@@ -9,6 +9,7 @@ global $post_type;
 if ( 'post' == $post_type )
 {
 $content = "<div class='infos'>
+	<h6>Links :</h6>
 	<a href=''target='_blank'><span>View all</span><i class='fa fa-lg fa-search'></i> </a>
 	<a href=''target='_blank'><span>Github</span><i class='fa fa-lg fa-github'></i> </a>
 	<a href=''target='_blank'><i class='fa fa-circle-o fa-lg'><span>T</span></i>Thingiverse</a>
