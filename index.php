@@ -64,7 +64,7 @@
                     <a class='<?php $cat = get_the_category(); $cat = $cat[0]; echo strtolower($cat->cat_name);?>' href="<?php the_permalink() ?>" rel="bookmark">
                         <span class="title_projects"><?php the_title(); ?></span>
                     </a>
-
+                    
                     <?php endwhile; ?>
 
                 </div><!--
@@ -74,9 +74,10 @@
                     <h4>Un Projet ?</h4>
                     <div class="comm">
                         <p>Vous recherchez un développeur ? <br>Quelqu'un de sérieux et compétent pour réaliser votre projet ?<br><br>
-                        Ne cherchez pas plus loin... <br>Je suis la personne qu'il vous faut !<br><br>
-                        Je vous invite à me rencontrer, afin de discuter d'une éventuelle collaboration !<br><br>
-                        A très bientôt !   
+                        Ne cherchez pas plus loin... <br>Je suis la personne qu'il vous faut !<br>
+                        Rencontrons nous et discuton d'une éventuelle collaboration !<br><br>
+                        A très bientôt.   <br>
+                        <a href="mailto:contact@mehdimaker.com">Mehdi Maker.</a>
                         </p>
                     </div>
                 </div>

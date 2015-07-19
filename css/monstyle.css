@@ -309,7 +309,7 @@ footer {
   width: 300px;
   height: 25px;
   background-size: contain;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 #home div.presentation blockquote h1 {
   font-size: 40px;
@@ -324,9 +324,10 @@ footer {
   text-align: right;
   font-family: "Myriad Pro";
   opacity: 1;
+  display: none;
 }
 #home div.presentation blockquote p {
-  margin-top: 80px;
+  margin-top: 90px;
   text-align: right;
   font-style: italic;
 }
@@ -445,6 +446,10 @@ footer {
   color: #ecf0f1;
   font-size: 12px;
   padding: 5px 10px 5px 10px;
+}
+#home div.recent div.comm p a {
+  text-align: right;
+  text-decoration: none;
 }
 /****** ARTICLES *********/
 #articles {
@@ -1252,6 +1257,8 @@ footer {
   height: 30px;
   margin-right: 2px;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #mainpro #etapes section.pres div.techno div span:last-child {
   margin-right: 0px;
