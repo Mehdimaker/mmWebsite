@@ -32,11 +32,11 @@
                     <span class='bgop'></span>
                     <div class="photo "></div>
                     <blockquote>
-                       <h1>MEHDI MAKER </h1>
-                      <span> DEVELOPER - DESIGNER - MAKER </span>
-                       <p>Passioné d'informatique depuis l'enfance, <br>
-                       Actuellement développeur au sein de Simplon.co.<br>
-                       Découvrez ici toutes mes réalisations, site internet, applications mobile, ou encore objects connectés ... 
+                      <span class="titlemm"></span>
+                    <pre class="fullstack">-- developer ------------- designer ------------- maker -- </pre>
+                       <p>Passionné des nouvelles technologies  <br>
+                       Actuellement développeur au sein de Simplon.co<br>
+                       Découvrez ici toutes mes réalisations<br> websites, applis mobile, ou encore objets connectés . . .
                        </p>
                        </blockquote>
                 </div>
@@ -228,7 +228,7 @@
             
              <div id="apropos">
              <h3>A propos </h3>
-                <p>MehdiMaker.com,<br> Website entièrement réalisé par Mehdi M.
+                <p>www.mehdimaker.com,<br> Website entièrement réalisé par Mehdi M.
           <br>
              Front End: <br> Javascript | Jquery | Angular | Html | Css
   <br>Back End: <br>Wordpress | Php
@@ -252,7 +252,7 @@
                   contact@mehdimaker.com
             </a>
               
-
+            
                  </div>
                 
                   </div><!--

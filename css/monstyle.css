@@ -300,16 +300,37 @@ footer {
   font-size: 20px;
   color: #ecf0f1;
   box-sizing: border-box;
-  padding: 18px 214px 18px 18px;
+  padding: 18px 214px 18px 36px;
+}
+#home div.presentation blockquote span.titlemm {
+  background-image: url(../img/mehdimaker.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 300px;
+  height: 25px;
+  background-size: contain;
+  margin-top: 10px;
 }
 #home div.presentation blockquote h1 {
   font-size: 40px;
   line-height: 40px;
 }
-#home div.presentation blockquote span {
+#home div.presentation blockquote pre.fullstack {
+  color: #18191b;
+  font-style: italic;
+  font-size: 14px;
   display: block;
   line-height: 18px;
-  margin-bottom: 28px;
+  width: 300px;
+  text-align: right;
+  font-weight: bold;
+  font-family: "Myriad Pro";
+  opacity: 0.6;
+}
+#home div.presentation blockquote p {
+  margin-top: 80px;
+  text-align: right;
+  font-style: italic;
 }
 #home div.presentation div.photo {
   z-index: 2;
@@ -321,7 +342,7 @@ footer {
   background-image: url(../img/mehdi.jpg);
   background-size: cover;
   box-sizing: border-box;
-  opacity: 0.8;
+  opacity: 1;
 }
 #home div.recent {
   height: 100%;
@@ -695,8 +716,8 @@ footer {
   padding: 10px;
 }
 #navapp #navlist #list a span.resumepro p {
-  font-size: 12px;
-  text-align: justify;
+  font-size: 14px;
+  text-align: left;
 }
 #navapp #navlist #list a span.infopro {
   padding: 10px;
@@ -993,7 +1014,7 @@ footer {
   z-index: 1;
 }
 #present_project span.thumbnail span.bgop {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #present_project span.thumbnail img {
   height: 100%;
@@ -1008,7 +1029,7 @@ footer {
   z-index: 1;
 }
 #present_project span.resumepro span.bgop {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 #present_project span.resumepro h1 {
   height: 30px;
@@ -1049,8 +1070,8 @@ footer {
   font-size: 11px;
 }
 #present_project span.resumepro p {
-  font-size: 12px;
-  text-align: justify;
+  font-size: 14px;
+  text-align: left;
 }
 #present_project span.comment {
   height: 38px;
@@ -1059,7 +1080,7 @@ footer {
   width: 120px;
   background-color: #18191b;
   color: #ecf0f1;
-  opacity: 0.75;
+  opacity: 0.85;
   font-size: 14px;
   padding: 10px 10px 0 10px;
   position: relative;
@@ -1080,6 +1101,7 @@ footer {
 #present_project span.comment:hover {
   color: #ffffff;
   cursor: pointer;
+  opacity: 0.7;
 }
 #present_article {
   height: 55.75px;
@@ -1098,7 +1120,7 @@ footer {
   padding-left: 10px;
   float: left;
   background-color: #18191b;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #present_article span.resume_article {
   height: 100%;
@@ -1108,7 +1130,7 @@ footer {
   text-align: left;
   font-size: 12px;
   background-color: #18191b;
-  opacity: 0.6;
+  opacity: 0.75;
 }
 #present_article span.date {
   height: 100%;
@@ -1119,7 +1141,7 @@ footer {
   text-align: right;
   box-sizing: border-box;
   background-color: #18191b;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #present_article span.date p.JJ {
   width: 43px;
@@ -1164,7 +1186,7 @@ footer {
   z-index: 1;
 }
 #mainpro #etapes section span.bgop {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #mainpro #etapes section div.description {
   box-sizing: border-box;
@@ -1175,7 +1197,7 @@ footer {
 }
 #mainpro #etapes section div.illustration {
   float: right;
-  height: 338px;
+  height: 100%;
   width: 338px;
   display: inline-block;
   margin-right: -20px;
@@ -1184,10 +1206,7 @@ footer {
 #mainpro #etapes section div.illustration img {
   height: 100%;
   width: auto;
-  float: right;
-}
-#mainpro #etapes section div.illustration img.website {
-  margin-right: -133px;
+  float: left;
 }
 #mainpro #etapes section.pres {
   position: relative;
@@ -1219,6 +1238,7 @@ footer {
 #mainpro #etapes section.pres div.techno div {
   display: inline-block;
   vertical-align: top;
+  margin-right: 15px;
 }
 #mainpro #etapes section.pres div.techno div p {
   font-size: 13px;
@@ -1295,10 +1315,6 @@ footer {
 }
 #mainpro #etapes section.pres div.techno div span.makerbot {
   background-image: url(../img/techno/makerbot.png);
-}
-#mainpro #etapes section.pres div.techno div:last-child {
-  text-align: right;
-  float: right;
 }
 #mainpro #etapes section.comment {
   padding: 0px;
@@ -1500,8 +1516,6 @@ footer {
   cursor: pointer;
 }
 #mainpro #etapes div.infos {
-  opacity: 0.75;
-  background-color: #18191b;
   width: 120px;
   height: 84px;
   font-size: 14px;
@@ -1516,11 +1530,13 @@ footer {
   margin-bottom: 0px;
   display: inline-block;
   width: 100%;
-  height: 20px;
+  height: 28px;
   cursor: pointer;
   text-align: left;
   text-decoration: none;
   color: #ecf0f1;
+  background-color: #18191b;
+  opacity: 0.85;
 }
 #mainpro #etapes div.infos a i {
   float: right;
@@ -1535,4 +1551,5 @@ footer {
 }
 #mainpro #etapes div.infos a:hover {
   color: #ffffff;
+  opacity: 0.7;
 }

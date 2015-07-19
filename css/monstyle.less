@@ -327,16 +327,37 @@ footer {
             font-size: 20px;
             color: @2;
             box-sizing: border-box;
-            padding: 18px 214px 18px 18px;
+            padding: 18px 214px 18px 36px;
+            span.titlemm{
+                background-image: url(../img/mehdimaker.png);
+                background-repeat: no-repeat;
+                display: block;
+                width: 300px;
+                height: 25px;
+                background-size: contain;
+                margin-top: 10px;
+               
 
+            }
             h1 {
                 font-size: 40px;
                 line-height: 40px;
             }
-            span {
+            pre.fullstack {
+                color: @1;
+                font-style: italic;
+                font-size: 14px;
                 display: block;
                 line-height: 18px;
-                margin-bottom: 28px;
+                width: 300px;
+               text-align: right;
+               font-weight: bold;
+               font-family: "Myriad Pro";
+                opacity: 0.6;
+            }
+            p{margin-top: 80px;
+                text-align: right;
+                font-style: italic;;
             }
         }
         div.photo {
@@ -349,7 +370,7 @@ footer {
             background-image: url(../img/mehdi.jpg);
             background-size: cover;
             box-sizing: border-box;
-            opacity: 0.8;
+            opacity: 1;
         }
     }
     div.recent {
@@ -745,8 +766,8 @@ footer {
                     padding: 10px;
 
                     p {
-                        font-size: 12px;
-                        text-align: justify;
+                        font-size: 14px;
+                        text-align: left;
                     }
                 }
                 span.infopro {
@@ -1059,7 +1080,7 @@ footer {
         z-index: 1;
 
         span.bgop {
-            opacity: @op1;
+            opacity: @op2;
         }
         img {
             height: 100%;
@@ -1075,7 +1096,7 @@ footer {
         z-index: 1;
 
         span.bgop {
-            opacity: @op2;
+            opacity: @op1;
         }
         h1 {
             height: 30px;
@@ -1117,8 +1138,8 @@ footer {
             }
         }
         p {
-            font-size: 12px;
-            text-align: justify;
+            font-size: 14px;
+            text-align: left;
         }
     }
     span.comment {
@@ -1128,7 +1149,7 @@ footer {
         width: 120px;
         background-color: @1;
         color: @3;
-        opacity: @op1;
+        opacity: @op2;
         font-size: 14px;
         padding: 10px 10px 0 10px;
         position: relative;
@@ -1150,6 +1171,7 @@ footer {
     span.comment:hover {
         color: @4;
         cursor: pointer;
+           opacity: 0.7;
     }
 }
 #present_article {
@@ -1169,7 +1191,7 @@ footer {
         padding-left: 10px;
         float: left;
         background-color: @1;
-        opacity: @op1;
+        opacity: @op2;
     }
     span.resume_article {
         height: 100%;
@@ -1179,7 +1201,7 @@ footer {
         text-align: left;
         font-size: 12px;
         background-color: @1;
-        opacity: 0.6;
+        opacity: @op1;
     }
     span.date {
         height: 100%;
@@ -1190,7 +1212,7 @@ footer {
         text-align: right;
         box-sizing: border-box;
         background-color: @1;
-        opacity: @op1;
+        opacity: @op2;
 
         p.JJ {
             width: 43px;
@@ -1237,7 +1259,7 @@ footer {
             z-index: 1;
 
             span.bgop {
-                opacity: @op1;
+                opacity: @op2;
             }
             div.description {
                 box-sizing: border-box;
@@ -1248,19 +1270,16 @@ footer {
             }
             div.illustration {
                 float: right;
-                height: 338px;
+                height: 100%;
                 width: 338px;
                 display: inline-block;
                 margin-right: -20px;
                 text-align: center;
-
+      
                 img {
                     height: 100%;
                     width: auto;
-                    float: right;
-                }
-                img.website {
-                    margin-right: -133px;
+                    float: left;
                 }
             }
         }
@@ -1294,6 +1313,7 @@ footer {
                 div {
                     display: inline-block;
                     vertical-align: top;
+                    margin-right: 15px;
 
                     p {
                         font-size: 13px;
@@ -1375,10 +1395,7 @@ footer {
                         background-image: url(../img/techno/makerbot.png)
                     }
                 }
-                div:last-child {
-                    text-align: right;
-                    float: right;
-                }
+
             }
         }
         section.comment {
@@ -1591,8 +1608,8 @@ footer {
             }
         }
         div.infos {
-            opacity: @op1;
-            background-color: @1;
+            
+            
             width: 120px;
             height: 84px;
             font-size: 14px;
@@ -1607,11 +1624,13 @@ footer {
                 margin-bottom: 0px;
                 display: inline-block;
                 width: 100%;
-                height: 20px;
+                height: 28px;
                 cursor: pointer;
                 text-align: left;
                 text-decoration: none;
                 color: @3;
+                 background-color: @1;
+                 opacity: @op2;
 
                 i {
                     float: right;
@@ -1628,6 +1647,8 @@ footer {
             }
             a:hover {
                 color: @4;
+                opacity: 0.7;
+
             }
         }
     }

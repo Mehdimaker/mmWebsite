@@ -20,7 +20,6 @@ jQuery(function ($) {
             function (response) {
                 
                 $('.list').html(response);
-             
 
             }
         );
