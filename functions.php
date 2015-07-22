@@ -22,9 +22,13 @@ $content = "<div class='infos'>
 <div class='techno'>
 <div ><p>Languages</p>
 	<span class='html'></span><span class='css'></span><span class='js'></span>
-</div><div><p>Tools</p>
+</div><div><p>Software</p>
 	<span class='ff'></span><span class='sublime'></span>
-</div></div></section>
+</div>
+<div><p>Hardware</p>
+	<span class='ff'></span><span class='sublime'></span>
+</div>
+</div></section>
 
 
 <section> <span class='bgop'></span><div class='description'>

@@ -4,7 +4,6 @@
 }
 body {
   background-color: #ecf0f1;
-  background: contain;
   font-family: "Myriad pro", sans-serif;
 }
 #container {
@@ -329,7 +328,6 @@ footer {
 #home div.presentation blockquote p {
   margin-top: 90px;
   text-align: right;
-  font-style: italic;
 }
 #home div.presentation div.photo {
   z-index: 2;
@@ -1187,6 +1185,9 @@ footer {
   position: relative;
   z-index: 1;
 }
+#mainpro #etapes section h3 {
+  margin-bottom: 20px;
+}
 #mainpro #etapes section span.bgop {
   opacity: 0.85;
 }
@@ -1196,6 +1197,10 @@ footer {
   display: inline-block;
   width: 426px;
   padding-right: 20px;
+}
+#mainpro #etapes section div.description ul {
+  margin-left: 20px;
+  list-style: none;
 }
 #mainpro #etapes section div.illustration {
   float: right;
@@ -1208,7 +1213,7 @@ footer {
 #mainpro #etapes section div.illustration img {
   height: 100%;
   width: auto;
-  float: left;
+  float: right;
 }
 #mainpro #etapes section.pres {
   position: relative;
@@ -1319,6 +1324,12 @@ footer {
 }
 #mainpro #etapes section.pres div.techno div span.makerbot {
   background-image: url(../img/techno/makerbot.png);
+}
+#mainpro #etapes section.pres div.techno div span.raspberrypi {
+  background-image: url(../img/techno/raspberrypi.png);
+}
+#mainpro #etapes section.pres div.techno div span.arduino {
+  background-image: url(../img/techno/arduino.png);
 }
 #mainpro #etapes section.comment {
   padding: 0px;
