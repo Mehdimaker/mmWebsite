@@ -3,6 +3,7 @@
 
 <body>
     <nav  id="navbar">
+        <div class="logo"></div>
           <ul>
             <li>
                 <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>

@@ -23,25 +23,39 @@
     height: 50px;
     width: 100%;
     display: block;
-    background-color: #18191b;
     position: fixed;
-    text-align: center;
     z-index: 1000;
+    text-align: right;
+    background-color: #18191b;
+    padding-right: 9px;
+  }
+  nav#navbar div.logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url(../img/logo3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
   }
   nav#navbar ul li {
     display: inline-block;
     margin-top: 5px;
+    text-align: right;
   }
   nav#navbar ul li a {
-    color: #949496;
     height: 60px;
     width: 60px;
     display: block;
     font-size: 14px;
+    color: #ecf0f1;
   }
   nav#navbar ul li a:hover {
-    color: #ffffff;
+    color: #ecf0f1;
     cursor: pointer;
+  }
+  nav#navbar ul li i {
+    display: none;
   }
   #home div.presentation {
     margin-bottom: 9px;
@@ -74,13 +88,12 @@
     border: none;
     width: 100%;
     height: 150px;
-    opacity: 0.85;
     box-sizing: border-box;
     display: block;
     vertical-align: top;
     white-space: normal;
     text-decoration: none;
-    color: #949496;
+    color: #ecf0f1;
     text-align: left;
     cursor: pointer;
     margin-bottom: 9px;
@@ -115,7 +128,6 @@
   #navapp #navlist #list a span.resumepro {
     width: 60%;
     background-color: #18191b;
-    opacity: 0.9;
     height: 100%;
     padding: 10px;
   }
@@ -131,7 +143,7 @@
   }
   #navapp #navlist #list a:hover {
     opacity: 0.90;
-    color: #ffffff;
+    color: #ecf0f1;
   }
   /**************** ARTICLES ****************/
   #articles {
@@ -141,8 +153,8 @@
     display: block;
     height: 55.75px;
     margin-bottom: 9px;
-    color: #949496;
-    opacity: 0.85;
+    color: #ecf0f1;
+    opacity: 0.75;
   }
   #articles #listarticles a.article span {
     box-sizing: border-box;
@@ -191,7 +203,7 @@
   }
   #articles #listarticles a.article:hover {
     opacity: 0.9;
-    color: #ffffff;
+    color: #ecf0f1;
   }
 }
 @media all and (max-width: 700px) {
@@ -200,7 +212,7 @@
     display: inline-block;
   }
   nav#navbar ul li a {
-    color: #949496;
+    color: #ecf0f1;
     height: 40px;
     width: 40px;
     display: block;
@@ -232,7 +244,6 @@
     background-image: url(../img/mehdi.jpg);
     background-size: cover;
     box-sizing: border-box;
-    opacity: 0.8;
   }
   #home .blocleft,
   #home .bloccenter,
@@ -244,13 +255,10 @@
     margin-bottom: 9px;
   }
   #home div.recent h4 {
-    opacity: 0.6;
     padding-left: 10px;
     height: 27px;
-    color: #949496;
     line-height: 27px;
     font-size: 14px;
-    background-color: #18191b;
   }
   /**************** PROJECT ****************/
   #projects div.rowprojecttop {
@@ -285,7 +293,6 @@
     height: 100%;
     display: block;
     box-sizing: border-box;
-    background-color: #18191b;
   }
   #projects div.rowproject span a div.ctgproject p {
     text-align: left;
@@ -303,7 +310,6 @@
     height: 100%;
     width: 20px;
     background-color: #18191b;
-    opacity: 0.8;
     margin-right: -20px;
     margin-top: 0px;
     float: right;
@@ -353,8 +359,6 @@
     padding: 5px;
     text-align: left;
     font-size: 10px;
-    background-color: #18191b;
-    opacity: 0.8;
   }
   #articles #listarticles a.article span.containdate {
     width: 12%;
@@ -384,6 +388,6 @@
   }
   #articles #listarticles a.article:hover {
     opacity: 0.9;
-    color: #ffffff;
+    color: #ecf0f1;
   }
 }

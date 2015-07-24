@@ -1,7 +1,14 @@
 @1:#18191b;
-@2:#949496;
-@3:#FFF;
-@op1 : 0.85;
+@2:#ecf0f1;
+//#b6b6b6
+@3:#ecf0f1;
+//#3498db
+//#e67e22
+@btn: @3;
+@4:#FFF;
+@op2:0.85;
+@op1:0.75;
+@ophover: 0.95;
 
 @media all and (max-width:1000px) {
 
@@ -29,26 +36,36 @@
 		height: 50px;
 		width: 100%;
 		display: block;
-		background-color: @1;
 		position: fixed;
-		text-align: center;
 		z-index: 1000;
-	
-		
+	   text-align: right; 
+       background-color: @1;
+       padding-right: 9px;
+            div.logo{
+        width: 50px;
+        height:50px;
+        position: absolute;
+             background-image: url(../img/logo3.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 30px 30px;
+        }
 			ul li {
 				display: inline-block;
 				margin-top: 5px;
+                text-align: right;
 				a {
-					color: @2;
 					height: 60px;
 					width: 60px;
 					display: block;
 					font-size: 14px;
+                    color:@2;
 				}
 				a:hover {
 					color: @3;
 					cursor: pointer;
 				}
+                i{display: none}
 			}
 			
 		
@@ -98,7 +115,6 @@
                 border: none;
                width: 100%;
                 height: 150px;
-                opacity: @op1;
                 box-sizing: border-box;
                 display: block;
                 vertical-align: top;
@@ -140,7 +156,6 @@
                 span.resumepro {
 					width: 60%;
                     background-color: @1;
-                    opacity: 0.9;
                     height: 100%;
                     padding: 10px;
 
@@ -277,7 +292,6 @@
             background-image: url(../img/mehdi.jpg);
             background-size: cover;
             box-sizing: border-box;
-            opacity: 0.8;
         }
 		}
 		.blocleft, .bloccenter, .blocright {
@@ -288,13 +302,10 @@
        margin-bottom: 9px;
 
         h4 {
-            opacity: 0.6;
             padding-left: 10px;
             height: 27px;
-            color: @2;
             line-height: 27px;
             font-size: 14px;
-            background-color: @1;
         }
 
     }
@@ -332,7 +343,6 @@
                     height: 100%;
                     display: block;
                     box-sizing: border-box;
-                    background-color: @1;
 
                     p {
                         text-align: left;
@@ -351,7 +361,6 @@
                         height: 100%;
                         width: 20px;
                         background-color: @1;
-                        opacity: 0.8;
                         margin-right: -20px;
                         margin-top: 0px;
                         float: right;
@@ -407,8 +416,6 @@
                 padding: 5px;
                 text-align: left;
                 font-size: 10px;
-                background-color: @1;
-                opacity: 0.8;
             }
          span.containdate{
             width: 12%;
