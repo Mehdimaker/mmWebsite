@@ -74,7 +74,7 @@ span.bgop {
   text-align: center;
   padding-top: 20px;
   box-sizing: border-box;
-  background-image: url(../img/logo3.png);
+  background-image: url(../img/logo4.png);
   background-size: 50px 50px;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,14 +97,9 @@ span.bgop {
   font-size: 14px;
   background-color: #18191b;
   box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 #blocgauche nav li a:hover {
-  color: #ffffff;
-  opacity: 0.85;
+  color: #ff2400;
   text-decoration: none;
 }
 #blocgauche nav li a.active:hover {
@@ -152,7 +147,7 @@ span.bgop {
   padding-top: 10px;
 }
 #blocgauche nav div.menuprojects a:hover {
-  color: #ffffff;
+  color: #ff2400;
   padding-left: 55px;
   text-decoration: none;
 }
@@ -256,7 +251,7 @@ span.bgop {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #ecf0f1;
+  background-color: #ff2400;
   color: #18191b;
   opacity: 0.8;
   -webkit-transition: all 0.25s ease;
@@ -296,34 +291,27 @@ footer {
 }
 #home div.presentation blockquote {
   height: 100%;
-  font-size: 20px;
+  font-size: 18px;
   color: #ecf0f1;
   box-sizing: border-box;
   padding: 18px 214px 18px 36px;
 }
+#home div.presentation blockquote a.simplon {
+  color: #ff2400;
+  text-decoration: none;
+}
 #home div.presentation blockquote span.titlemm {
-  background-image: url(../img/mehdimaker.png);
+  background-image: url(../img/mehdimakerred.png);
   background-repeat: no-repeat;
   display: block;
   width: 300px;
-  height: 25px;
+  height: 30px;
   background-size: contain;
   margin-top: 15px;
 }
 #home div.presentation blockquote h1 {
   font-size: 40px;
   line-height: 40px;
-}
-#home div.presentation blockquote pre.fullstack {
-  color: #ffffff;
-  font-size: 14px;
-  display: block;
-  line-height: 18px;
-  width: 300px;
-  text-align: right;
-  font-family: "Myriad Pro";
-  opacity: 1;
-  display: none;
 }
 #home div.presentation blockquote p {
   margin-top: 90px;
@@ -367,10 +355,6 @@ footer {
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 96% 50%;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 #home div.recent a span {
   display: inline-block;
@@ -415,7 +399,7 @@ footer {
 }
 #home div.recent a:hover {
   opacity: 0.95;
-  color: #ffffff;
+  color: #ff2400;
 }
 #home div.recent a.apps {
   background-image: url(../img/icoprojects/apps.png);
@@ -435,6 +419,24 @@ footer {
 #home div.recent a.others {
   background-image: url(../img/icoprojects/others.png);
 }
+#home div.recent a.apps:hover {
+  background-image: url(../img/icoprojects/appshover.png);
+}
+#home div.recent a.websites:hover {
+  background-image: url(../img/icoprojects/websiteshover.png);
+}
+#home div.recent a.graphics:hover {
+  background-image: url(../img/icoprojects/graphicshover.png);
+}
+#home div.recent a.objects:hover {
+  background-image: url(../img/icoprojects/objectshover.png);
+}
+#home div.recent a.videos:hover {
+  background-image: url(../img/icoprojects/videoshover.png);
+}
+#home div.recent a.others:hover {
+  background-image: url(../img/icoprojects/othershover.png);
+}
 #home div.recent div.comm {
   height: 180px;
   background-color: #18191b;
@@ -448,6 +450,7 @@ footer {
 #home div.recent div.comm p a {
   text-align: right;
   text-decoration: none;
+  color: #ff2400;
 }
 /****** ARTICLES *********/
 #articles {
@@ -466,10 +469,6 @@ footer {
   margin-bottom: 9px;
   color: #ecf0f1;
   opacity: 0.85;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 #articles #listarticles a.article span {
   box-sizing: border-box;
@@ -536,7 +535,7 @@ footer {
 }
 #articles #listarticles a.article:hover {
   opacity: 0.95;
-  color: #ffffff;
+  color: #ff2400;
 }
 /******** PROJECTS *********/
 #projects {
@@ -563,7 +562,7 @@ footer {
 }
 #projects div.rowproject span a:hover {
   opacity: 0.95;
-  color: #ffffff;
+  color: #ff2400;
 }
 #projects div.rowproject span a {
   opacity: 0.85;
@@ -572,10 +571,6 @@ footer {
   cursor: pointer;
   color: #ecf0f1;
   display: block;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 #projects div.rowproject span a i {
   background-repeat: no-repeat;
@@ -621,25 +616,43 @@ footer {
   background-image: url(../img/icoprojects/websites.png);
   background-size: 70px;
 }
+#projects div.rowproject span a.websites:hover > i.websites {
+  background-image: url(../img/icoprojects/websiteshover.png);
+}
 #projects div.rowproject span i.apps {
   background-image: url(../img/icoprojects/apps.png);
-  background-size: 65px;
+  background-size: 60px;
+}
+#projects div.rowproject span a.apps:hover > i.apps {
+  background-image: url(../img/icoprojects/appshover.png);
 }
 #projects div.rowproject span i.graphics {
   background-image: url(../img/icoprojects/graphics.png);
   background-size: 70px;
 }
+#projects div.rowproject span a.graphics:hover > i.graphics {
+  background-image: url(../img/icoprojects/graphicshover.png);
+}
 #projects div.rowproject span i.objects {
   background-image: url(../img/icoprojects/objects.png);
   background-size: 60px;
+}
+#projects div.rowproject span a.objects:hover > i.objects {
+  background-image: url(../img/icoprojects/objectshover.png);
 }
 #projects div.rowproject span i.videos {
   background-image: url(../img/icoprojects/videos.png);
   background-size: 60px;
 }
+#projects div.rowproject span a.videos:hover > i.videos {
+  background-image: url(../img/icoprojects/videoshover.png);
+}
 #projects div.rowproject span i.others {
   background-image: url(../img/icoprojects/others.png);
   background-size: 60px;
+}
+#projects div.rowproject span a.others:hover > i.others {
+  background-image: url(../img/icoprojects/othershover.png);
 }
 #navapp #navlist {
   overflow: hidden;
@@ -679,10 +692,6 @@ footer {
   color: #ecf0f1;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 #navapp #navlist #list a span {
   display: block;
@@ -756,31 +765,18 @@ footer {
 }
 #navapp #navlist #list a:hover span.thumbnail span.bgop {
   opacity: 0.95;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 #navapp #navlist #list a:hover h1 {
   opacity: 0.95;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  color: #ff2400;
 }
 #navapp #navlist #list a:hover span.infopro {
   opacity: 0.95;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  color: #ff2400;
 }
 #navapp #navlist #list a:hover span.resumepro {
   opacity: 0.85;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  color: #ff2400;
 }
 /******** SERVICES *********/
 #services {
@@ -1100,7 +1096,7 @@ footer {
   font-weight: bold;
 }
 #present_project span.comment:hover {
-  color: #ffffff;
+  color: #ff2400;
   cursor: pointer;
 }
 #present_article {
@@ -1224,8 +1220,8 @@ footer {
   opacity: 1;
 }
 #mainpro #etapes section.pres img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 #mainpro #etapes section.pres span.bgtechno {
   background-color: #18191b;
@@ -1541,19 +1537,8 @@ footer {
   top: 0px;
   position: absolute;
   box-sizing: border-box;
-}
-#mainpro #etapes div.infos h6 {
-  box-sizing: border-box;
-  padding: 10px 10px 0 10px;
-  margin-bottom: 0px;
-  width: 100%;
-  height: 28px;
-  text-align: left;
-  color: #ecf0f1;
   background-color: #18191b;
-  font-weight: normal;
   opacity: 0.85;
-  font-size: 14px;
 }
 #mainpro #etapes div.infos a {
   box-sizing: border-box;
@@ -1566,8 +1551,6 @@ footer {
   text-align: left;
   text-decoration: none;
   color: #ecf0f1;
-  background-color: #18191b;
-  opacity: 0.85;
 }
 #mainpro #etapes div.infos a i {
   float: right;
@@ -1581,5 +1564,5 @@ footer {
   top: 1px;
 }
 #mainpro #etapes div.infos a:hover {
-  color: #ffffff;
+  color: red;
 }

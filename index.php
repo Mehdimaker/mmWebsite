@@ -34,9 +34,8 @@
                     <div class="photo "></div>
                     <blockquote>
                       <span class="titlemm"></span>
-                    <pre class="fullstack">---- developer ------------ designer ------------ maker ---- </pre>
                        <p>Passionné des nouvelles technologies  <br>
-                       Actuellement développeur au sein de Simplon.co<br>
+                       Actuellement développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon.co</a><br>
                        Découvrez ici toutes mes réalisations<br> websites, applis mobile, ou encore objets connectés . . .
                        </p>
                        </blockquote>
@@ -47,19 +46,7 @@
 
 
                 <div class="recent blocleft">
-                    <h4>Derniers Articles</h4>
-                    <?php $args=array( 'category_name'=> 'articles', 'showposts' => '6', ); $recentPosts=new WP_Query($args); while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-                    <a href="<?php the_permalink() ?>" rel="bookmark">
-                        <span class="title_projects"><?php the_title(); ?></span>
-                        <span class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></span>
-                    </a>
-
-                    <?php endwhile; ?>
-
-                </div><!--
-
-                --><div class="recent bloccenter">
-                    <h4>Derniers Projets</h4>
+                         <h4>Derniers Projets</h4>
                     <?php $args=array( 'category_name'=> 'websites,apps,graphics,objects,videos,others', 'showposts' => '6', ); $recentPosts=new WP_Query($args); while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
                     <a class='<?php $cat = get_the_category(); $cat = $cat[0]; echo strtolower($cat->cat_name);?>' href="<?php the_permalink() ?>" rel="bookmark">
@@ -68,6 +55,18 @@
                     
                     <?php endwhile; ?>
 
+                </div><!--
+
+                --><div class="recent bloccenter">
+                    <h4>Derniers Articles</h4>
+                    <?php $args=array( 'category_name'=> 'articles', 'showposts' => '6', ); $recentPosts=new WP_Query($args); while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+                    <a href="<?php the_permalink() ?>" rel="bookmark">
+                        <span class="title_projects"><?php the_title(); ?></span>
+                        <span class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></span>
+                    </a>
+
+                    <?php endwhile; ?>
+               
                 </div><!--
 
 

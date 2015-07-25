@@ -1,10 +1,10 @@
 @1:#18191b;
 @2:#ecf0f1;
 //#b6b6b6
-@3:#ecf0f1;
+@3:#ff2400;
+//c60000
 //#3498db
 //#e67e22
-@btn: @3;
 @4:#FFF;
 @op2:0.85;
 @op1:0.75;
@@ -16,7 +16,7 @@
 }
 body {
     //background-image: url(../img/bg/444.jpg);
-    background-color: @3;
+    background-color: @2;
     // font: 76%/150% "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
     font-family: "Myriad pro", sans-serif;
 }
@@ -90,7 +90,7 @@ span.bgop {
         text-align: center;
         padding-top: 20px;
         box-sizing: border-box;
-        background-image: url(../img/logo3.png);
+        background-image: url(../img/logo4.png);
         background-size: 50px 50px;
         background-position: center;
         background-repeat: no-repeat;
@@ -103,7 +103,7 @@ span.bgop {
         }
         li a {
             padding: 12px 0 0 15px;
-            color: @3;
+            color: @2;
             width: 100%;
             display: block;
             height: 40px;
@@ -113,14 +113,9 @@ span.bgop {
             font-size: 14px;
             background-color: @1;
             box-sizing: border-box;
-            -webkit-transition: all 0.25s ease;
-            -moz-transition: all 0.25s ease;
-            -o-transition: all 0.25s ease;
-            transition: all 0.25s ease;
         }
         li a:hover {
-            color: @4;
-            opacity: @op2;
+            color: @3;
             text-decoration: none;
         }
         li a.active:hover {
@@ -149,7 +144,7 @@ span.bgop {
             transition: none;
 
             a {
-                color: @3;
+                color: @2;
                 font-size: 12px;
                 line-height: 20px;
                 height: 20px;
@@ -168,7 +163,7 @@ span.bgop {
                 padding-top: 10px;
             }
             a:hover {
-                color: @4;
+                color: @3;
                 padding-left: 55px;
                 text-decoration: none;
             }
@@ -205,7 +200,7 @@ span.bgop {
     overflow: hidden;
     position: relative;
     text-align: center;
-    color: @3;
+    color: @2;
 
     div.langue {
         position: absolute;
@@ -215,7 +210,7 @@ span.bgop {
             margin-top: 16px;
         }
         .fa-flag:hover {
-            color: @3;
+            color: @2;
             cursor: pointer;
         }
         div.menulangue {
@@ -280,7 +275,7 @@ span.bgop {
             display: block;
             text-decoration: none;
             cursor: pointer;
-            background-color: @btn;
+            background-color: @3;
             color: @1;
             opacity: 0.8;
             -webkit-transition: all 0.25s ease;
@@ -294,7 +289,7 @@ span.bgop {
         i.cache {
             opacity: 0.2;
             background-color: @1;
-            color: @3;
+            color: @2;
             cursor: default;
         }
         i.cache:hover {
@@ -325,17 +320,20 @@ footer {
         }
         blockquote {
             height: 100%;
-            font-size: 20px;
+            font-size: 18px;
             color: @2;
             box-sizing: border-box;
             padding: 18px 214px 18px 36px;
-
+            
+            a.simplon{
+    color:@3;text-decoration: none;
+}
             span.titlemm {
-                background-image: url(../img/mehdimaker.png);
+                background-image: url(../img/mehdimakerred.png);
                 background-repeat: no-repeat;
                 display: block;
                 width: 300px;
-                height: 25px;
+                height: 30px;
                 background-size: contain;
                 margin-top: 15px;
             }
@@ -343,20 +341,10 @@ footer {
                 font-size: 40px;
                 line-height: 40px;
             }
-            pre.fullstack {
-                color: @4;
-                font-size: 14px;
-                display: block;
-                line-height: 18px;
-                width: 300px;
-                text-align: right;
-                font-family: "Myriad Pro";
-                opacity: 1;
-                display: none;
-            }
             p {
                 margin-top: 90px;
                 text-align: right;
+
                 //font-style: italic;
             }
         }
@@ -399,10 +387,7 @@ footer {
             background-repeat: no-repeat;
             background-size: 20px;
             background-position: 96% 50%;
-            -webkit-transition: all 0.25s ease;
-            -moz-transition: all 0.25s ease;
-            -o-transition: all 0.25s ease;
-            transition: all 0.25s ease;
+         
 
             span {
                 display: inline-block;
@@ -450,7 +435,7 @@ footer {
         }
         a:hover {
             opacity: @ophover;
-            color: @4;
+            color: @3;
         }
         a.apps {
             background-image: url(../img/icoprojects/apps.png);
@@ -470,6 +455,25 @@ footer {
         a.others {
             background-image: url(../img/icoprojects/others.png);
         }
+        a.apps:hover {
+            background-image: url(../img/icoprojects/appshover.png);
+        }
+        a.websites:hover {
+            background-image: url(../img/icoprojects/websiteshover.png);
+        }
+        a.graphics:hover {
+            background-image: url(../img/icoprojects/graphicshover.png);
+        }
+        a.objects:hover {
+            background-image: url(../img/icoprojects/objectshover.png);
+        }
+        a.videos:hover {
+            background-image: url(../img/icoprojects/videoshover.png);
+        }
+        a.others:hover {
+            background-image: url(../img/icoprojects/othershover.png);
+        }
+
         div.comm {
             height: 180px;
             background-color: @1;
@@ -483,6 +487,7 @@ footer {
                 a {
                     text-align: right;
                     text-decoration: none;
+                    color: @3;
                 }
             }
         }
@@ -506,10 +511,6 @@ footer {
             margin-bottom: 9px;
             color: @2;
             opacity: @op2;
-            -webkit-transition: all 0.25s ease;
-            -moz-transition: all 0.25s ease;
-            -o-transition: all 0.25s ease;
-            transition: all 0.25s ease;
 
             span {
                 box-sizing: border-box;
@@ -579,7 +580,7 @@ footer {
         }
         a.article:hover {
             opacity: @ophover;
-            color: @4;
+            color: @3;
         }
     }
 }
@@ -609,7 +610,7 @@ footer {
 
             a:hover {
                 opacity: @ophover;
-                color: @4;
+                color: @3;
             }
             a {
                 opacity: @op2;
@@ -618,11 +619,6 @@ footer {
                 cursor: pointer;
                 color: @2;
                 display: block;
-                -webkit-transition: all 0.25s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-
                 i {
                     background-repeat: no-repeat;
                     background-position: center;
@@ -670,25 +666,43 @@ footer {
                 background-image: url(../img/icoprojects/websites.png);
                 background-size: 70px;
             }
+            a.websites:hover > i.websites  {
+            background-image: url(../img/icoprojects/websiteshover.png);
+            }
             i.apps {
                 background-image: url(../img/icoprojects/apps.png);
-                background-size: 65px;
+                background-size: 60px;
+            }
+            a.apps:hover > i.apps  {
+            background-image: url(../img/icoprojects/appshover.png);
             }
             i.graphics {
                 background-image: url(../img/icoprojects/graphics.png);
                 background-size: 70px;
             }
+            a.graphics:hover > i.graphics  {
+            background-image: url(../img/icoprojects/graphicshover.png);
+            }
             i.objects {
                 background-image: url(../img/icoprojects/objects.png);
                 background-size: 60px;
+            }
+            a.objects:hover > i.objects  {
+            background-image: url(../img/icoprojects/objectshover.png);
             }
             i.videos {
                 background-image: url(../img/icoprojects/videos.png);
                 background-size: 60px;
             }
+            a.videos:hover > i.videos  {
+            background-image: url(../img/icoprojects/videoshover.png);
+            }
             i.others {
                 background-image: url(../img/icoprojects/others.png);
                 background-size: 60px;
+            }
+            a.others:hover > i.others  {
+            background-image: url(../img/icoprojects/othershover.png);
             }
         }
     }
@@ -732,10 +746,6 @@ footer {
                 color: @2;
                 text-align: center;
                 cursor: pointer;
-                -webkit-transition: all 0.25s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
 
                 span {
                     display: block;
@@ -814,35 +824,19 @@ footer {
             }
             a:hover span.thumbnail span.bgop {
                 opacity: @ophover;
-                -webkit-transition: all 0.5s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
                 //color: @4;
             }
             a:hover h1 {
                 opacity: @ophover;
-                -webkit-transition: all 0.5s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-                //color: @4;
+                color: @3;
             }
             a:hover span.infopro {
                 opacity: @ophover;
-                -webkit-transition: all 0.5s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-                //color: @4;
+                color: @3;
             }
             a:hover span.resumepro {
                 opacity: 0.85;
-                -webkit-transition: all 0.5s ease;
-                -moz-transition: all 0.25s ease;
-                -o-transition: all 0.25s ease;
-                transition: all 0.25s ease;
-                //color: @4;
+                color: @3;
             }
         }
     }
@@ -1157,7 +1151,7 @@ footer {
         border: none;
         width: 120px;
         background-color: @1;
-        color: @3;
+        color: @2;
         opacity: @op2;
         font-size: 14px;
         padding: 10px 10px 0 10px;
@@ -1178,7 +1172,7 @@ footer {
         }
     }
     span.comment:hover {
-        color: @4;
+        color: @3;
         cursor: pointer;
         // opacity: @ophover;
     }
@@ -1309,8 +1303,8 @@ footer {
             opacity: 1;
 
             img {
-                height: 100%;
-                width: auto;
+                height: auto;
+                width: 100%;
             }
             span.bgtechno {
                 background-color: @1;
@@ -1622,7 +1616,7 @@ footer {
                         transition: all 0.25s ease;
                     }
                     button:hover {
-                        color: @3;
+                        color: @2;
                     }
                     button.btnvalid {
                         opacity: @op1;
@@ -1642,20 +1636,9 @@ footer {
             top: 0px;
             position: absolute;
             box-sizing: border-box;
-
-            h6 {
-                box-sizing: border-box;
-                padding: 10px 10px 0 10px;
-                margin-bottom: 0px;
-                width: 100%;
-                height: 28px;
-                text-align: left;
-                color: @3;
-                background-color: @1;
-                font-weight: normal;
+background-color: @1;
                 opacity: @op2;
-                font-size: 14px;
-            }
+           
             a {
                 box-sizing: border-box;
                 padding: 10px 10px 0 10px;
@@ -1666,9 +1649,8 @@ footer {
                 cursor: pointer;
                 text-align: left;
                 text-decoration: none;
-                color: @3;
-                background-color: @1;
-                opacity: @op2;
+                color: @2;
+                
 
                 i {
                     float: right;
@@ -1684,7 +1666,7 @@ footer {
                 }
             }
             a:hover {
-                color: @4;
+                color: red;
                 //opacity: @ophover;
             }
         }
