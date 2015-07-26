@@ -130,11 +130,11 @@ function loadctg() {
 		
     echo "<a class='loadarticle' href='";
         the_permalink();
-    echo "'><span class='thumbnail'><span class='bgop'></span>";
-        the_post_thumbnail( 'full' );     
-    echo "</span><h1>";
+    echo "'><h1>";
         the_title();
-    echo "</h1><span class='resumepro'><p>";
+    echo "</h1><span class='thumbnail'><span class='bgop'></span>";
+        the_post_thumbnail( 'full' );     
+    echo "</span><span class='resumepro'><p>";
        the_excerpt() ;
     echo "</p></span><span class='infopro'><span class='date'><p class='JJ'>";
         the_time(d); 
@@ -147,7 +147,8 @@ function loadctg() {
     
  
 	endwhile;
-       
+        else: echo "<div class='noproject'>Pas de projet pour le moment ...</div>";
+
 	endif;
     
       echo "<script type='text/javascript' src='";

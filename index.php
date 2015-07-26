@@ -116,78 +116,66 @@
 
 
                     <span class="blocleft"><a name="websites" class="loadctg websites " onclick="show('navapp')">
+                        <span class="bgop"></span>
                         <i class="websites"></i>
-                        <div class="ctgproject">
-                            <p>Websites </p>
-                        </div>
-                        <div class="number">
-                            <p>
+                        <p class="ctgproject" >Websites </p>
+                            <p class="number">
                                 <?php echo count_cat_post( 'websites' ); ?>
                             </p>
-                        </div>
+                    
                     </a></span><!--
 
 
                     --><span class="bloccenter"><a class="loadctg apps " name="apps" onclick="show('navapp')">
+                        <span class="bgop"></span>
                         <i class="apps"></i>
-                        <div class="ctgproject">
-                            <p>Apps mobile </p>
-                        </div>
-                        <div class="number">
-                            <p>
+                        <p class="ctgproject" >Apps Mobile </p>
+                            <p class="number">
                                 <?php echo count_cat_post( 'apps' ); ?>
                             </p>
-                        </div>
+                    
                     </a></span><!--
 
                     --><span class="blocright"><a name="graphics" class="loadctg graphics" onclick="show('navapp')">
+                        <span class="bgop"></span>
                         <i class="graphics"></i>
-                        <div class="ctgproject">
-                            <p>Graphics Design </p>
-                        </div>
-                        <div class="number">
-                            <p>
+                        <p class="ctgproject" >Graphics Design </p>
+                            <p class="number">
                                 <?php echo count_cat_post( 'graphics' ); ?>
                             </p>
-                        </div>
+                    
                     </a></span>
 
                 </div>
 
                 <div class="rowproject rowprojectbottom" >
                     <span class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
+                        <span class="bgop"></span>
                         <i class="objects"></i>
-                        <div class="ctgproject">
-                            <p>Objects 3D </p>
-                        </div>
-                        <div class="number">
-                            <p>
+                        <p class="ctgproject" >Objects 3D </p>
+                            <p class="number">
                                 <?php echo count_cat_post( 'objects' ); ?>
                             </p>
-                        </div>
+                    
                     </a></span><!--
 
                     --><span class="bloccenter"><a name="videos" class="loadctg videos" onclick="show('navapp')">
+                         <span class="bgop"></span>
                         <i class="videos"></i>
-                        <div class="ctgproject">
-                            <p>Videos </p>
-                        </div>
-                        <div class="number">
-                            <p>
+                        <p class="ctgproject" >Videos </p>
+                            <p class="number">
                                 <?php echo count_cat_post( 'videos' ); ?>
                             </p>
-                        </div>
+                    
                     </a></span><!--
                     --><span class="blocright"><a name="others" class="loadctg others" onclick="show('navapp')">
+                         <span class="bgop"></span>
                         <i class="others"></i>
-                        <div class="ctgproject">
-                            <p>Others </p>
-                        </div>
-                        <div class="number">
-                            <p>
+                        <p class="ctgproject" >Others </p>
+                            <p class="number">
                                 <?php echo count_cat_post( 'others' ); ?>
                             </p>
-                        </div>
+                    
                     </a></span>
 
 

@@ -1,7 +1,7 @@
 @1:#18191b;
 @2:#ecf0f1;
 //#b6b6b6
-@3:#ff2400;
+@3:#fe5d43;
 //c60000
 //#3498db
 //#e67e22
@@ -84,13 +84,14 @@ span.bgop {
     border-bottom-left-radius: 10px;
 
     header {
+
         height: 90px;
         background-color: @1;
         border-top-left-radius: 10px;
         text-align: center;
         padding-top: 20px;
         box-sizing: border-box;
-        background-image: url(../img/logo4.png);
+        background-image: url(../img/logo5.png);
         background-size: 50px 50px;
         background-position: center;
         background-repeat: no-repeat;
@@ -329,7 +330,7 @@ footer {
     color:@3;text-decoration: none;
 }
             span.titlemm {
-                background-image: url(../img/mehdimakerred.png);
+                background-image: url(../img/mehdimaker3.png);
                 background-repeat: no-repeat;
                 display: block;
                 width: 300px;
@@ -369,13 +370,13 @@ footer {
         vertical-align: top;
 
         h4 {
-            opacity: @op2;
+            
             padding-left: 10px;
             height: 27px;
             color: @2;
             line-height: 27px;
             font-size: 14px;
-            background-color: @1;
+            background-color: @3;
         }
         a {
             background-color: @1;
@@ -605,20 +606,26 @@ footer {
             box-sizing: border-box;
             width: 33.33333333333%;
             height: 100%;
-            padding-bottom: 40px;
             position: relative;
-
             a:hover {
-                opacity: @ophover;
                 color: @3;
             }
             a {
-                opacity: @op2;
+               
                 text-decoration: none;
                 height: 100%;
+                width: 100%;
                 cursor: pointer;
                 color: @2;
-                display: block;
+                display: block; 
+
+           position: relative;
+z-index: 1;
+
+                span.bgop{
+                    width: 100%;
+
+                }
                 i {
                     background-repeat: no-repeat;
                     background-position: center;
@@ -628,39 +635,34 @@ footer {
                     position: absolute;
                     top: 0px;
                 }
-                div.ctgproject {
-                    height: 100%;
-                    display: block;
-                    box-sizing: border-box;
-                    background-color: @1;
-
-                    p {
+           
+                    p.ctgproject {
                         text-align: left;
                         padding: 10px 0 0 10px;
                         font-size: 16px;
+                        position: absolute;
+                        top: 0px;
                     }
-                }
-                div.number {
-                    background-color: @1;
-                    height: 40px;
-                    margin-right: 40px;
+
+                    p.number  {
+                         height: 40px;
+                         width: 40px;
                     text-align: center;
                     box-sizing: border-box;
-
-                    p {
-                        height: 100%;
-                        width: 40px;
-                        background-color: @1;
-                        opacity: 0.85;
-                        margin-right: -40px;
-                        margin-top: 0px;
-                        float: right;
-                        text-decoration: none;
+                        
+                        background-color: @3;
+                       display: block;
                         font-size: 20px;
                         padding-top: 8px;
-                        box-sizing: border-box;
-                    }
+                        color:@2;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                    
                 }
+            }
+            a:hover >span.bgop{
+                opacity: @ophover;
             }
             i.websites {
                 background-image: url(../img/icoprojects/websites.png);
@@ -714,6 +716,7 @@ footer {
         height: 509px;
         width: 100%;
         position: relative;
+        
 
         #list {
             -webkit-transition: all 0.5s ease;
@@ -721,17 +724,34 @@ footer {
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
             padding: 0px;
+div.noproject{
+            color:@2;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: @1;
+            opacity: @op1;
+            display: block;
+            position: absolute;
+            padding-top: 250px;
+        }
 
             .ajaxload {
                 height: 100%;
                 width: 100%;
                 text-align: center;
-                color: @1;
+                
                 position: absolute;
                 top: 0px;
                 left: 0px;
                 padding-top: 25%;
                 box-sizing: border-box;
+                     
+                         
+
+color: @3;
+
+
             }
             a {
                 margin-right: 9px;
@@ -751,28 +771,29 @@ footer {
                     display: block;
                 }
                 span.thumbnail {
-                    height: auto;
+                    height: 240px;
                     padding: 10px 20px 10px 20px;
                     box-sizing: border-box;
                     z-index: 1;
                     position: relative;
 
+
                     span.bgop {
                         opacity: @op2;
                     }
                     img {
-                        margin-top: 0px;
+                        margin-top: 30px;
                         width: 100%;
                         height: auto;
                     }
                 }
                 h1 {
-                    padding: 10px;
+                    padding: 7px;
                     font-size: 16px;
                     text-align: center;
-                    background-color: @1;
+                    background-color: @3;
                     height: 30px;
-                    opacity: @op2;
+                    box-sizing: border-box;
                 }
                 span.resumepro {
                     background-color: @1;
@@ -794,7 +815,7 @@ footer {
                     span.date {
                         height: 30px;
                         margin: auto;
-                        margin-top: 15px;
+                        margin-top: 2px;
                         width: 48px;
                         box-sizing: border-box;
 
@@ -827,16 +848,16 @@ footer {
                 //color: @4;
             }
             a:hover h1 {
-                opacity: @ophover;
-                color: @3;
+                //opacity: @ophover;
+                //color: @3;
             }
             a:hover span.infopro {
                 opacity: @ophover;
-                color: @3;
+                //color: @3;
             }
             a:hover span.resumepro {
                 opacity: 0.85;
-                color: @3;
+                //color: @3;
             }
         }
     }
@@ -970,7 +991,7 @@ footer {
                     font-size: 14px;
                     color: @2;
                     font-family: "Myriad Pro";
-                    border: 2px solid @2;
+                    border: 2px solid @3;
                 }
                 textarea {
                     height: 100%;
@@ -994,7 +1015,7 @@ footer {
                     line-height: 44px;
                     text-align: center;
                     width: 40px;
-                    background-color: @2;
+                    background-color: @3;
                     color: @1;
                 }
                 span.icotextarea {
@@ -1004,7 +1025,7 @@ footer {
                     text-align: center;
                     width: 40px;
                     height: 40px;
-                    background-color: @2;
+                    background-color: @3;
                     color: @1;
                 }
                 span.valid i, span.invalid i {
@@ -1033,7 +1054,7 @@ footer {
                 right: 18px;
                 height: 40px;
                 width: 100px;
-                background-color: @2;
+                background-color: @3;
                 color: @1;
                 opacity: 0.1;
                 text-align: center;
@@ -1534,7 +1555,7 @@ footer {
                             font-size: 14px;
                             color: @2;
                             background-color: transparent;
-                            border: 2px solid @2;
+                            border: 2px solid @3;
                             font-family: "Myriad Pro";
                         }
                         textarea {
@@ -1567,7 +1588,7 @@ footer {
                             line-height: 36px;
                             text-align: center;
                             width: 32px;
-                            background-color: @2;
+                            background-color: @3;
                             color: @1;
                         }
                         span.icotextarea {
@@ -1577,7 +1598,7 @@ footer {
                             line-height: 36px;
                             text-align: center;
                             width: 32px;
-                            background-color: @2;
+                            background-color: @3;
                             color: @1;
                         }
                         span.valid i, span.invalid i {
@@ -1604,7 +1625,7 @@ footer {
                         height: 30px;
                         width: 100px;
                         right: 18px;
-                        background-color: @2;
+                        background-color: @3;
                         color: @1;
                         opacity: 0.1;
                         border: none;
@@ -1666,7 +1687,7 @@ background-color: @1;
                 }
             }
             a:hover {
-                color: red;
+                color: @3;
                 //opacity: @ophover;
             }
         }
