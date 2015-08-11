@@ -1287,10 +1287,6 @@ footer {
   padding: 0;
   opacity: 1;
 }
-#mainpro #etapes section.pres img {
-  height: auto;
-  width: 100%;
-}
 #mainpro #etapes section.pres span.bgtechno {
   background-color: #18191b;
   width: 100%;

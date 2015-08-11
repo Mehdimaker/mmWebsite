@@ -8,7 +8,7 @@
 @4:#FFF;
 @op2:0.85;
 @op1:0.75;
-@ophover: 0.95;
+@ophover: 1;
 
 @media all and (max-width:1000px) {
     #container {
@@ -29,6 +29,19 @@
     }
     #blocdroit {
         display: none
+    }
+    span.sep {
+        display: none;
+    }
+    .bloccenter {
+        span.bgsepvertical {
+            display: none;
+        }
+    }
+    .blocleft {
+        span.bgsepvertical {
+            display: none;
+        }
     }
     nav#navbar {
         top: 0px;
@@ -111,6 +124,11 @@
             }
         }
     }
+    #projects {
+        span.seppro {
+            display: none;
+        }
+    }
     #navapp {
         #navlist {
             overflow: inherit;
@@ -145,6 +163,9 @@
                     margin-bottom: 9px;
                     padding-left: 0px;
 
+                    span.sepverpro {
+                        display: none;
+                    }
                     span {
                         vertical-align: top;
                         display: inline-block;
@@ -153,11 +174,13 @@
                     span.thumbnail {
                         text-align: center;
                         height: 100%;
-                        width: 25%;
-                        background-color: @1;
+                        width: 200px;
                         padding: 10px;
                         box-sizing: border-box;
 
+                        span.bgop {
+                            opacity: 0.4;
+                        }
                         img {
                             margin-top: 0px;
                             width: auto;
@@ -165,18 +188,22 @@
                         }
                     }
                     h1 {
-                        display: none;
+                        position: absolute;
+                        z-index: 2;
                         padding: 10px;
                         font-size: 16px;
                         text-align: center;
-                        background-color: @1;
                         height: 30px;
+                        right: 0px;
                     }
                     span.resumepro {
-                        width: 60%;
+                        position: absolute;
+                        right: 0px;
+                        width: 100%;
                         background-color: @1;
                         height: 100%;
-                        padding: 10px;
+                        padding-top: 40px;
+                        padding-left: 210px;
 
                         p {
                             font-size: 12px;
@@ -184,15 +211,11 @@
                         }
                     }
                     span.infopro {
-                        width: 15%;
-                        padding: 10px;
-                        background-color: @1;
-                        height: 100%;
+                        display: none
                     }
                 }
-                a:hover {
-                    opacity: 0.90;
-                    color: @3;
+                a:last-of-type span.sepverpro {
+                    display: none;
                 }
             }
         }
@@ -263,6 +286,184 @@
             a.article:hover {
                 opacity: 0.9;
                 color: @3;
+            }
+        }
+    }
+
+    /****CONTACT***////
+
+    /***SINGLE****/
+    #present_project {
+        height: 122px;
+        width: 100%;
+        position: relative;
+        color: @2;
+        margin-bottom: 9px;
+
+        span, a {
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+        }
+        a.precedent {
+            height: 100%;
+            width: 40px;
+            opacity: 0.5;
+            background-color: @1;
+        }
+        span.thumbnail {
+            padding: 10px;
+            height: 100%;
+            width: 160px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+
+            span.bgop {
+                opacity: 0.4;
+            }
+            img {
+                height: 100%;
+                width: auto;
+                padding: 0px;
+            }
+        }
+        span.resumepro {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            position: relative;
+            z-index: 1;
+            position: absolute;
+            left: 0px;
+            padding-left: 170px;
+
+            span.bgop {
+                opacity: @op1;
+            }
+            h1 {
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
+                box-sizing: border-box;
+                display: inline-block;
+                vertical-align: top;
+            }
+            span.date {
+            }
+        }
+        span.comment {
+            display: none;
+        }
+    }
+    div.infos {
+        display: none;
+    }
+    #mainpro {
+        overflow: visible;
+
+        section.pres {
+            position: relative;
+            padding: 0;
+            opacity: 1;
+            height: auto!important; 
+           P{margin:0;padding:0;}
+
+            img {
+                
+                height: auto;
+                width: 100%;
+margin:0!important;padding:0!important;
+            
+            }
+            span.bgtechno {
+                background-color: @1;
+                width: 100%;
+                display: block;
+                height: 65px;
+                position: absolute;
+                bottom: 0px;
+                opacity: 0.75;
+            }
+            div.techno {
+                width: 100%;
+                height: 65px;
+                position: absolute;
+                box-sizing: border-box;
+                bottom: 0px;
+                padding: 10px;
+                display: block;
+
+                div {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 15px;
+
+                    p {
+                        font-size: 13px;
+                        line-height: 10px;
+                        margin-bottom: 5px;
+                        font-weight: normal;
+                        color: @2;
+                    }
+                    span {
+                        vertical-align: top;
+                        box-sizing: border-box;
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 2px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    span:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        section{
+
+            height: auto!important;
+
+             div.description {
+                
+                width: 50%!important;
+                              border: 1px solid green;
+
+            }
+            div.illustration {
+                float: right;
+                height: 100%;
+                width: 50%!important;
+                border: 1px solid red;
+   
+
+                img {
+                    
+                    height:auto!important;
+                    width: 100%!important;
+                    float: right;
+                }
+            }
+        }
+        section.comment {
+          
+            min-height:auto!important;
+
+            #listsComments {
+               display: block!important;
+                width: 100%!important;
+               min-height: 4 00px!important;
+
+            }
+            #FormComments {
+               display: block!important;
+                width: 100%!important;
+               height: 400px!important;
+
+
             }
         }
     }
@@ -355,7 +556,7 @@
         }
         div.rowproject {
             span {
-                padding-bottom: 20px;
+                
 
                 a {
                     i {
