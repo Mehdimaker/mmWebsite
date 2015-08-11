@@ -142,7 +142,7 @@ function loadctg() {
         the_time(M);
     echo "</p><p class='AA'>";
         the_time(Y);
-    echo "</p></span></span></a>";
+    echo "</p></span></span><span class='sepverpro'></span></a>";
     
     
  

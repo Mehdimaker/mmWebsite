@@ -8,7 +8,7 @@
 @4:#FFF;
 @op2:0.85;
 @op1:0.75;
-@ophover: 0.95;
+@ophover: 1;
 
 * {
     margin: 0px;
@@ -29,8 +29,6 @@ body {
 main {
     width: 804px;
     height: 100%;
-    margin-right: 18px;
-    margin-left: 18px;
     background-image: url(../img/maps1.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -51,11 +49,33 @@ nav#navbar {
     display: none;
 }
 .blocleft {
-    padding-right: 6px
+    padding-right: 6px;
+    position: relative;
+
+    span.bgsepvertical {
+        background-color: @1;
+        height: 100%;
+        width: 9px;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: -3px;
+    }
 }
 .bloccenter {
     padding-right: 3px;
     padding-left: 3px;
+    position: relative;
+
+    span.bgsepvertical {
+        background-color: @1;
+        height: 100%;
+        width: 9px;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: -6px;
+    }
 }
 .blocright {
     padding-left: 6px;
@@ -71,10 +91,16 @@ span.bgop {
     left: 0px;
     position: absolute;
 }
+span.sep {
+    height: 9px;
+    background-color: @1;
+    display: block;
+    width: 100%;
+}
 
 /******** NAV LEFT *********/
 #blocgauche {
-    width: 120px;
+    width: 138px;
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -84,7 +110,6 @@ span.bgop {
     border-bottom-left-radius: 10px;
 
     header {
-
         height: 90px;
         background-color: @1;
         border-top-left-radius: 10px;
@@ -97,7 +122,7 @@ span.bgop {
         background-repeat: no-repeat;
     }
     nav {
-        width: 120px;
+        width: 138px;
 
         ul li {
             list-style-type: none;
@@ -129,6 +154,7 @@ span.bgop {
             font-weight: bold;
             color: @1;
             background-color: transparent;
+            border-right: 18px solid @1;
         }
         li a.projects.active:hover {
             cursor: pointer;
@@ -192,7 +218,7 @@ span.bgop {
 
 /********NAVRIGHT******/
 #blocdroit {
-    width: 40px;
+    width: 58px;
     height: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -268,7 +294,9 @@ span.bgop {
     div.navbtn {
         z-index: 2;
         height: 80px;
+        width: 40px;
         background-color: @1;
+        float: right;
 
         i {
             line-height: 40px;
@@ -278,7 +306,6 @@ span.bgop {
             cursor: pointer;
             background-color: @3;
             color: @1;
-            opacity: 0.8;
             -webkit-transition: all 0.25s ease;
             -moz-transition: all 0.25s ease;
             -o-transition: all 0.25s ease;
@@ -312,23 +339,23 @@ footer {
     div.presentation {
         height: 293px;
         box-sizing: border-box;
-        margin-bottom: 9px;
         position: relative;
         z-index: 1;
 
         span.bgop {
-            opacity: @op2;
+            opacity: @op1;
         }
         blockquote {
             height: 100%;
             font-size: 18px;
             color: @2;
             box-sizing: border-box;
-            padding: 18px 214px 18px 36px;
-            
-            a.simplon{
-    color:@3;text-decoration: none;
-}
+            padding: 18px 214px 18px 40px;
+
+            a.simplon {
+                color: @3;
+                text-decoration: none;
+            }
             span.titlemm {
                 background-image: url(../img/mehdimaker3.png);
                 background-repeat: no-repeat;
@@ -345,8 +372,6 @@ footer {
             p {
                 margin-top: 90px;
                 text-align: right;
-
-                //font-style: italic;
             }
         }
         div.photo {
@@ -370,7 +395,6 @@ footer {
         vertical-align: top;
 
         h4 {
-            
             padding-left: 10px;
             height: 27px;
             color: @2;
@@ -382,13 +406,12 @@ footer {
             background-color: @1;
             height: 30px;
             color: @2;
-            opacity: @op1;
+            opacity: @op2;
             display: block;
             padding-left: 10px;
             background-repeat: no-repeat;
             background-size: 20px;
             background-position: 96% 50%;
-         
 
             span {
                 display: inline-block;
@@ -436,7 +459,7 @@ footer {
         }
         a:hover {
             opacity: @ophover;
-            color: @3;
+            color: @2;
         }
         a.apps {
             background-image: url(../img/icoprojects/apps.png);
@@ -455,7 +478,7 @@ footer {
         }
         a.others {
             background-image: url(../img/icoprojects/others.png);
-        }
+        }/*
         a.apps:hover {
             background-image: url(../img/icoprojects/appshover.png);
         }
@@ -473,22 +496,30 @@ footer {
         }
         a.others:hover {
             background-image: url(../img/icoprojects/othershover.png);
-        }
-
+        }*/
         div.comm {
             height: 180px;
-            background-color: @1;
-            opacity: @op1;
+            position: relative;
+            z-index: 1;
 
+            span.bgop {
+                opacity: @op2;
+            }
             p {
                 color: @2;
                 font-size: 12px;
                 padding: 5px 10px 5px 10px;
 
-                a {
-                    text-align: right;
+                a.mmlink {
+                    background-color: transparent;
                     text-decoration: none;
                     color: @3;
+                    position: absolute;
+                    right: 9px;
+                    bottom: 0px;
+                    padding: 0px;
+                    height: 19px;
+                    opacity: 1;
                 }
             }
         }
@@ -509,7 +540,6 @@ footer {
         a.article {
             display: block;
             height: 55.75px;
-            margin-bottom: 9px;
             color: @2;
             opacity: @op2;
 
@@ -581,7 +611,7 @@ footer {
         }
         a.article:hover {
             opacity: @ophover;
-            color: @3;
+           
         }
     }
 }
@@ -590,6 +620,15 @@ footer {
 #projects {
     height: 100%;
 
+    span.seppro {
+        height: 9px;
+        background-color: @1;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        margin-top: -4.5px;
+    }
     div.rowprojecttop {
         padding-bottom: 4.5px;
     }
@@ -600,31 +639,30 @@ footer {
         height: 50%;
         box-sizing: border-box;
 
-        span {
+        div {
             display: inline-block;
             vertical-align: top;
             box-sizing: border-box;
             width: 33.33333333333%;
             height: 100%;
             position: relative;
+
             a:hover {
-                color: @3;
+               // color: @3;
             }
             a {
-               
                 text-decoration: none;
                 height: 100%;
                 width: 100%;
                 cursor: pointer;
                 color: @2;
-                display: block; 
+                display: block;
+                position: relative;
+                z-index: 1;
 
-           position: relative;
-z-index: 1;
-
-                span.bgop{
+                span.bgop {
                     width: 100%;
-
+                    opacity: @op1;
                 }
                 i {
                     background-repeat: no-repeat;
@@ -635,77 +673,73 @@ z-index: 1;
                     position: absolute;
                     top: 0px;
                 }
-           
-                    p.ctgproject {
-                        text-align: left;
-                        padding: 10px 0 0 10px;
-                        font-size: 16px;
-                        position: absolute;
-                        top: 0px;
-                    }
-
-                    p.number  {
-                         height: 40px;
-                         width: 40px;
+                p.ctgproject {
+                    text-align: left;
+                    padding: 10px 0 0 10px;
+                    font-size: 16px;
+                    position: absolute;
+                    top: 0px;
+                }
+                p.number {
+                    height: 40px;
+                    width: 40px;
                     text-align: center;
                     box-sizing: border-box;
-                        
-                        background-color: @3;
-                       display: block;
-                        font-size: 20px;
-                        padding-top: 8px;
-                        color:@2;
-                        position: absolute;
-                        bottom: 0px;
-                        right: 0px;
-                    
+                    background-color: @3;
+                    display: block;
+                    font-size: 20px;
+                    padding-top: 8px;
+                    color: @2;
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
                 }
             }
-            a:hover >span.bgop{
+            a:hover >span.bgop {
                 opacity: @ophover;
             }
             i.websites {
                 background-image: url(../img/icoprojects/websites.png);
                 background-size: 70px;
-            }
-            a.websites:hover > i.websites  {
-            background-image: url(../img/icoprojects/websiteshover.png);
-            }
+            }/*
+            a.websites:hover > i.websites {
+                background-image: url(../img/icoprojects/websiteshover.png);
+            }*/
             i.apps {
                 background-image: url(../img/icoprojects/apps.png);
                 background-size: 60px;
-            }
-            a.apps:hover > i.apps  {
-            background-image: url(../img/icoprojects/appshover.png);
-            }
+            }/*
+            a.apps:hover > i.apps {
+                background-image: url(../img/icoprojects/appshover.png);
+            }*/
             i.graphics {
                 background-image: url(../img/icoprojects/graphics.png);
                 background-size: 70px;
-            }
-            a.graphics:hover > i.graphics  {
-            background-image: url(../img/icoprojects/graphicshover.png);
-            }
+            }/*
+            a.graphics:hover > i.graphics {
+                background-image: url(../img/icoprojects/graphicshover.png);
+            }*/
             i.objects {
                 background-image: url(../img/icoprojects/objects.png);
                 background-size: 60px;
-            }
-            a.objects:hover > i.objects  {
-            background-image: url(../img/icoprojects/objectshover.png);
-            }
+            }/*
+            a.objects:hover > i.objects {
+                background-image: url(../img/icoprojects/objectshover.png);
+            }*/
             i.videos {
                 background-image: url(../img/icoprojects/videos.png);
                 background-size: 60px;
-            }
-            a.videos:hover > i.videos  {
-            background-image: url(../img/icoprojects/videoshover.png);
-            }
+            }/*
+            a.videos:hover > i.videos {
+                background-image: url(../img/icoprojects/videoshover.png);
+            }*/
             i.others {
                 background-image: url(../img/icoprojects/others.png);
                 background-size: 60px;
-            }
-            a.others:hover > i.others  {
-            background-image: url(../img/icoprojects/othershover.png);
-            }
+            }/*
+            a.others:hover > i.others {
+                background-image: url(../img/icoprojects/othershover.png);
+            }*/
         }
     }
 }
@@ -716,7 +750,6 @@ z-index: 1;
         height: 509px;
         width: 100%;
         position: relative;
-        
 
         #list {
             -webkit-transition: all 0.5s ease;
@@ -724,40 +757,36 @@ z-index: 1;
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
             padding: 0px;
-div.noproject{
-            color:@2;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            background-color: @1;
-            opacity: @op1;
-            display: block;
-            position: absolute;
-            padding-top: 250px;
-        }
 
+            div.noproject {
+                color: @2;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                background-color: @1;
+                opacity: @op1;
+                display: block;
+                position: absolute;
+                padding-top: 250px;
+            }
             .ajaxload {
                 height: 100%;
                 width: 100%;
                 text-align: center;
-                
+                background-color: @1;
+                opacity: 1;
                 position: absolute;
                 top: 0px;
                 left: 0px;
-                padding-top: 25%;
+                padding-top: 27%;
                 box-sizing: border-box;
-                     
-                         
-
-color: @3;
-
-
+                color: @3;
             }
             a {
                 margin-right: 9px;
                 border: none;
                 width: 195px;
-                height: 420px;
+                height: 100%;
                 box-sizing: border-box;
                 display: inline-block;
                 vertical-align: top;
@@ -766,7 +795,19 @@ color: @3;
                 color: @2;
                 text-align: center;
                 cursor: pointer;
+                position: relative;
 
+                span.sepverpro {
+                    display: block;
+                    background-color: @1;
+                    height: 100%;
+                    position: absolute;
+                    width: 9px;
+                    top: 0px;
+                    right: -9px;
+                    cursor: default;
+                    pointer-events: none;
+                }
                 span {
                     display: block;
                 }
@@ -776,7 +817,6 @@ color: @3;
                     box-sizing: border-box;
                     z-index: 1;
                     position: relative;
-
 
                     span.bgop {
                         opacity: @op2;
@@ -843,6 +883,20 @@ color: @3;
                     }
                 }
             }
+            a:last-of-type span.sepverpro {
+                    display: block;
+                    background-color: @1;
+                    height: 100%;
+                    position: absolute;
+                    width: 400%;
+                    top: 0px;
+                    right: -400%;
+            
+              
+                    color: green;  
+
+                }
+              
             a:hover span.thumbnail span.bgop {
                 opacity: @ophover;
                 //color: @4;
@@ -859,7 +913,7 @@ color: @3;
                 opacity: 0.85;
                 //color: @3;
             }
-        }
+        } 
     }
 }
 
@@ -1081,7 +1135,6 @@ color: @3;
 }
 #present_project {
     height: 122px;
-    margin-bottom: 9px;
     color: @2;
 
     span, a {
@@ -1200,7 +1253,6 @@ color: @3;
 }
 #present_article {
     height: 55.75px;
-    margin-bottom: 9px;
     color: @2;
 
     span {
@@ -1294,10 +1346,10 @@ color: @3;
                 display: inline-block;
                 width: 426px;
                 padding-right: 20px;
-                ul{
-                    margin-left:20px;
-                     list-style: none;
 
+                ul {
+                    margin-left: 20px;
+                    list-style: none;
                 }
             }
             div.illustration {
@@ -1314,9 +1366,9 @@ color: @3;
                     float: right;
                 }
             }
-            div.decalage{  
+            div.decalage {
                 margin-right: -132px;
-}
+            }
         }
         section.pres {
             position: relative;
@@ -1657,9 +1709,9 @@ color: @3;
             top: 0px;
             position: absolute;
             box-sizing: border-box;
-background-color: @1;
-                opacity: @op2;
-           
+            background-color: @1;
+            opacity: @op2;
+
             a {
                 box-sizing: border-box;
                 padding: 10px 10px 0 10px;
@@ -1671,7 +1723,6 @@ background-color: @1;
                 text-align: left;
                 text-decoration: none;
                 color: @2;
-                
 
                 i {
                     float: right;

@@ -15,8 +15,6 @@ body {
 main {
   width: 804px;
   height: 100%;
-  margin-right: 18px;
-  margin-left: 18px;
   background-image: url(../img/maps1.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -37,10 +35,30 @@ nav#navbar {
 }
 .blocleft {
   padding-right: 6px;
+  position: relative;
+}
+.blocleft span.bgsepvertical {
+  background-color: #18191b;
+  height: 100%;
+  width: 9px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -3px;
 }
 .bloccenter {
   padding-right: 3px;
   padding-left: 3px;
+  position: relative;
+}
+.bloccenter span.bgsepvertical {
+  background-color: #18191b;
+  height: 100%;
+  width: 9px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -6px;
 }
 .blocright {
   padding-left: 6px;
@@ -56,9 +74,15 @@ span.bgop {
   left: 0px;
   position: absolute;
 }
+span.sep {
+  height: 9px;
+  background-color: #18191b;
+  display: block;
+  width: 100%;
+}
 /******** NAV LEFT *********/
 #blocgauche {
-  width: 120px;
+  width: 138px;
   height: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -80,7 +104,7 @@ span.bgop {
   background-repeat: no-repeat;
 }
 #blocgauche nav {
-  width: 120px;
+  width: 138px;
 }
 #blocgauche nav ul li {
   list-style-type: none;
@@ -112,6 +136,7 @@ span.bgop {
   font-weight: bold;
   color: #18191b;
   background-color: transparent;
+  border-right: 18px solid #18191b;
 }
 #blocgauche nav li a.projects.active:hover {
   cursor: pointer;
@@ -171,7 +196,7 @@ span.bgop {
 }
 /********NAVRIGHT******/
 #blocdroit {
-  width: 40px;
+  width: 58px;
   height: 100%;
   box-sizing: border-box;
   display: inline-block;
@@ -243,7 +268,9 @@ span.bgop {
 #blocdroit div.navbtn {
   z-index: 2;
   height: 80px;
+  width: 40px;
   background-color: #18191b;
+  float: right;
 }
 #blocdroit div.navbtn i {
   line-height: 40px;
@@ -253,7 +280,6 @@ span.bgop {
   cursor: pointer;
   background-color: #fe5d43;
   color: #18191b;
-  opacity: 0.8;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
@@ -282,19 +308,18 @@ footer {
 #home div.presentation {
   height: 293px;
   box-sizing: border-box;
-  margin-bottom: 9px;
   position: relative;
   z-index: 1;
 }
 #home div.presentation span.bgop {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 #home div.presentation blockquote {
   height: 100%;
   font-size: 18px;
   color: #ecf0f1;
   box-sizing: border-box;
-  padding: 18px 214px 18px 36px;
+  padding: 18px 214px 18px 40px;
 }
 #home div.presentation blockquote a.simplon {
   color: #fe5d43;
@@ -335,6 +360,25 @@ footer {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
+  /*
+        a.apps:hover {
+            background-image: url(../img/icoprojects/appshover.png);
+        }
+        a.websites:hover {
+            background-image: url(../img/icoprojects/websiteshover.png);
+        }
+        a.graphics:hover {
+            background-image: url(../img/icoprojects/graphicshover.png);
+        }
+        a.objects:hover {
+            background-image: url(../img/icoprojects/objectshover.png);
+        }
+        a.videos:hover {
+            background-image: url(../img/icoprojects/videoshover.png);
+        }
+        a.others:hover {
+            background-image: url(../img/icoprojects/othershover.png);
+        }*/
 }
 #home div.recent h4 {
   padding-left: 10px;
@@ -348,7 +392,7 @@ footer {
   background-color: #18191b;
   height: 30px;
   color: #ecf0f1;
-  opacity: 0.75;
+  opacity: 0.85;
   display: block;
   padding-left: 10px;
   background-repeat: no-repeat;
@@ -397,8 +441,8 @@ footer {
   font-size: 9px;
 }
 #home div.recent a:hover {
-  opacity: 0.95;
-  color: #fe5d43;
+  opacity: 1;
+  color: #ecf0f1;
 }
 #home div.recent a.apps {
   background-image: url(../img/icoprojects/apps.png);
@@ -418,38 +462,29 @@ footer {
 #home div.recent a.others {
   background-image: url(../img/icoprojects/others.png);
 }
-#home div.recent a.apps:hover {
-  background-image: url(../img/icoprojects/appshover.png);
-}
-#home div.recent a.websites:hover {
-  background-image: url(../img/icoprojects/websiteshover.png);
-}
-#home div.recent a.graphics:hover {
-  background-image: url(../img/icoprojects/graphicshover.png);
-}
-#home div.recent a.objects:hover {
-  background-image: url(../img/icoprojects/objectshover.png);
-}
-#home div.recent a.videos:hover {
-  background-image: url(../img/icoprojects/videoshover.png);
-}
-#home div.recent a.others:hover {
-  background-image: url(../img/icoprojects/othershover.png);
-}
 #home div.recent div.comm {
   height: 180px;
-  background-color: #18191b;
-  opacity: 0.75;
+  position: relative;
+  z-index: 1;
+}
+#home div.recent div.comm span.bgop {
+  opacity: 0.85;
 }
 #home div.recent div.comm p {
   color: #ecf0f1;
   font-size: 12px;
   padding: 5px 10px 5px 10px;
 }
-#home div.recent div.comm p a {
-  text-align: right;
+#home div.recent div.comm p a.mmlink {
+  background-color: transparent;
   text-decoration: none;
   color: #fe5d43;
+  position: absolute;
+  right: 9px;
+  bottom: 0px;
+  padding: 0px;
+  height: 19px;
+  opacity: 1;
 }
 /****** ARTICLES *********/
 #articles {
@@ -465,7 +500,6 @@ footer {
 #articles #listarticles a.article {
   display: block;
   height: 55.75px;
-  margin-bottom: 9px;
   color: #ecf0f1;
   opacity: 0.85;
 }
@@ -533,12 +567,20 @@ footer {
   font-size: 12px;
 }
 #articles #listarticles a.article:hover {
-  opacity: 0.95;
-  color: #fe5d43;
+  opacity: 1;
 }
 /******** PROJECTS *********/
 #projects {
   height: 100%;
+}
+#projects span.seppro {
+  height: 9px;
+  background-color: #18191b;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -4.5px;
 }
 #projects div.rowprojecttop {
   padding-bottom: 4.5px;
@@ -550,18 +592,39 @@ footer {
   height: 50%;
   box-sizing: border-box;
 }
-#projects div.rowproject span {
+#projects div.rowproject div {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
   width: 33.33333333333%;
   height: 100%;
   position: relative;
+  /*
+            a.websites:hover > i.websites {
+                background-image: url(../img/icoprojects/websiteshover.png);
+            }*/
+  /*
+            a.apps:hover > i.apps {
+                background-image: url(../img/icoprojects/appshover.png);
+            }*/
+  /*
+            a.graphics:hover > i.graphics {
+                background-image: url(../img/icoprojects/graphicshover.png);
+            }*/
+  /*
+            a.objects:hover > i.objects {
+                background-image: url(../img/icoprojects/objectshover.png);
+            }*/
+  /*
+            a.videos:hover > i.videos {
+                background-image: url(../img/icoprojects/videoshover.png);
+            }*/
+  /*
+            a.others:hover > i.others {
+                background-image: url(../img/icoprojects/othershover.png);
+            }*/
 }
-#projects div.rowproject span a:hover {
-  color: #fe5d43;
-}
-#projects div.rowproject span a {
+#projects div.rowproject div a {
   text-decoration: none;
   height: 100%;
   width: 100%;
@@ -571,10 +634,11 @@ footer {
   position: relative;
   z-index: 1;
 }
-#projects div.rowproject span a span.bgop {
+#projects div.rowproject div a span.bgop {
   width: 100%;
+  opacity: 0.75;
 }
-#projects div.rowproject span a i {
+#projects div.rowproject div a i {
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -583,14 +647,14 @@ footer {
   position: absolute;
   top: 0px;
 }
-#projects div.rowproject span a p.ctgproject {
+#projects div.rowproject div a p.ctgproject {
   text-align: left;
   padding: 10px 0 0 10px;
   font-size: 16px;
   position: absolute;
   top: 0px;
 }
-#projects div.rowproject span a p.number {
+#projects div.rowproject div a p.number {
   height: 40px;
   width: 40px;
   text-align: center;
@@ -604,50 +668,32 @@ footer {
   bottom: 0px;
   right: 0px;
 }
-#projects div.rowproject span a:hover > span.bgop {
-  opacity: 0.95;
+#projects div.rowproject div a:hover > span.bgop {
+  opacity: 1;
 }
-#projects div.rowproject span i.websites {
+#projects div.rowproject div i.websites {
   background-image: url(../img/icoprojects/websites.png);
   background-size: 70px;
 }
-#projects div.rowproject span a.websites:hover > i.websites {
-  background-image: url(../img/icoprojects/websiteshover.png);
-}
-#projects div.rowproject span i.apps {
+#projects div.rowproject div i.apps {
   background-image: url(../img/icoprojects/apps.png);
   background-size: 60px;
 }
-#projects div.rowproject span a.apps:hover > i.apps {
-  background-image: url(../img/icoprojects/appshover.png);
-}
-#projects div.rowproject span i.graphics {
+#projects div.rowproject div i.graphics {
   background-image: url(../img/icoprojects/graphics.png);
   background-size: 70px;
 }
-#projects div.rowproject span a.graphics:hover > i.graphics {
-  background-image: url(../img/icoprojects/graphicshover.png);
-}
-#projects div.rowproject span i.objects {
+#projects div.rowproject div i.objects {
   background-image: url(../img/icoprojects/objects.png);
   background-size: 60px;
 }
-#projects div.rowproject span a.objects:hover > i.objects {
-  background-image: url(../img/icoprojects/objectshover.png);
-}
-#projects div.rowproject span i.videos {
+#projects div.rowproject div i.videos {
   background-image: url(../img/icoprojects/videos.png);
   background-size: 60px;
 }
-#projects div.rowproject span a.videos:hover > i.videos {
-  background-image: url(../img/icoprojects/videoshover.png);
-}
-#projects div.rowproject span i.others {
+#projects div.rowproject div i.others {
   background-image: url(../img/icoprojects/others.png);
   background-size: 60px;
-}
-#projects div.rowproject span a.others:hover > i.others {
-  background-image: url(../img/icoprojects/othershover.png);
 }
 #navapp #navlist {
   overflow: hidden;
@@ -678,10 +724,12 @@ footer {
   height: 100%;
   width: 100%;
   text-align: center;
+  background-color: #18191b;
+  opacity: 1;
   position: absolute;
   top: 0px;
   left: 0px;
-  padding-top: 25%;
+  padding-top: 27%;
   box-sizing: border-box;
   color: #fe5d43;
 }
@@ -689,7 +737,7 @@ footer {
   margin-right: 9px;
   border: none;
   width: 195px;
-  height: 420px;
+  height: 100%;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
@@ -698,6 +746,18 @@ footer {
   color: #ecf0f1;
   text-align: center;
   cursor: pointer;
+  position: relative;
+}
+#navapp #navlist #list a span.sepverpro {
+  display: block;
+  background-color: #18191b;
+  height: 100%;
+  position: absolute;
+  width: 9px;
+  top: 0px;
+  right: -9px;
+  cursor: default;
+  pointer-events: none;
 }
 #navapp #navlist #list a span {
   display: block;
@@ -769,11 +829,21 @@ footer {
   line-height: 10px;
   font-size: 10px;
 }
+#navapp #navlist #list a:last-of-type span.sepverpro {
+  display: block;
+  background-color: #18191b;
+  height: 100%;
+  position: absolute;
+  width: 400%;
+  top: 0px;
+  right: -400%;
+  color: green;
+}
 #navapp #navlist #list a:hover span.thumbnail span.bgop {
-  opacity: 0.95;
+  opacity: 1;
 }
 #navapp #navlist #list a:hover span.infopro {
-  opacity: 0.95;
+  opacity: 1;
 }
 #navapp #navlist #list a:hover span.resumepro {
   opacity: 0.85;
@@ -987,7 +1057,6 @@ footer {
 }
 #present_project {
   height: 122px;
-  margin-bottom: 9px;
   color: #ecf0f1;
 }
 #present_project span,
@@ -1101,7 +1170,6 @@ footer {
 }
 #present_article {
   height: 55.75px;
-  margin-bottom: 9px;
   color: #ecf0f1;
 }
 #present_article span {

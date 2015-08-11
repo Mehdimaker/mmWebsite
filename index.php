@@ -4,15 +4,16 @@
 <body>
     <nav  id="navbar">
         <div class="logo"></div>
+        <div class="mmname"></div>
           <ul>
             <li>
                 <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
             </li>
             <li>
-                <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
+                <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
             </li>
             <li>
-                <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
+                <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
             </li>   
             <li>
                 <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
@@ -40,6 +41,7 @@
                        </p>
                        </blockquote>
                 </div>
+                <span class="sep"></span>
 
 
 
@@ -54,7 +56,7 @@
                     </a>
                     
                     <?php endwhile; ?>
-
+                <span class="bgsepvertical"></span>
                 </div><!--
 
                 --><div class="recent bloccenter">
@@ -66,18 +68,19 @@
                     </a>
 
                     <?php endwhile; ?>
-               
+               <span class="bgsepvertical"></span>
                 </div><!--
 
 
                 --><div class="recent blocright">
                     <h4>Un Projet ?</h4>
                     <div class="comm">
+                        <span class="bgop"></span>
                         <p>Vous recherchez un développeur ? <br>Quelqu'un de sérieux et compétent pour réaliser votre projet ?<br><br>
                         Ne cherchez pas plus loin... <br>Je suis la personne qu'il vous faut !<br>
                         Rencontrons nous et discutons d'une éventuelle collaboration !<br><br>
                         A très bientôt.   <br>
-                        <a href="mailto:contact@mehdimaker.com">Mehdi Maker.</a>
+                        <a class="mmlink" href="mailto:contact@mehdimaker.com">Mehdi Maker.</a>
                         </p>
                     </div>
                 </div>
@@ -98,7 +101,7 @@
                         <span class="title_article"><?php the_title(); ?></span>
                         <span class="resume_article"><?php the_excerpt() ;?></span>
                         <span class="containdate"><div class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></div></span>
-                    </a><!--
+                    </a><span class="sep"></span><!--
             <?php endwhile; ?>
             --></div>
                
@@ -115,7 +118,7 @@
                 <div class="rowproject rowprojecttop">
 
 
-                    <span class="blocleft"><a name="websites" class="loadctg websites " onclick="show('navapp')">
+                    <div class="blocleft"><a name="websites" class="loadctg websites " onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="websites"></i>
                         <p class="ctgproject" >Websites </p>
@@ -123,10 +126,10 @@
                                 <?php echo count_cat_post( 'websites' ); ?>
                             </p>
                     
-                    </a></span><!--
+                    </a> <span class="bgsepvertical"></span></div><!--
 
 
-                    --><span class="bloccenter"><a class="loadctg apps " name="apps" onclick="show('navapp')">
+                    --><div class="bloccenter"><a class="loadctg apps " name="apps" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="apps"></i>
                         <p class="ctgproject" >Apps Mobile </p>
@@ -134,9 +137,9 @@
                                 <?php echo count_cat_post( 'apps' ); ?>
                             </p>
                     
-                    </a></span><!--
+                    </a> <span class="bgsepvertical"></span></div><!--
 
-                    --><span class="blocright"><a name="graphics" class="loadctg graphics" onclick="show('navapp')">
+                    --><div class="blocright"><a name="graphics" class="loadctg graphics" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="graphics"></i>
                         <p class="ctgproject" >Graphics Design </p>
@@ -144,12 +147,13 @@
                                 <?php echo count_cat_post( 'graphics' ); ?>
                             </p>
                     
-                    </a></span>
+                    </a></div>
 
                 </div>
+                <span class="seppro"></span>
 
                 <div class="rowproject rowprojectbottom" >
-                    <span class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
+                    <div class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="objects"></i>
                         <p class="ctgproject" >Objects 3D </p>
@@ -157,9 +161,9 @@
                                 <?php echo count_cat_post( 'objects' ); ?>
                             </p>
                     
-                    </a></span><!--
+                    </a> <span class="bgsepvertical"></span></div><!--
 
-                    --><span class="bloccenter"><a name="videos" class="loadctg videos" onclick="show('navapp')">
+                    --><div class="bloccenter"><a name="videos" class="loadctg videos" onclick="show('navapp')">
                          <span class="bgop"></span>
                         <i class="videos"></i>
                         <p class="ctgproject" >Videos </p>
@@ -167,8 +171,8 @@
                                 <?php echo count_cat_post( 'videos' ); ?>
                             </p>
                     
-                    </a></span><!--
-                    --><span class="blocright"><a name="others" class="loadctg others" onclick="show('navapp')">
+                    </a> <span class="bgsepvertical"></span></div><!--
+                    --><div class="blocright"><a name="others" class="loadctg others" onclick="show('navapp')">
                          <span class="bgop"></span>
                         <i class="others"></i>
                         <p class="ctgproject" >Others </p>
@@ -176,7 +180,7 @@
                                 <?php echo count_cat_post( 'others' ); ?>
                             </p>
                     
-                    </a></span>
+                    </a></div>
 
 
 
@@ -360,7 +364,7 @@ $scope.sendMessage = function () {
                 $(".menuprojects").css("height", "130px");
                 $("div.menuprojects a").removeClass('active2');
                 $("div.menuprojects a." + $direction).toggleClass("active2")
-                $('.list').html("<div class='ajaxload'><i class='fa  fa-5x fa-cog fa-spin'></div>");
+                $('.list').html("<div class='ajaxload'><i class='fa  fa-4x fa-refresh fa-spin'></i></div>");
 
                 jQuery.post(
                     ajaxurl, {

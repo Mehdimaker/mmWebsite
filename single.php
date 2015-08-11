@@ -40,6 +40,7 @@ comments_number('0', '0 Comment', '%');
  
     </div>
     
+    <span class="sep"></span>
     <div id="mainpro">
     <div id="etapes">
  
