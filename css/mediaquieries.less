@@ -38,6 +38,7 @@ body {
   background: #222;
   text-align: center; }
   #main-nav a {
+    cursor: pointer;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -moz-box-flex: 1;
@@ -68,7 +69,7 @@ body {
 
 .fade {
   position: fixed;
-  z-index: 999;
+  z-index: 4;
   top: 0;
   right: 0;
   bottom: 0;
@@ -108,17 +109,18 @@ body {
         }
         a{
             position: absolute;
+            z-index: 5;
             height: 50px;
             width: 50px;
             border: none;
             color:@3;
             text-decoration: none;
-            font-size: 40px;
+            font-size: 30px;
             background-color: transparent;
             top: 0px;
             right: 0px;
             padding-right: 0px;
-      
+            padding-top: 7px;
 
 
         }

@@ -27,6 +27,7 @@
     text-align: center;
   }
   #main-nav a {
+    cursor: pointer;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -moz-box-flex: 1;
@@ -59,7 +60,7 @@
   }
   .fade {
     position: fixed;
-    z-index: 999;
+    z-index: 4;
     top: 0;
     right: 0;
     bottom: 0;
@@ -99,16 +100,18 @@
   }
   header.cf a {
     position: absolute;
+    z-index: 5;
     height: 50px;
     width: 50px;
     border: none;
     color: #ecf0f1;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     background-color: transparent;
     top: 0px;
     right: 0px;
     padding-right: 0px;
+    padding-top: 7px;
   }
   #container {
     width: 100%;

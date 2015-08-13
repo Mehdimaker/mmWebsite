@@ -1,18 +1,13 @@
 <?php get_header();?>
 
-
 <body>
-    <nav  id="navbar" style="display:none">
+
+    <header class="cf">
         <div class="logo"></div>
         <div class="mmname"></div>
-        <button><i class="fa fa-2x fa-bars"></i></button>
-    </nav>
-
-        <header class="cf">
-    <div class="logo"></div>
-        <div class="mmname"></div>
-    <a href="#" id="navicon" class="closed">&#9776;</a>
-</header>
+        <a href="#" id="navicon" class="closed"><i class="fa fa-bars"></i>
+</a>
+    </header>
     <nav id="main-nav">
         <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
         <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
@@ -20,8 +15,7 @@
         <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
         <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
     </nav>
-
-<!--<div class="fade"></div>-->
+    <div class="fade"></div>
 
     <div id="container">
         <?php include_once 'blocgauche.php';?><!--
