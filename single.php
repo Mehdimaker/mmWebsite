@@ -1,27 +1,20 @@
 <?php get_header();?>
 
 <body>
-  <nav  id="navbar">
+   <header class="cf">
         <div class="logo"></div>
         <div class="mmname"></div>
-          <ul>
-            <li>
-                <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
-            </li>
-            <li>
-                <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
-            </li>
-            <li>
-                <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
-            </li>   
-            <li>
-                <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
-            </li>
-            <li>
-                <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
-            </li>
-        </ul>
+        <a href="#" id="navicon" class="closed"><i class="fa fa-bars"></i>
+</a>
+    </header>
+    <nav id="main-nav">
+        <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
+        <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
+        <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
+        <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
+        <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
     </nav>
+    <div class="fade"></div>
     <div id="container">
 
 <?php include_once 'blocgauche.php';?><!--

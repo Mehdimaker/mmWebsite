@@ -8,7 +8,7 @@
     if($('#navicon').hasClass('closed')) {
         $('body').animate({left: "-250px"}, 400).css({"overflow":"hidden"});
       $('#main-nav').animate({right: "0"}, 400);
-      $(this).removeClass('closed').addClass('open').html('&times');
+      $(this).removeClass('closed').addClass('open').html("<i class='fa fa-times'></i>");
       $('.fade').fadeIn();
     }
     else if($('#navicon').hasClass('open')) {

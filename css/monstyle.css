@@ -24,8 +24,13 @@ main {
   vertical-align: top;
   position: relative;
 }
-nav#navbar {
+header.cf {
   display: none;
+}
+@media all and (min-width: 1000px) {
+  nav#main-nav {
+    display: none;
+  }
 }
 .on {
   display: block;
