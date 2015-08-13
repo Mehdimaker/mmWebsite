@@ -64,10 +64,12 @@ add_filter('default_content', 'texte_post_par_defaut');
        wp_register_script('handle2', get_bloginfo('template_directory') . '/js/addactive.js', false, null, false);
        wp_register_script('handle3', get_bloginfo('template_directory') . '/js/navlist.js', false, null, false);
        wp_register_script('handle4', get_bloginfo('template_directory') . '/js/angular.min.js', false, null, false);
+       wp_register_script('handle5', get_bloginfo('template_directory') . '/js/modernizr.js', false, null, false);
+       wp_register_script('handle6', get_bloginfo('template_directory') . '/js/menuhamburger.js', false, null, false);
 
 
 
-    wp_enqueue_script('handle'); wp_enqueue_script('handle2');wp_enqueue_script('handle3');wp_enqueue_script('handle4');
+    wp_enqueue_script('handle'); wp_enqueue_script('handle2');wp_enqueue_script('handle3');wp_enqueue_script('handle4');wp_enqueue_script('handle5');wp_enqueue_script('handle6');
 }
 add_action('wp_enqueue_scripts', 'jm_scripts', 100);
 

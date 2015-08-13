@@ -1,10 +1,121 @@
 @media all and (max-width: 1000px) {
+  body {
+    position: relative;
+    left: 0;
+  }
+  #main-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    max-width: 250px;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    right: -250px;
+    position: fixed;
+    background: #222;
+    text-align: center;
+  }
+  #main-nav a {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: white;
+    border-top: 1px solid #555555;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #main-nav a:hover,
+  #main-nav a.current {
+    background: #3c3c3c;
+  }
+  .fade {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+  }
+  header.cf {
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    display: block;
+    z-index: 1000;
+    text-align: center;
+    background-color: #18191b;
+    padding: 9px;
+    box-sizing: border-box;
+  }
+  header.cf div.logo {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../img/logo5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
+  header.cf div.mmname {
+    background-image: url(../img/mehdimaker3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 5px;
+    height: 20px;
+  }
+  header.cf a {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: transparent;
+    top: 0px;
+    right: 0px;
+    padding-right: 0px;
+  }
   #container {
     width: 100%;
     margin: 0px;
     box-sizing: border-box;
     padding: 9px;
-    padding-top: 59px;
+    padding-top: 9px;
     height: 100vh;
   }
   main {
@@ -25,60 +136,6 @@
     display: none;
   }
   .blocleft span.bgsepvertical {
-    display: none;
-  }
-  nav#navbar {
-    top: 0px;
-    height: 50px;
-    width: 100%;
-    display: block;
-    position: fixed;
-    z-index: 1000;
-    text-align: right;
-    background-color: #18191b;
-    padding: 9px;
-    box-sizing: border-box;
-  }
-  nav#navbar div.logo {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background-image: url(../img/logo5.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-  }
-  nav#navbar div.mmname {
-    margin-left: 80px;
-    margin-top: 5px;
-    background-image: url(../img/mehdimaker3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 350px;
-    height: 20px;
-  }
-  nav#navbar ul {
-    position: absolute;
-    top: -5px;
-    right: 9px;
-  }
-  nav#navbar ul li {
-    display: inline-block;
-    margin-top: 5px;
-    text-align: right;
-  }
-  nav#navbar ul li a {
-    height: 60px;
-    width: 60px;
-    display: block;
-    font-size: 14px;
-    color: #ecf0f1;
-  }
-  nav#navbar ul li a:hover {
-    color: #ecf0f1;
-    cursor: pointer;
-  }
-  nav#navbar ul li i {
     display: none;
   }
   #home div.presentation {
@@ -377,13 +434,11 @@
   }
   #mainpro section div.description {
     width: 50%!important;
-    border: 1px solid green;
   }
   #mainpro section div.illustration {
     float: right;
     height: 100%;
     width: 50%!important;
-    border: 1px solid red;
   }
   #mainpro section div.illustration img {
     height: auto!important;
@@ -396,12 +451,12 @@
   #mainpro section.comment #listsComments {
     display: block!important;
     width: 100%!important;
-    min-height: 4 00px!important;
+    min-height: auto!important;
   }
   #mainpro section.comment #FormComments {
     display: block!important;
     width: 100%!important;
-    height: 400px!important;
+    height: 100%!important;
   }
 }
 @media all and (max-width: 700px) {
