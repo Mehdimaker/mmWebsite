@@ -748,11 +748,12 @@
     padding: 0px;
   }
   #present_project span.resumepro {
+    padding: 5px;
     padding-left: 100px;
   }
   #present_project span.resumepro h1 {
     height: 30px;
-    line-height: 30px;
+    line-height: 20px;
     font-size: 16px;
     box-sizing: border-box;
     display: inline-block;
@@ -768,6 +769,12 @@
     font-size: 14px;
   }
   #mainpro section div.description {
+    padding-right: -20px;
     font-size: 12px;
+    border: 1px solid red;
+    margin: 0;
+  }
+  #mainpro section div.illustration {
+    border: 1px solid red;
   }
 }
