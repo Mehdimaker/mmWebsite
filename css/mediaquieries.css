@@ -122,8 +122,8 @@
     width: 100%;
     margin: 0px;
     box-sizing: border-box;
-    padding: 9px;
-    padding-top: 9px;
+    padding: 0px;
+    padding-top: 0px;
     height: 100vh;
   }
   main {
@@ -148,9 +148,6 @@
   }
   #home div.presentation {
     margin-bottom: 9px;
-    margin-left: -9px;
-    margin-right: -9px;
-    margin-top: -9px;
   }
   #home div.presentation blockquote {
     font-size: 18px;
@@ -245,7 +242,7 @@
   }
   #navapp #navlist #list a span.resumepro p {
     font-size: 12px;
-    text-align: justify;
+    text-align: left;
   }
   #navapp #navlist #list a span.infopro {
     display: none;
@@ -320,7 +317,7 @@
     width: 100%;
     position: relative;
     color: #ecf0f1;
-    margin-bottom: 9px;
+    margin-bottom: 0px;
   }
   #present_project span,
   #present_project a {
@@ -694,7 +691,7 @@
     padding: 5px;
     font-size: 16px;
     text-align: center;
-    height: 30px;
+    height: 25px;
     right: 0px;
   }
   #navapp #navlist #list a span.resumepro {
@@ -703,12 +700,11 @@
     width: 100%;
     background-color: #18191b;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 110px;
   }
   #navapp #navlist #list a span.resumepro p {
     font-size: 12px;
-    text-align: justify;
   }
   #navapp #navlist #list a span.infopro {
     display: none;
@@ -722,7 +718,6 @@
     width: 100%;
     position: relative;
     color: #ecf0f1;
-    margin-bottom: 9px;
   }
   #present_project span,
   #present_project a {
