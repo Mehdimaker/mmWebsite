@@ -4,10 +4,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  body {
-    position: relative;
-    left: 0;
-  }
   #main-nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -30,6 +26,7 @@
     position: fixed;
     background: #18191b;
     text-align: center;
+    padding-top: 50px;
   }
   #main-nav a {
     cursor: pointer;
@@ -71,10 +68,9 @@
     bottom: 0;
     left: 0;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.7;
   }
   header.cf {
-    top: 0px;
     height: 50px;
     width: 100%;
     display: block;
@@ -83,6 +79,7 @@
     background-color: #18191b;
     padding: 9px;
     box-sizing: border-box;
+    position: fixed;
   }
   header.cf div.logo {
     width: 30px;
@@ -119,11 +116,13 @@
     padding-top: 7px;
   }
   #container {
+    position: relative;
+    left: 0;
     width: 100%;
     margin: 0px;
     box-sizing: border-box;
     padding: 0px;
-    padding-top: 0px;
+    padding-top: 50px;
     height: 100vh;
   }
   main {
@@ -140,11 +139,20 @@
   span.sep {
     display: none;
   }
+  .bloccenter {
+    padding: 0;
+  }
   .bloccenter span.bgsepvertical {
     display: none;
   }
+  .blocleft {
+    padding: 0;
+  }
   .blocleft span.bgsepvertical {
     display: none;
+  }
+  .blocright {
+    padding: 0;
   }
   #home div.presentation {
     margin-bottom: 9px;
@@ -163,8 +171,20 @@
   #home div.recent a span.title_projects {
     font-size: 11px;
   }
+  #home div.recent a:nth-of-type(even) {
+    opacity: 0.8;
+  }
   #projects span.seppro {
     display: none;
+  }
+  #projects div.rowprojecttop {
+    padding: 0px;
+  }
+  #projects div.rowprojectbottom {
+    padding: 0;
+  }
+  #projects div div a.face span.bgop {
+    opacity: 0.8;
   }
   #navapp #navlist {
     overflow: inherit;
@@ -196,7 +216,7 @@
     color: #ecf0f1;
     text-align: left;
     cursor: pointer;
-    margin-bottom: 9px;
+    margin-bottom: 0px;
     padding-left: 0px;
   }
   #navapp #navlist #list a span.sepverpro {
@@ -441,12 +461,13 @@
     height: auto !important;
   }
   #mainpro section div.description {
-    width: 50% !important;
+    width: 60% !important;
+    padding: 0px!important;
   }
   #mainpro section div.illustration {
     float: right;
     height: 100%;
-    width: 50% !important;
+    width: 40% !important;
   }
   #mainpro section div.illustration img {
     height: auto !important;
@@ -485,6 +506,7 @@
   /**************** HOME ****************/
   #home div.presentation {
     height: 243px;
+    margin-bottom: 0px;
   }
   #home div.presentation blockquote {
     font-size: 14px;
@@ -516,7 +538,7 @@
   }
   #home div.recent {
     width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 0px;
   }
   #home div.recent h4 {
     padding-left: 10px;
@@ -525,47 +547,31 @@
     font-size: 14px;
   }
   /**************** PROJECT ****************/
-  #projects div.rowprojecttop {
-    padding-bottom: 2.25px;
-  }
-  #projects div.rowprojectbottom {
-    padding-top: 2.25px;
-  }
-  #projects .blocleft {
-    padding-right: 3px;
-  }
-  #projects .bloccenter {
-    padding-right: 1.5px;
-    padding-left: 1.5px;
-  }
-  #projects .blocright {
-    padding-left: 3px;
-  }
   #projects div.rowproject div p.ctgproject {
-    font-size: 15px!important;
+    font-size: 15px !important;
   }
   #projects div.rowproject div p.number {
-    height: 30px!important;
-    width: 30px!important;
-    font-size: 14px!important;
+    height: 30px !important;
+    width: 30px !important;
+    font-size: 14px !important;
   }
   #projects div.rowproject div i.websites {
-    background-size: 50px!important;
+    background-size: 50px !important;
   }
   #projects div.rowproject div i.apps {
-    background-size: 40px!important;
+    background-size: 40px !important;
   }
   #projects div.rowproject div i.graphics {
-    background-size: 50px!important;
+    background-size: 50px !important;
   }
   #projects div.rowproject div i.objects {
-    background-size: 40px!important;
+    background-size: 40px !important;
   }
   #projects div.rowproject div i.videos {
-    background-size: 40px!important;
+    background-size: 40px !important;
   }
   #projects div.rowproject div i.others {
-    background-size: 40px!important;
+    background-size: 40px !important;
   }
   /**************** ARTICLES ****************/
   #articles {
@@ -659,7 +665,7 @@
     color: #ecf0f1;
     text-align: left;
     cursor: pointer;
-    margin-bottom: 9px;
+    margin-bottom: 0px;
     padding-left: 0px;
   }
   #navapp #navlist #list a span.sepverpro {
@@ -769,12 +775,7 @@
     font-size: 14px;
   }
   #mainpro section div.description {
-    padding-right: -20px;
     font-size: 12px;
-    border: 1px solid red;
     margin: 0;
-  }
-  #mainpro section div.illustration {
-    border: 1px solid red;
   }
 }

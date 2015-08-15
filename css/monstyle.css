@@ -397,7 +397,7 @@ footer {
   background-color: #18191b;
   height: 30px;
   color: #ecf0f1;
-  opacity: 0.85;
+  opacity: 0.75;
   display: block;
   padding-left: 10px;
   background-repeat: no-repeat;
@@ -445,6 +445,9 @@ footer {
   line-height: 7px;
   font-size: 9px;
 }
+#home div.recent a:nth-of-type(even) {
+  opacity: 0.8;
+}
 #home div.recent a:hover {
   opacity: 1;
   color: #ecf0f1;
@@ -473,7 +476,7 @@ footer {
   z-index: 1;
 }
 #home div.recent div.comm span.bgop {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 #home div.recent div.comm p {
   color: #ecf0f1;
@@ -874,7 +877,7 @@ footer {
 #contact #apropos {
   height: 100%;
   background-color: #18191b;
-  opacity: 0.75;
+  opacity: 0.85;
   width: 50%;
   display: inline-block;
   vertical-align: top;
@@ -939,7 +942,7 @@ footer {
   margin-top: 10px;
 }
 #contact form div.formcontain {
-  opacity: 0.85;
+  opacity: 0.75;
   padding: 18px;
   background-color: #18191b;
   height: 100%;
@@ -1249,7 +1252,7 @@ footer {
   vertical-align: top;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 20px 0px 20px 20px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -1276,7 +1279,6 @@ footer {
   height: 100%;
   width: 338px;
   display: inline-block;
-  margin-right: -20px;
   text-align: center;
 }
 #mainpro #etapes section div.illustration img {

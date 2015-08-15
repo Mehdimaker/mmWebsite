@@ -410,7 +410,7 @@ footer {
             background-color: @1;
             height: 30px;
             color: @2;
-            opacity: @op2;
+            opacity: @op1;
             display: block;
             padding-left: 10px;
             background-repeat: no-repeat;
@@ -461,6 +461,9 @@ footer {
                 }
             }
         }
+         a:nth-of-type(even) {
+            opacity: 0.8;
+         }
         a:hover {
             opacity: @ophover;
             color: @2;
@@ -507,7 +510,7 @@ footer {
             z-index: 1;
 
             span.bgop {
-                opacity: @op2;
+                opacity: @op1;
             }
             p {
                 color: @2;
@@ -944,7 +947,7 @@ footer {
     #apropos {
         height: 100%;
         background-color: @1;
-        opacity: @op1;
+        opacity: @op2;
         width: 50%;
         display: inline-block;
         vertical-align: top;
@@ -1014,7 +1017,7 @@ footer {
             }
         }
         div.formcontain {
-            opacity: @op2;
+            opacity: @op1;
             padding: 18px;
             background-color: @1;
             height: 100%;
@@ -1333,7 +1336,7 @@ footer {
             vertical-align: top;
             width: 100%;
             height: 100%;
-            padding: 20px;
+            padding: 20px 0px 20px 20px;
             overflow: hidden;
             position: relative;
             z-index: 1;
@@ -1361,7 +1364,6 @@ footer {
                 height: 100%;
                 width: 338px;
                 display: inline-block;
-                margin-right: -20px;
                 text-align: center;
 
                 img {

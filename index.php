@@ -122,7 +122,7 @@
                     </a> <span class="bgsepvertical"></span></div><!--
 
 
-                    --><div class="bloccenter"><a class="loadctg apps " name="apps" onclick="show('navapp')">
+                    --><div class="bloccenter"><a class="loadctg apps face" name="apps" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="apps"></i>
                         <p class="ctgproject" >Apps Mobile </p>
@@ -146,7 +146,7 @@
                 <span class="seppro"></span>
 
                 <div class="rowproject rowprojectbottom" >
-                    <div class="blocleft"><a name="objects" class="loadctg objects" onclick="show('navapp')">
+                    <div class="blocleft"><a name="objects" class="loadctg objects face" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="objects"></i>
                         <p class="ctgproject" >Objects 3D </p>
@@ -165,7 +165,7 @@
                             </p>
                     
                     </a> <span class="bgsepvertical"></span></div><!--
-                    --><div class="blocright"><a name="others" class="loadctg others" onclick="show('navapp')">
+                    --><div class="blocright"><a name="others" class="loadctg others face" onclick="show('navapp')">
                          <span class="bgop"></span>
                         <i class="others"></i>
                         <p class="ctgproject" >Others </p>

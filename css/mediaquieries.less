@@ -16,10 +16,6 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-    body {
-        position: relative;
-        left: 0;
-    }
     #main-nav {
         display: -webkit-box;
         display: -webkit-flex;
@@ -42,6 +38,7 @@
         position: fixed;
         background: @1;
         text-align: center;
+        padding-top: 50px;
     }
     #main-nav a {
         cursor: pointer;
@@ -82,10 +79,9 @@
         bottom: 0;
         left: 0;
         background: #000;
-        opacity: 0.5;
+        opacity: 0.7;
     }
     header.cf {
-        top: 0px;
         height: 50px;
         width: 100%;
         display: block;
@@ -94,6 +90,7 @@
         background-color: @1;
         padding: 9px;
         box-sizing: border-box;
+        position: fixed;
 
         div.logo {
             width: 30px;
@@ -131,11 +128,13 @@
         }
     }
     #container {
+        position: relative;
+        left: 0;
         width: 100%;
         margin: 0px;
         box-sizing: border-box;
         padding: 0px;
-        padding-top: 0px;
+        padding-top: 50px;
         height: 100vh;
     }
     main {
@@ -153,22 +152,28 @@
         display: none;
     }
     .bloccenter {
+        padding: 0;
+
         span.bgsepvertical {
             display: none;
         }
     }
     .blocleft {
+        padding: 0;
+
         span.bgsepvertical {
             display: none;
         }
     }
+    .blocright {
+        padding: 0;
+    }
     #home {
         div.presentation {
             margin-bottom: 9px;
-         //    margin-left: -9px;
-         //    margin-right: -9px;
-
-         // margin-top: -9px;
+            //    margin-left: -9px;
+            //    margin-right: -9px;
+            // margin-top: -9px;
 
             blockquote {
                 font-size: 18px;
@@ -189,11 +194,25 @@
                     font-size: 11px;
                 }
             }
+            a:nth-of-type(even) {
+                opacity: 0.8;
+            }
         }
     }
     #projects {
         span.seppro {
             display: none;
+        }
+        div.rowprojecttop {
+            padding: 0px;
+        }
+        div.rowprojectbottom {
+            padding: 0;
+        }
+        div div a.face{ 
+            span.bgop{
+                opacity: 0.8;
+            }
         }
     }
     #navapp {
@@ -227,7 +246,7 @@
                     color: @2;
                     text-align: left;
                     cursor: pointer;
-                    margin-bottom: 9px;
+                    margin-bottom: 0px;
                     padding-left: 0px;
 
                     span.sepverpro {
@@ -496,12 +515,13 @@
             height: auto !important;
 
             div.description {
-                width: 50% !important;
+                width: 60% !important;
+                padding: 0px!important;
             }
             div.illustration {
                 float: right;
                 height: 100%;
-                width: 50% !important;
+                width: 40% !important;
 
                 img {
                     height: auto !important;
@@ -552,6 +572,7 @@
     #home {
         div.presentation {
             height: 243px;
+            margin-bottom: 0px;
 
             blockquote {
                 font-size: 14px;
@@ -583,7 +604,7 @@
         }
         div.recent {
             width: 100%;
-            margin-bottom: 9px;
+            margin-bottom: 0px;
 
             h4 {
                 padding-left: 10px;
@@ -596,59 +617,35 @@
 
     /**************** PROJECT ****************/
     #projects {
-        div.rowprojecttop {
-            padding-bottom: 2.25px;
-        }
-        div.rowprojectbottom {
-            padding-top: 2.25px;
-        }
-        .blocleft {
-            padding-right: 3px
-        }
-        .bloccenter {
-            padding-right: 1.5px;
-            padding-left: 1.5px;
-        }
-        .blocright {
-            padding-left: 3px;
-        }
+       
         div.rowproject {
-           
             div {
-           
-         p.ctgproject {
-                  
-                    font-size: 15px!important;
-                   
-
+                p.ctgproject {
+                    font-size: 15px !important;
                 }
                 p.number {
-                    height: 30px!important;
-                    width: 30px!important;
-           
-                    font-size: 14px!important;
-                   
+                    height: 30px !important;
+                    width: 30px !important;
+                    font-size: 14px !important;
                 }
-
- i.websites {
-                background-size: 50px!important;
-            }
-            i.apps {
-                background-size: 40px!important;
-            }
-            i.graphics {
-                background-size: 50px!important;
-            }
-            i.objects {
-                background-size: 40px!important;
-            }
-            i.videos {
-                background-size: 40px!important;
-            }
-            i.others {
-                background-size: 40px!important;
-            }
-
+                i.websites {
+                    background-size: 50px !important;
+                }
+                i.apps {
+                    background-size: 40px !important;
+                }
+                i.graphics {
+                    background-size: 50px !important;
+                }
+                i.objects {
+                    background-size: 40px !important;
+                }
+                i.videos {
+                    background-size: 40px !important;
+                }
+                i.others {
+                    background-size: 40px !important;
+                }
             }
         }
     }
@@ -732,8 +729,7 @@
             }
         }
     }
-
-#navapp {
+    #navapp {
         #navlist {
             overflow: inherit;
             white-space: normal;
@@ -764,7 +760,7 @@
                     color: @2;
                     text-align: left;
                     cursor: pointer;
-                    margin-bottom: 9px;
+                    margin-bottom: 0px;
                     padding-left: 0px;
 
                     span.sepverpro {
@@ -821,8 +817,10 @@
                     display: none;
                 }
             }
-        }}
-          /***SINGLE****/
+        }
+    }
+
+    /***SINGLE****/
     #present_project {
         height: 90px;
         width: 100%;
@@ -887,16 +885,14 @@
                 font-size: 14px
             }
             div.description {
-                padding-right: -20px;// A REVOIR
                 font-size: 12px;
-                border:1px solid red;margin: 0;
-            }
-            div.illustration {                border:1px solid red;
+                margin: 0;
 
+            }
+            div.illustration {
             }
         }
         section.comment {
         }
     }
-
 }
