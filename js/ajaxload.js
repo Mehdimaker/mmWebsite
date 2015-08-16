@@ -9,7 +9,7 @@ jQuery(function ($) {
     $('body').on('click', '.loadctg', function toto() {
         $("#list").css("margin-left", 0 + "px");
         var keyword = $(this).attr("name");
-        $('.list').html("<div class='ajaxload'><i class='fa  fa-4x fa-refresh fa-spin'></i></div>");
+        $('.list').html("<div class='ajaxload'><span class='bgop'></span><i class='fa  fa-4x fa-refresh fa-spin'></i></div>");
         
 
         jQuery.post(

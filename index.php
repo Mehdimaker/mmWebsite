@@ -357,7 +357,7 @@ $scope.sendMessage = function () {
                 $(".menuprojects").css("height", "130px");
                 $("div.menuprojects a").removeClass('active2');
                 $("div.menuprojects a." + $direction).toggleClass("active2")
-                $('.list').html("<div class='ajaxload'><i class='fa  fa-4x fa-refresh fa-spin'></i></div>");
+                $('.list').html("<div class='ajaxload'><span class='bgop'></span><i class='fa  fa-4x fa-refresh fa-spin'></i></div>");
 
                 jQuery.post(
                     ajaxurl, {

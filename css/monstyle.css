@@ -732,14 +732,16 @@ footer {
   height: 100%;
   width: 100%;
   text-align: center;
-  background-color: #18191b;
-  opacity: 1;
+  z-index: 1;
   position: absolute;
   top: 0px;
   left: 0px;
   padding-top: 27%;
   box-sizing: border-box;
   color: #fe5d43;
+}
+#navapp #navlist #list .ajaxload span.bgop {
+  opacity: 1;
 }
 #navapp #navlist #list a {
   margin-right: 9px;
@@ -1461,7 +1463,7 @@ footer {
 #mainpro #etapes section.comment #FormComments div.titlereponse {
   background-color: #18191b;
   padding: 10px 10px 10px 20px;
-  opacity: 0.75;
+  opacity: 0.85;
   position: relative;
   height: 60px;
   box-sizing: border-box;

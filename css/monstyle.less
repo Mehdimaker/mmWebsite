@@ -780,14 +780,17 @@ footer {
                 height: 100%;
                 width: 100%;
                 text-align: center;
-                background-color: @1;
-                opacity: 1;
+                z-index: 1;
                 position: absolute;
                 top: 0px;
                 left: 0px;
                 padding-top: 27%;
                 box-sizing: border-box;
                 color: @3;
+
+                span.bgop{
+                    opacity: 1;
+                }
             }
             a {
                 margin-right: 9px;
@@ -1564,7 +1567,7 @@ footer {
                 div.titlereponse {
                     background-color: @1;
                     padding: 10px 10px 10px 20px;
-                    opacity: @op1;
+                    opacity: @op2;
                     position: relative;
                     height: 60px;
                     box-sizing: border-box;
