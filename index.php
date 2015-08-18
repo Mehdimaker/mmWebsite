@@ -245,12 +245,13 @@
              
               
             --><form name="FormContact" ng-submit="sendMessage()" novalidate >
+                                    <span class="bgop"></span>
+
                      <fieldset>             <i class="fa fa-2x fa-paper-plane"></i>
                         <h3>Contacter moi par mail.</h3>
 
                             N'hésitez pas à me contacter en remplissant ce formulaire, <br>Je répondrais au plus vite.</fieldset>
                     <div class="formcontain">
-
                 <label>
                     <span class="ico"><i class="fa fa-user"></i></span><!--
                 --><input placeholder="Votre nom *" name="name" ng-model="name" ng-required="true" />

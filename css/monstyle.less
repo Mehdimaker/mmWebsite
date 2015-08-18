@@ -23,8 +23,12 @@ body {
 #container {
     width: 1000px;
     height: 509px;
-    margin: auto;
-    margin-top: 8%;
+   position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 main {
     width: 804px;
@@ -1002,10 +1006,11 @@ footer {
         color: @2;
         position: relative;
         overflow: hidden;
-
+z-index: 1;
+span.bgop{
+                opacity: @op1;
+            }
         fieldset {
-            background-color: @1;
-            opacity: @op1;
             height: 70px;
             font-size: 12px;
             border: none;
@@ -1020,11 +1025,12 @@ footer {
             }
         }
         div.formcontain {
-            opacity: @op1;
+           
             padding: 18px;
-            background-color: @1;
+            
             height: 100%;
-
+            
+            
             label.textarea {
                 height: 100%;
                 padding-bottom: 303px;
@@ -1080,7 +1086,8 @@ footer {
                     text-align: center;
                     width: 40px;
                     background-color: @3;
-                    color: @1;
+                    color: @2;
+
                 }
                 span.icotextarea {
                     position: absolute;
@@ -1090,7 +1097,7 @@ footer {
                     width: 40px;
                     height: 40px;
                     background-color: @3;
-                    color: @1;
+                    color: @2;
                 }
                 span.valid i, span.invalid i {
                     width: 50px;
@@ -1100,7 +1107,7 @@ footer {
                     right: 10px;
                     top: 0px;
                     text-align: right;
-                    opacity: 0.5;
+                    opacity: 1;
                 }
                 span.valid i {
                     line-height: 40px;
@@ -1114,6 +1121,7 @@ footer {
             }
             button {
                 position: absolute;
+                z-index: 5;
                 bottom: 18px;
                 right: 18px;
                 height: 40px;
