@@ -565,7 +565,7 @@
     float: right;
   }
   #mainpro section div.decalage {
-    display: none!important;
+    margin-right: 0important;
   }
   #mainpro section.comment {
     min-height: auto !important;
