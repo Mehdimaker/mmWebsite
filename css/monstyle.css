@@ -1300,6 +1300,9 @@ footer {
   width: auto;
   float: right;
 }
+#mainpro #etapes section div.decalage {
+  margin-right: -132px;
+}
 #mainpro #etapes section.pres {
   position: relative;
   padding: 0;

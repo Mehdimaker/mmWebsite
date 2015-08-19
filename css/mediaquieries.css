@@ -496,7 +496,7 @@
     padding: 0px!important;
   }
   #mainpro section.pres p img {
-    height: 100%!important;
+    height: auto!important;
     width: 100%;
     margin: 0px !important;
     padding: 0px !important;
@@ -563,6 +563,9 @@
     height: auto !important;
     width: 100% !important;
     float: right;
+  }
+  #mainpro section div.decalage {
+    display: none;
   }
   #mainpro section.comment {
     min-height: auto !important;
