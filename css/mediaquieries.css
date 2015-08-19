@@ -234,7 +234,7 @@
     box-sizing: border-box;
   }
   #navapp #navlist #list a span.thumbnail span.bgop {
-    opacity: 0.4;
+    opacity: 0;
   }
   #navapp #navlist #list a span.thumbnail img {
     margin-top: 0px;
@@ -444,7 +444,7 @@
     z-index: 2;
   }
   #present_project span.thumbnail span.bgop {
-    opacity: 0.4;
+    opacity: 0!important;
   }
   #present_project span.thumbnail img {
     height: 100%;
@@ -472,6 +472,9 @@
     display: inline-block;
     vertical-align: top;
   }
+  #present_project span.resumepro span.date {
+    display: none!important;
+  }
   #present_project span.comment {
     display: none;
   }
@@ -482,36 +485,39 @@
     overflow: visible;
   }
   #mainpro section.pres {
-    position: relative;
+    position: absolute;
     padding: 0;
     opacity: 1;
     height: auto !important;
+    margin-bottom: -6px !important;
   }
-  #mainpro section.pres P {
-    margin: 0;
-    padding: 0;
+  #mainpro section.pres p {
+    margin: 0px!important;
+    padding: 0px!important;
   }
-  #mainpro section.pres img {
-    height: auto;
+  #mainpro section.pres p img {
+    height: 100%!important;
     width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0px !important;
+    padding: 0px !important;
   }
   #mainpro section.pres span.bgtechno {
+    display: none!important;
     background-color: #18191b;
     width: 100%;
     display: block;
     height: 65px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0px!important;
     opacity: 0.75;
   }
   #mainpro section.pres div.techno {
+    display: none!important;
     width: 100%;
     height: 65px;
-    position: absolute;
+    position: normal!important;
     box-sizing: border-box;
-    bottom: 0px;
+    bottom: 0px !important;
     padding: 10px;
     display: block;
   }
@@ -570,6 +576,10 @@
     display: block !important;
     width: 100% !important;
     height: 100% !important;
+  }
+  #mainpro section.comment #FormComments div.titlereponse {
+    background-color: #18191b !important;
+    opacity: 1;
   }
 }
 @media all and (max-width: 700px) {
@@ -758,7 +768,7 @@
     box-sizing: border-box;
   }
   #navapp #navlist #list a span.thumbnail span.bgop {
-    opacity: 0.4;
+    opacity: 0;
   }
   #navapp #navlist #list a span.thumbnail img {
     margin-top: 0px;
@@ -830,7 +840,7 @@
     padding-left: 100px;
   }
   #present_project span.resumepro h1 {
-    height: 30px;
+    height: 20px;
     line-height: 20px;
     font-size: 16px;
     box-sizing: border-box;

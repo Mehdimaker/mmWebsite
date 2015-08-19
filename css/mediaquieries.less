@@ -231,6 +231,7 @@
                margin-top: -50px;
                 span.bgop{
                     opacity: @op1;
+
                 }
             }
               
@@ -265,7 +266,7 @@
                         box-sizing: border-box;
 
                         span.bgop {
-                            opacity: 0.4;
+                            opacity: 0;
                         }
                         img {
                             margin-top: 0px;
@@ -290,7 +291,7 @@
                         height: 100%;
                         padding-top: 40px;
                         padding-left: 210px;
-
+                        
                         p {
                             font-size: 12px;
                             text-align: left;
@@ -302,7 +303,7 @@
                 }
              
                  a:nth-of-type(even) span.resumepro{
-                    opacity:0.65;
+                    opacity:0.65; 
                 }
                 a:last-of-type span.sepverpro {
                     display: none;
@@ -503,7 +504,7 @@
             z-index: 2;
 
             span.bgop {
-                opacity: 0.4;
+                opacity: 0!important;
             }
             img {
                 height: 100%;
@@ -533,6 +534,7 @@
                 vertical-align: top;
             }
             span.date {
+                display: none!important;
             }
         }
         span.comment {
@@ -546,36 +548,42 @@
         overflow: visible;
 
         section.pres {
-            position: relative;
+            position: absolute;
             padding: 0;
             opacity: 1;
             height: auto !important;
-
-            P {
-                margin: 0;
-                padding: 0;
+            margin-bottom: -6px!important;
+           // padding-bottom:59px!important;
+            p{
+                margin: 0px!important;
+                padding: 0px!important;
+           
             }
-            img {
-                height: auto;
+            p img {
+                height: 100%!important;
                 width: 100%;
-                margin: 0 !important;
-                padding: 0 !important;
+                margin: 0px !important;
+                padding: 0px !important;
+                             
+
             }
             span.bgtechno {
+                display: none!important;
                 background-color: @1;
                 width: 100%;
                 display: block;
                 height: 65px;
                 position: absolute;
-                bottom: 0px;
+                bottom: 0px!important;
                 opacity: 0.75;
             }
-            div.techno {
+            div.techno {                display: none!important;
+
                 width: 100%;
                 height: 65px;
-                position: absolute;
+                position: normal!important;
                 box-sizing: border-box;
-                bottom: 0px;
+                bottom: -0px!important;
                 padding: 10px;
                 display: block;
 
@@ -639,6 +647,10 @@
                 display: block !important;
                 width: 100% !important;
                 height: 100% !important;
+                div.titlereponse {
+                    background-color: @1!important;
+                    opacity: 1;
+                    }
             }
         }
     }
@@ -870,7 +882,7 @@
                         box-sizing: border-box;
 
                         span.bgop {
-                            opacity: 0.4;
+                            opacity: 0;
                         }
                         img {
                             margin-top: 0px;
@@ -950,7 +962,7 @@
             padding-left: 100px;
 
             h1 {
-                height: 30px;
+                height: 20px;
                 line-height: 20px;
                 font-size: 16px;
                 box-sizing: border-box;

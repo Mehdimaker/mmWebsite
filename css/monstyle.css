@@ -1,3 +1,10 @@
+textarea,
+input {
+  font-family: "Myriad Pro", Arial, sans-serif;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -1292,9 +1299,6 @@ footer {
   height: 100%;
   width: auto;
   float: right;
-}
-#mainpro #etapes section div.decalage {
-  margin-right: -132px;
 }
 #mainpro #etapes section.pres {
   position: relative;
