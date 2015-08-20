@@ -3,6 +3,7 @@ function show(id) {
     var projects = document.getElementById('projects');
     var articles = document.getElementById('articles');
     var services = document.getElementById('services');
+    var about = document.getElementById('about');
     var contact = document.getElementById('contact');
     var navapp = document.getElementById('navapp');
     var navverti = document.getElementById('navvertical');
@@ -13,6 +14,7 @@ function show(id) {
     projects.className = "off";
     articles.className = "off";
     services.className = "off";
+    about.className = "off";
     contact.className = "off";
     navapp.className = "off";
     navverti.className = "off";

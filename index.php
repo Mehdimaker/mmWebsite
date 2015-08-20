@@ -10,9 +10,10 @@
     </header>
     <nav id="main-nav">
         <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
-        <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
+        <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projets</span></a>
         <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
-        <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
+        <a name="about" onclick="show('about')" class="about"><i class="fa fa-lg fa-file-text"></i><span><br>A Propos</span></a>
+       <!-- <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>-->
         <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
     </nav>
     <div class="fade"></div>
@@ -42,7 +43,7 @@
 
                 <div class="recent blocleft">
                          <h4>Derniers Projets</h4>
-                    <?php $args=array( 'category_name'=> 'websites,apps,graphics,objects,videos,others', 'showposts' => '6', ); $recentPosts=new WP_Query($args); while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
+                    <?php $args=array( 'category_name'=> 'websites,apps,graphics,objects,imps,scripts', 'showposts' => '6', ); $recentPosts=new WP_Query($args); while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
 
                     <a class='<?php $cat = get_the_category(); $cat = $cat[0]; echo strtolower($cat->cat_name);?>' href="<?php the_permalink() ?>" rel="bookmark">
                         <span class="title_projects"><?php the_title(); ?></span>
@@ -81,12 +82,6 @@
             </div>
 
 
-
-
-
-
-
-
             <div id="articles" class="off">
                 <div id="listarticles"><!--
             <?php $args=array( 'category_name'=> 'articles', 'showposts' => '-1', ); $recentPosts=new WP_Query($args); while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
@@ -110,67 +105,64 @@
 
                 <div class="rowproject rowprojecttop">
 
-
                     <div class="blocleft"><a name="websites" class="loadctg websites " onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="websites"></i>
-                        <p class="ctgproject" >Websites </p>
+                        <p class="ctgproject" >Sites Web </p>
                             <p class="number">
                                 <?php echo count_cat_post( 'websites' ); ?>
                             </p>
-                    
                     </a> <span class="bgsepvertical"></span></div><!--
 
 
                     --><div class="bloccenter"><a class="loadctg apps face" name="apps" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="apps"></i>
-                        <p class="ctgproject" >Apps Mobile </p>
+                        <p class="ctgproject" >Applications Mobile </p>
                             <p class="number">
                                 <?php echo count_cat_post( 'apps' ); ?>
                             </p>
                     
                     </a> <span class="bgsepvertical"></span></div><!--
 
-                    --><div class="blocright"><a name="graphics" class="loadctg graphics" onclick="show('navapp')">
+                    --><div class="blocright"><a name="scripts" class="loadctg scripts" onclick="show('navapp')">
                         <span class="bgop"></span>
-                        <i class="graphics"></i>
-                        <p class="ctgproject" >Graphics Design </p>
+                        <i class="scripts"></i>
+                        <p class="ctgproject" >Scripts </p>
                             <p class="number">
-                                <?php echo count_cat_post( 'graphics' ); ?>
+                                <?php echo count_cat_post( 'scripts' ); ?>
                             </p>
-                    
                     </a></div>
 
                 </div>
                 <span class="seppro"></span>
 
                 <div class="rowproject rowprojectbottom" >
-                    <div class="blocleft"><a name="objects" class="loadctg objects face" onclick="show('navapp')">
+                    <div class="blocleft"><a name="graphics" class="loadctg graphics face" onclick="show('navapp')">
                         <span class="bgop"></span>
-                        <i class="objects"></i>
-                        <p class="ctgproject" >Objects 3D </p>
+                        <i class="graphics"></i>
+                        <p class="ctgproject" >Design Graphiques</p>
                             <p class="number">
-                                <?php echo count_cat_post( 'objects' ); ?>
+                                <?php echo count_cat_post( 'graphics' ); ?>
                             </p>
                     
                     </a> <span class="bgsepvertical"></span></div><!--
 
-                    --><div class="bloccenter"><a name="videos" class="loadctg videos" onclick="show('navapp')">
+                    --><div class="bloccenter"><a name="imps" class="loadctg imps" onclick="show('navapp')">
                          <span class="bgop"></span>
-                        <i class="videos"></i>
-                        <p class="ctgproject" >Videos </p>
+                        <i class="imps"></i>
+                        <p class="ctgproject" >Impréssions 3D </p>
                             <p class="number">
-                                <?php echo count_cat_post( 'videos' ); ?>
+                                <?php echo count_cat_post( 'imps' ); ?>
                             </p>
                     
                     </a> <span class="bgsepvertical"></span></div><!--
-                    --><div class="blocright"><a name="others" class="loadctg others face" onclick="show('navapp')">
+                    --><div class="blocright"><a name="objects" class="loadctg objects face" onclick="show('navapp')">
                          <span class="bgop"></span>
-                        <i class="others"></i>
-                        <p class="ctgproject" >Others </p>
+                        <i class="objects"></i>
+                        <p class="ctgproject" >Objets Connectés </p>
                             <p class="number">
-                                <?php echo count_cat_post( 'others' ); ?>
+                                <?php echo count_cat_post( 'objects' ); ?>
                             </p>
                     
                     </a></div>
@@ -200,6 +192,11 @@
                      <p>En cours ...</p>
                   
                 </div>
+            <div id="about" class="off">
+
+                     <p>En cours ...</p>
+                  
+            </div>
 
 
 
@@ -207,9 +204,8 @@
 
             <div id="contact" class="off">
              
-                       
-                      <div class="height100"ng-app="app">
-        <div class="height100" ng-controller="appCtrl">
+            <div class="height100"ng-app="app">
+            <div class="height100" ng-controller="appCtrl">
             
             
              <div id="apropos">
@@ -341,7 +337,7 @@ $scope.sendMessage = function () {
             //redirection ciblé via LocalStorage
 
             var $direction = JSON.parse(localStorage.getItem("redirection"));
-            if ($direction == "home" || $direction == "articles" || $direction == "projects" || $direction == "services" || $direction == "contact") {
+            if ($direction == "home" || $direction == "articles" || $direction == "projects" || $direction == "services" || $direction == "about" || $direction == "contact") {
                 show($direction);
                 $('nav li a').removeClass('active');
                 $('nav li a.' + $direction).addClass('active');
@@ -351,7 +347,7 @@ $scope.sendMessage = function () {
                 } else if ($direction == "articles") {
 
                 }
-            } else if ($direction == "websites" || $direction == "apps" || $direction == "graphics" || $direction == "objects" || $direction == "videos" || $direction == "others") {
+            } else if ($direction == "websites" || $direction == "apps" || $direction == "graphics" || $direction == "objects" || $direction == "imps" || $direction == "scripts") {
                 show("navapp");
                 $('nav li a').removeClass('active');
                 $('nav li a.projects').addClass('active');

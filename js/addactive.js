@@ -31,13 +31,13 @@ jQuery(function ($) {
         $("div.menuprojects a").removeClass('active2');
         $("div.menuprojects a.objects").toggleClass("active2")
     });
-    $("#projects a.videos").on("click", function () {
+    $("#projects a.imps").on("click", function () {
         $("div.menuprojects a").removeClass('active2');
-        $("div.menuprojects a.videos").toggleClass("active2")
+        $("div.menuprojects a.imps").toggleClass("active2")
     });
-    $("#projects a.others").on("click", function () {
+    $("#projects a.scripts").on("click", function () {
         $("div.menuprojects a").removeClass('active2');
-        $("div.menuprojects a.others").toggleClass("active2")
+        $("div.menuprojects a.scripts").toggleClass("active2")
     });
 
 });
