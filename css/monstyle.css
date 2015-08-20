@@ -174,7 +174,7 @@ span.sep {
   line-height: 20px;
   height: 20px;
   display: block;
-  padding-left: 37px;
+  padding-left: 38px;
   text-align: left;
   width: 100%;
   cursor: pointer;
@@ -196,7 +196,7 @@ span.sep {
   padding-left: 50px;
   background-image: url(../img/arrowss.png);
   background-repeat: no-repeat;
-  background-position: 37px 5px;
+  background-position: 38px 5px;
   background-size: 8px;
   -webkit-transition: all 0s ease;
   -moz-transition: all 0s ease;
@@ -204,7 +204,7 @@ span.sep {
   transition: all 0s ease;
 }
 #blocgauche nav div.menuprojects a.active2:first-child {
-  background-position: 37px 15px;
+  background-position: 38px 15px;
 }
 #blocgauche nav div.menuprojects a.active2:hover {
   text-decoration: none;
@@ -472,8 +472,8 @@ footer {
 #home div.recent a.graphics {
   background-image: url(../img/icoprojects/graphics.png);
 }
-#home div.recent a.objects {
-  background-image: url(../img/icoprojects/objects.png);
+#home div.recent a.imps {
+  background-image: url(../img/icoprojects/imps.png);
 }
 #home div.recent a.objects {
   background-image: url(../img/icoprojects/objects.png);
@@ -852,6 +852,20 @@ footer {
   opacity: 0.75;
 }
 #services p {
+  text-align: center;
+  color: #ecf0f1;
+  padding-top: 250px;
+}
+/******** APROPOS *********/
+#about {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+#about span.bgop {
+  opacity: 0.85;
+}
+#about p {
   text-align: center;
   color: #ecf0f1;
   padding-top: 250px;

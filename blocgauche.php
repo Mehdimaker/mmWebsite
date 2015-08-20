@@ -24,7 +24,7 @@
                 <a name="services" onclick="show('services')" class="services"><i class="fa fa-briefcase"></i><span>Services</span></a>
             </li>-->
             <li>
-                <a name="about" onclick="show('about')" class="about"><i class="fa fa-user"></i><span>A propos</span></a>
+                <a name="about" onclick="show('about')" class="about"><i class="fa fa-bar-chart"></i><span>À propos</span></a>
             </li>
             <li>
                 <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-envelope"></i><span>Contact</span></a>

@@ -151,7 +151,7 @@
                     --><div class="bloccenter"><a name="imps" class="loadctg imps" onclick="show('navapp')">
                          <span class="bgop"></span>
                         <i class="imps"></i>
-                        <p class="ctgproject" >Impréssions 3D </p>
+                        <p class="ctgproject" >Impressions 3D </p>
                             <p class="number">
                                 <?php echo count_cat_post( 'imps' ); ?>
                             </p>
@@ -193,7 +193,7 @@
                   
                 </div>
             <div id="about" class="off">
-
+                <span class="bgop"></span>
                      <p>En cours ...</p>
                   
             </div>
