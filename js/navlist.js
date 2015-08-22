@@ -9,16 +9,16 @@
       var positionarticles = 0;
 
       function addopacityarticles() {
-          if (positionarticles == 0 && nbarticles <= 8) {
+          if (positionarticles == 0 && nbarticles <= 6) {
               $(".btntop").addClass("cache");
               $(".btnbottom").addClass("cache");
-          } else if (positionarticles == 0 && nbarticles > 8) {
+          } else if (positionarticles == 0 && nbarticles > 6) {
               $(".btntop").addClass("cache");
               $(".btnbottom").removeClass("cache");
           } else if (positionarticles > 0) {
               $(".btntop").removeClass("cache");
               $(".btnbottom").removeClass("cache");
-              if (positionarticles >= (nbarticles - 8)) {
+              if (positionarticles >= (nbarticles - 6)) {
                   $(".btnbottom").addClass("cache");
               }
           }
@@ -34,7 +34,7 @@
       });
 
       $('.btnbottom').on("click", function () {
-          if (nbarticles > 8 && positionarticles < (nbarticles - 8)) {
+          if (nbarticles > 6 && positionarticles < (nbarticles - 6)) {
               margintop -= decalagearticle;
               positionarticles++;
               $("#listarticles").css("margin-top", margintop + "px");

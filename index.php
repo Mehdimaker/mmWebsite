@@ -118,7 +118,7 @@
                     --><div class="bloccenter"><a class="loadctg apps face" name="apps" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="apps"></i>
-                        <p class="ctgproject" >Applications Mobile </p>
+                        <p class="ctgproject" >Applications  </p>
                             <p class="number">
                                 <?php echo count_cat_post( 'apps' ); ?>
                             </p>

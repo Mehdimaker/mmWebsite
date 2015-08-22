@@ -6,16 +6,12 @@
 //#3498db
 //#e67e22
 @4:#FFF;
-
-
 @op2:0.85;
 @op1:0.75;
 @ophover: 1;
 
-textarea,input {
-
-   font-family: "Myriad Pro", Arial, sans-serif;
-
+textarea, input {
+    font-family: "Myriad Pro", Arial, sans-serif;
     -webkit-border-radius: none;
     -moz-border-radius: none;
     border-radius: none;
@@ -28,17 +24,17 @@ body {
     //background-image: url(../img/bg/444.jpg);
     background-color: @2;
     // font: 76%/150% "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
-    font-family: "Myriad pro",Arial, sans-serif;
+    font-family: "Myriad pro", Arial, sans-serif;
 }
 #container {
     width: 1000px;
     height: 509px;
-   position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 main {
     width: 804px;
@@ -53,12 +49,13 @@ main {
     position: relative;
     // pour position absolute du span infos
 }
-header.cf{display: none}
-
-@media all and (min-width:1000px) {
-nav#main-nav {
-    display: none;
+header.cf {
+    display: none
 }
+@media all and (min-width:1000px) {
+    nav#main-nav {
+        display: none;
+    }
 }
 .on {
     display: block;
@@ -214,7 +211,7 @@ span.sep {
             }
             a.active2 {
                 padding-left: 50px;
-                background-image: url(../img/arrowss.png);
+                background-image: url(../img/arrowsshover.png);
                 background-repeat: no-repeat;
                 background-position: 38px 5px;
                 background-size: 8px;
@@ -222,6 +219,7 @@ span.sep {
                 -moz-transition: all 0s ease;
                 -o-transition: all 0s ease;
                 transition: all 0s ease;
+                color: @3;
             }
             a.active2:first-child {
                 background-position: 38px 15px;
@@ -443,41 +441,40 @@ footer {
                 font-size: 12px;
             }
             span.date {
-                height: 30px;
-                padding-top: 3px;
-                padding-right: 8px;
-                width: 57px;
+                margin-right: 9px;
+                margin-top: 5px;
                 float: right;
-                text-align: right;
-                box-sizing: border-box;
-
+                position: relative;
+                display: block;
+height: auto;
                 p.JJ {
-                    width: 28px;
-                    height: 20px;
-                    line-height: 16px;
-                    font-size: 21px;
-                    padding-top: 4px;
-                    margin-top: 1px;
-                    float: left;
+                    width: 45px;
+                    line-height: 18px;
+                    font-size: 22px;
+                    
                 }
                 p.MM {
-                    float: right;
                     font-size: 9px;
-                    line-height: 8px;
+                    line-height: 9px;
                     font-weight: bold;
-                    padding-top: 4px;
                     text-transform: uppercase;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
                 }
                 p.AA {
                     float: right;
-                    line-height: 7px;
                     font-size: 9px;
+                    line-height: 9px;
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
                 }
             }
         }
-         a:nth-of-type(even) {
+        a:nth-of-type(even) {
             opacity: 0.8;
-         }
+        }
         a:hover {
             opacity: @ophover;
             color: @2;
@@ -493,31 +490,14 @@ footer {
         }
         a.imps {
             background-image: url(../img/icoprojects/imps.png);
+            background-size: 17px;
         }
         a.objects {
             background-image: url(../img/icoprojects/objects.png);
         }
         a.scripts {
             background-image: url(../img/icoprojects/scripts.png);
-        }/*
-        a.apps:hover {
-            background-image: url(../img/icoprojects/appshover.png);
         }
-        a.websites:hover {
-            background-image: url(../img/icoprojects/websiteshover.png);
-        }
-        a.graphics:hover {
-            background-image: url(../img/icoprojects/graphicshover.png);
-        }
-        a.objects:hover {
-            background-image: url(../img/icoprojects/objectshover.png);
-        }
-        a.objects:hover {
-            background-image: url(../img/icoprojects/objectshover.png);
-        }
-        a.scripts:hover {
-            background-image: url(../img/icoprojects/scriptshover.png);
-        }*/
         div.comm {
             height: 180px;
             position: relative;
@@ -560,7 +540,7 @@ footer {
 
         a.article {
             display: block;
-            height: 55.75px;
+            height: 77.3333px;
             color: @2;
             opacity: @op2;
 
@@ -632,7 +612,6 @@ footer {
         }
         a.article:hover {
             opacity: @ophover;
-           
         }
     }
 }
@@ -669,7 +648,7 @@ footer {
             position: relative;
 
             a:hover {
-               // color: @3;
+                // color: @3;
             }
             a {
                 text-decoration: none;
@@ -731,7 +710,6 @@ footer {
                 background-image: url(../img/icoprojects/scripts.png);
                 background-size: 55px;
             }
-
             i.graphics {
                 background-image: url(../img/icoprojects/graphics.png);
                 background-size: 70px;
@@ -740,11 +718,10 @@ footer {
                 background-image: url(../img/icoprojects/imps.png);
                 background-size: 55px;
             }
-            i.objects{
+            i.objects {
                 background-image: url(../img/icoprojects/objects.png);
                 background-size: 70px;
             }
-            
         }
     }
 }
@@ -786,7 +763,7 @@ footer {
                 box-sizing: border-box;
                 color: @3;
 
-                span.bgop{
+                span.bgop {
                     opacity: 1;
                 }
             }
@@ -892,19 +869,15 @@ footer {
                 }
             }
             a:last-of-type span.sepverpro {
-                    display: block;
-                    background-color: @1;
-                    height: 100%;
-                    position: absolute;
-                    width: 400%;
-                    top: 0px;
-                    right: -400%;
-            
-              
-                    color: green;  
-
-                }
-              
+                display: block;
+                background-color: @1;
+                height: 100%;
+                position: absolute;
+                width: 400%;
+                top: 0px;
+                right: -400%;
+                color: green;
+            }
             a:hover span.thumbnail span.bgop {
                 opacity: @ophover;
                 //color: @4;
@@ -921,7 +894,7 @@ footer {
                 opacity: 0.85;
                 //color: @3;
             }
-        } 
+        }
     }
 }
 
@@ -937,15 +910,16 @@ footer {
         padding-top: 250px;
     }
 }
+
 /******** APROPOS *********/
 #about {
     height: 100%;
-   position: relative;
-   z-index: 1;
-    span.bgop{
+    position: relative;
+    z-index: 1;
+
+    span.bgop {
         opacity: @op2;
     }
-
     p {
         text-align: center;
         color: @2;
@@ -1015,10 +989,11 @@ footer {
         color: @2;
         position: relative;
         overflow: hidden;
-z-index: 1;
-span.bgop{
-                opacity: @op1;
-            }
+        z-index: 1;
+
+        span.bgop {
+            opacity: @op1;
+        }
         fieldset {
             height: 70px;
             font-size: 12px;
@@ -1034,12 +1009,9 @@ span.bgop{
             }
         }
         div.formcontain {
-           
             padding: 18px;
-            
             height: 100%;
-            
-            
+
             label.textarea {
                 height: 100%;
                 padding-bottom: 303px;
@@ -1096,7 +1068,6 @@ span.bgop{
                     width: 40px;
                     background-color: @3;
                     color: @2;
-
                 }
                 span.icotextarea {
                     position: absolute;
@@ -1402,7 +1373,6 @@ span.bgop{
             opacity: 1;
 
             img {
-           
             }
             span.bgtechno {
                 background-color: @1;

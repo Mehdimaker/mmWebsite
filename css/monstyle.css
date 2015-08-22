@@ -194,7 +194,7 @@ span.sep {
 }
 #blocgauche nav div.menuprojects a.active2 {
   padding-left: 50px;
-  background-image: url(../img/arrowss.png);
+  background-image: url(../img/arrowsshover.png);
   background-repeat: no-repeat;
   background-position: 38px 5px;
   background-size: 8px;
@@ -202,6 +202,7 @@ span.sep {
   -moz-transition: all 0s ease;
   -o-transition: all 0s ease;
   transition: all 0s ease;
+  color: #fe5d43;
 }
 #blocgauche nav div.menuprojects a.active2:first-child {
   background-position: 38px 15px;
@@ -376,25 +377,6 @@ footer {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
-  /*
-        a.apps:hover {
-            background-image: url(../img/icoprojects/appshover.png);
-        }
-        a.websites:hover {
-            background-image: url(../img/icoprojects/websiteshover.png);
-        }
-        a.graphics:hover {
-            background-image: url(../img/icoprojects/graphicshover.png);
-        }
-        a.objects:hover {
-            background-image: url(../img/icoprojects/objectshover.png);
-        }
-        a.objects:hover {
-            background-image: url(../img/icoprojects/objectshover.png);
-        }
-        a.scripts:hover {
-            background-image: url(../img/icoprojects/scriptshover.png);
-        }*/
 }
 #home div.recent h4 {
   padding-left: 10px;
@@ -426,35 +408,34 @@ footer {
   font-size: 12px;
 }
 #home div.recent a span.date {
-  height: 30px;
-  padding-top: 3px;
-  padding-right: 8px;
-  width: 57px;
+  margin-right: 9px;
+  margin-top: 5px;
   float: right;
-  text-align: right;
-  box-sizing: border-box;
+  position: relative;
+  display: block;
+  height: auto;
 }
 #home div.recent a span.date p.JJ {
-  width: 28px;
-  height: 20px;
-  line-height: 16px;
-  font-size: 21px;
-  padding-top: 4px;
-  margin-top: 1px;
-  float: left;
+  width: 45px;
+  line-height: 18px;
+  font-size: 22px;
 }
 #home div.recent a span.date p.MM {
-  float: right;
   font-size: 9px;
-  line-height: 8px;
+  line-height: 9px;
   font-weight: bold;
-  padding-top: 4px;
   text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 #home div.recent a span.date p.AA {
   float: right;
-  line-height: 7px;
   font-size: 9px;
+  line-height: 9px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 #home div.recent a:nth-of-type(even) {
   opacity: 0.8;
@@ -474,6 +455,7 @@ footer {
 }
 #home div.recent a.imps {
   background-image: url(../img/icoprojects/imps.png);
+  background-size: 17px;
 }
 #home div.recent a.objects {
   background-image: url(../img/icoprojects/objects.png);
@@ -518,7 +500,7 @@ footer {
 }
 #articles #listarticles a.article {
   display: block;
-  height: 55.75px;
+  height: 77.3333px;
   color: #ecf0f1;
   opacity: 0.85;
 }

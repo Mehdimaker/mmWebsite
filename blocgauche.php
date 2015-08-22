@@ -11,7 +11,7 @@
             
             </li>   <div class="menuprojects">
                 <a name="websites" class=" websites loadctg" onclick="show('navapp')">Sites web</a>
-                <a name="apps" class=" apps loadctg" onclick="show('navapp')">Apps mobile </a>
+                <a name="apps" class=" apps loadctg" onclick="show('navapp')">Applications </a>
                 <a name="scripts" class=" scripts loadctg" onclick="show('navapp')">Scripts</a> 
                 <a name="graphics" class=" graphics loadctg" onclick="show('navapp')">Design graph.</a>
                 <a name="imps" class=" imps loadctg" onclick="show('navapp')">Imps. 3D</a>

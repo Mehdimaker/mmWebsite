@@ -45,7 +45,7 @@
     <?php   
     echo "<p>";
     the_excerpt() ;
-    echo "</p></span><span class='comment'>Comments<i class='fa fa-comment fa-2x'></i><p>";
+    echo "</p></span><span class='comment'>Commentaires<i class='fa fa-comment fa-2x'></i><p>";
     
 comments_number('0', '0 Comment', '%'); 
     echo "</p></span>"
