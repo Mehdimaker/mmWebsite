@@ -5,7 +5,7 @@
 	
      </div></div>
 
-</div><div id="listsComments">
+</div><div id="listscomments"><span class="bgop"></span>
 	<?php if ( have_comments() ) : ?>
 
 		<ul class="commentlist">

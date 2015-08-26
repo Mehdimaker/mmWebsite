@@ -28,12 +28,12 @@
                     <span class='bgop'></span>
                     <div class="photo "></div>
                     <blockquote>
-                      <span class="titlemm"></span>
-                       <p>Passionné des nouvelles technologies  <br>
-                       Actuellement développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon.co</a><br>
-                       Découvrez ici toutes mes réalisations<br> websites, applis mobile, ou encore objets connectés . . .
-                       </p>
-                       </blockquote>
+                        <span class="titlemm"></span>
+                        <p>Passionné des nouvelles technologies  <br>
+                        Actuellement développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon.co</a>
+                        </p>                     
+                        <p class="right">Découvrez ici toutes mes réalisations<br> websites, applis mobile, ou encore objets connectés . . .</p>
+                    </blockquote>
                 </div>
                 <span class="sep"></span>
 
@@ -51,16 +51,14 @@
                     
                     <?php endwhile; ?>
                 <span class="bgsepvertical"></span>
-                </div><!--
-
-                --><div class="recent bloccenter">
+                    </div><!--
+                    --><div class="recent bloccenter">
                     <h4>Derniers Articles</h4>
                     <?php $args=array( 'category_name'=> 'articles', 'showposts' => '6', ); $recentPosts=new WP_Query($args); while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
                     <a href="<?php the_permalink() ?>" rel="bookmark">
                         <span class="title_projects"><?php the_title(); ?></span>
-                        <span class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></span>
+                        <span class="date"><?php the_time(d);?>-<?php the_time(m);?>-<?php the_time(y);?></span>
                     </a>
-
                     <?php endwhile; ?>
                <span class="bgsepvertical"></span>
                 </div><!--
@@ -88,7 +86,7 @@
             --><a class="article" href="<?php the_permalink() ?>" rel="bookmark">
                         <span class="title_article"><?php the_title(); ?></span>
                         <span class="resume_article"><?php the_excerpt() ;?></span>
-                        <span class="containdate"><div class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></div></span>
+                        <span class="date"><?php the_time(d);?>-<?php the_time(m);?>-<?php the_time(y);?></span>
                     </a><span class="sep"></span><!--
             <?php endwhile; ?>
             --></div>
@@ -246,7 +244,7 @@
                      <fieldset>             <i class="fa fa-2x fa-paper-plane"></i>
                         <h3>Contacter moi par mail.</h3>
 
-                            N'hésitez pas à me contacter en remplissant ce formulaire, <br>Je répondrais au plus vite.</fieldset>
+                            N'hésitez pas à me contacter en remplissant ce formulaire, je répondrais au plus vite.</fieldset>
                     <div class="formcontain">
                 <label>
                     <span class="ico"><i class="fa fa-user"></i></span><!--
@@ -343,7 +341,7 @@ $scope.sendMessage = function () {
                 $('nav li a.' + $direction).addClass('active');
                 localStorage.setItem("redirection", null);
                 if ($direction == "projects") {
-                    $(".menuprojects").css("height", "130px");
+                    $(".menuprojects").css("height", "140px");
                 } else if ($direction == "articles") {
 
                 }
@@ -351,7 +349,7 @@ $scope.sendMessage = function () {
                 show("navapp");
                 $('nav li a').removeClass('active');
                 $('nav li a.projects').addClass('active');
-                $(".menuprojects").css("height", "130px");
+                $(".menuprojects").css("height", "140px");
                 $("div.menuprojects a").removeClass('active2');
                 $("div.menuprojects a." + $direction).toggleClass("active2")
                 $('.list').html("<div class='ajaxload'><span class='bgop'></span><i class='fa  fa-4x fa-refresh fa-spin'></i></div>");

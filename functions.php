@@ -8,7 +8,7 @@ function texte_post_par_defaut( $content )
 global $post_type;
 if ( 'post' == $post_type )
 {
-$content = "<div class='infos'>
+$content = "<div class='infos'><span class='bgop'></span>
 	<a href=''target='_blank'><span>View all</span><i class='fa fa-lg fa-search'></i> </a>
 	<a href=''target='_blank'><span>Github</span><i class='fa fa-lg fa-github'></i> </a>
 	<a href=''target='_blank'><i class='fa fa-circle-o fa-lg'><span>T</span></i>Thingiverse</a>
@@ -138,13 +138,13 @@ function loadctg() {
         the_post_thumbnail( 'full' );     
     echo "</span><span class='resumepro'><p>";
        the_excerpt() ;
-    echo "</p></span><span class='infopro'><span class='date'><p class='JJ'>";
+    echo "</p></span><span class='infopro'><span class='date'>";
         the_time(d); 
-    echo "</p><p class='MM'>";
-        the_time(M);
-    echo "</p><p class='AA'>";
-        the_time(Y);
-    echo "</p></span></span><span class='sepverpro'></span></a>";
+    echo "-";
+        the_time(m);
+    echo "-";
+        the_time(y);
+    echo "</span></span><span class='sepverpro'></span></a>";
     
     
  
@@ -333,7 +333,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 			do_action( 'comment_form_before' );
 			?>
 			<div id="respond" class="comment-respond">
-			<div class="titlereponse">
+			<div class="titlereponse"><span class="bgop"></span>
 				<i class="fa fa-2x  fa-comment-o"></i>
 				<h4 >Laisser un Commentaire</h4>
 			<p>Votre adresse e-mail ne sera pas publié.</p>	
@@ -349,7 +349,7 @@ function comment_form_modify( $args = array(), $post_id = null ) {
 					do_action( 'comment_form_must_log_in_after' );
 					?>
 				<?php else : ?>
-					<form name="FormComment" novalidate action="<?php echo site_url( '/wp-comments-post.php' ); ?>" method="post" id="<?php echo esc_attr( $args['id_form'] ); ?>" class="comment-form"<?php echo $html5 ? ' novalidate' : ''; ?>>
+					<form name="FormComment" novalidate action="<?php echo site_url( '/wp-comments-post.php' ); ?>" method="post" id="<?php echo esc_attr( $args['id_form'] ); ?>" class="comment-form"<?php echo $html5 ? ' novalidate' : ''; ?>><span class="bgop"></span>
 						
 						
 							<?php

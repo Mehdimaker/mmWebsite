@@ -1,30 +1,17 @@
 @1:#18191b;
 @2:#ecf0f1;
-//#b6b6b6
 @3:#fe5d43;
-//c60000
-//#3498db
-//#e67e22
-@4:#FFF;
 @op2:0.85;
 @op1:0.75;
 @ophover: 1;
 
-textarea, input {
-    font-family: "Myriad Pro", Arial, sans-serif;
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
-}
 * {
+    font-family: "Ubuntu", Arial, sans-serif;
     margin: 0px;
     padding: 0px;
 }
 body {
-    //background-image: url(../img/bg/444.jpg);
     background-color: @2;
-    // font: 76%/150% "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
-    font-family: "Myriad pro", Arial, sans-serif;
 }
 #container {
     width: 1000px;
@@ -213,7 +200,7 @@ span.sep {
                 padding-left: 50px;
                 background-image: url(../img/arrowsshover.png);
                 background-repeat: no-repeat;
-                background-position: 38px 5px;
+                background-position: 38px 7px;
                 background-size: 8px;
                 -webkit-transition: all 0s ease;
                 -moz-transition: all 0s ease;
@@ -227,6 +214,12 @@ span.sep {
             a.active2:hover {
                 text-decoration: none;
                 background-image: url(../img/arrowsshover.png);
+            }
+            span.bouchon {
+                display: block;
+                width: 100%;
+                background-color: @1;
+                height: 10px;
             }
         }
     }
@@ -276,7 +269,7 @@ span.sep {
             line-height: 40px;
         }
         .fa-share-alt:hover {
-            color: @4;
+            color: @2;
             cursor: pointer;
         }
         div.menureseau {
@@ -366,7 +359,7 @@ footer {
             font-size: 18px;
             color: @2;
             box-sizing: border-box;
-            padding: 18px 214px 18px 40px;
+            padding: 18px 184px 18px 40px;
 
             a.simplon {
                 color: @3;
@@ -386,8 +379,13 @@ footer {
                 line-height: 40px;
             }
             p {
-                margin-top: 90px;
-                text-align: right;
+                margin-left: 60px;
+                margin-top: 60px;
+                text-align: left;
+            }
+            p.right {
+                margin-top: 30px;
+                margin-left: 120px;
             }
         }
         div.photo {
@@ -442,34 +440,12 @@ footer {
             }
             span.date {
                 margin-right: 9px;
-                margin-top: 5px;
                 float: right;
                 position: relative;
                 display: block;
-height: auto;
-                p.JJ {
-                    width: 45px;
-                    line-height: 18px;
-                    font-size: 22px;
-                    
-                }
-                p.MM {
-                    font-size: 9px;
-                    line-height: 9px;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    position: absolute;
-                    top: 0px;
-                    right: 0px;
-                }
-                p.AA {
-                    float: right;
-                    font-size: 9px;
-                    line-height: 9px;
-                    position: absolute;
-                    bottom: 0px;
-                    right: 0px;
-                }
+                font-size: 11px;
+                line-height: 30px;
+                height: auto;
             }
         }
         a:nth-of-type(even) {
@@ -509,7 +485,7 @@ height: auto;
             p {
                 color: @2;
                 font-size: 12px;
-                padding: 5px 10px 5px 10px;
+                padding: 9px;
 
                 a.mmlink {
                     background-color: transparent;
@@ -517,10 +493,11 @@ height: auto;
                     color: @3;
                     position: absolute;
                     right: 9px;
-                    bottom: 0px;
+                    height: 12px;
+                    font-size: 12px;
+                    bottom: 9px;
                     padding: 0px;
-                    height: 19px;
-                    opacity: 1;
+opacity: 1;
                 }
             }
         }
@@ -550,13 +527,12 @@ height: auto;
                 vertical-align: top;
             }
             span.title_article {
-                line-height: 55.75px;
+                line-height: 77.3333px;
                 width: 35%;
                 height: 100%;
                 padding-left: 10px;
                 float: left;
                 background-color: @1;
-                opacity: 1;
             }
             span.resume_article {
                 height: 100%;
@@ -568,46 +544,15 @@ height: auto;
                 background-color: @1;
                 opacity: 0.90;
             }
-            span.containdate {
+            span.date {
                 width: 10%;
                 height: 100%;
-                padding-right: 10px;
                 float: right;
-                text-align: right;
+                text-align: center;
                 box-sizing: border-box;
                 background-color: @1;
-                opacity: 1;
-
-                div.date {
-                    height: 100%;
-                    padding-top: 16px;
-                    width: 70px;
-                    float: right;
-                    text-align: right;
-                    box-sizing: border-box;
-
-                    p.JJ {
-                        width: 43px;
-                        height: 20px;
-                        line-height: 16px;
-                        font-size: 31px;
-                        padding-top: 3px;
-                        margin-top: 2px;
-                        float: left;
-                    }
-                    p.MM {
-                        float: right;
-                        font-size: 13px;
-                        line-height: 13px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                    }
-                    p.AA {
-                        float: right;
-                        line-height: 11px;
-                        font-size: 12px;
-                    }
-                }
+                line-height: 77.3333px;
+                font-size: 14px;
             }
         }
         a.article:hover {
@@ -839,32 +784,10 @@ height: auto;
 
                     span.date {
                         height: 30px;
-                        margin: auto;
-                        margin-top: 2px;
-                        width: 48px;
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 30px;
                         box-sizing: border-box;
-
-                        p.JJ {
-                            float: left;
-                            width: 20px;
-                            height: 20px;
-                            line-height: 24px;
-                            font-size: 24px;
-                            margin-top: 2px;
-                        }
-                        p.MM {
-                            float: right;
-                            font-size: 10px;
-                            line-height: 10px;
-                            font-weight: bold;
-                            padding-top: 3px;
-                            text-transform: uppercase;
-                        }
-                        p.AA {
-                            float: right;
-                            line-height: 10px;
-                            font-size: 10px;
-                        }
                     }
                 }
             }
@@ -880,7 +803,7 @@ height: auto;
             }
             a:hover span.thumbnail span.bgop {
                 opacity: @ophover;
-                //color: @4;
+                //color: @2;
             }
             a:hover h1 {
                 //opacity: @ophover;
@@ -937,7 +860,7 @@ height: auto;
     #apropos {
         height: 100%;
         background-color: @1;
-        opacity: @op2;
+        opacity: @op1;
         width: 50%;
         display: inline-block;
         vertical-align: top;
@@ -976,7 +899,7 @@ height: auto;
                 }
             }
             a:hover {
-                color: @4;
+                color: @3;
             }
         }
     }
@@ -992,7 +915,7 @@ height: auto;
         z-index: 1;
 
         span.bgop {
-            opacity: @op1;
+            opacity: @op2;
         }
         fieldset {
             height: 70px;
@@ -1035,7 +958,7 @@ height: auto;
                     height: 40px;
                     line-height: 40px;
                     border: none;
-                    padding-left: 46px;
+                    padding-left: 50px;
                     padding-right: 35px;
                     box-sizing: border-box;
                     background-color: transparent;
@@ -1125,14 +1048,14 @@ height: auto;
                 opacity: 1;
             }
             button.btnvalid:hover {
-                color: @4;
+                color: @1;
                 cursor: pointer;
             }
         }
     }
 }
 #present_project {
-    height: 122px;
+    height: 102px;
     color: @2;
 
     span, a {
@@ -1149,11 +1072,11 @@ height: auto;
     span.thumbnail {
         padding: 10px;
         height: 100%;
-        width: 160px;
+        width: 140px;
         text-align: center;
         position: relative;
         z-index: 1;
-
+        
         span.bgop {
             opacity: @op2;
         }
@@ -1175,7 +1098,7 @@ height: auto;
         }
         h1 {
             height: 30px;
-            line-height: 30px;
+            line-height: 20px;
             font-size: 20px;
             box-sizing: border-box;
             display: inline-block;
@@ -1183,34 +1106,13 @@ height: auto;
         }
         span.date {
             height: 25px;
-            padding-top: 0px;
-            width: 55px;
-            float: right;
-            text-align: right;
+            line-height: 20px;
+            font-size: 16px;
             box-sizing: border-box;
+            position: absolute;
+            right: 9px;
 
-            p.JJ {
-                width: 20px;
-                height: 20px;
-                line-height: 27px;
-                font-size: 27px;
-                padding-top: 0px;
-                margin-top: 2px;
-                float: left;
-            }
-            p.MM {
-                float: right;
-                font-size: 11px;
-                line-height: 11px;
-                font-weight: bold;
-                padding-top: 3px;
-                text-transform: uppercase;
-            }
-            p.AA {
-                float: right;
-                line-height: 11px;
-                font-size: 11px;
-            }
+           
         }
         p {
             font-size: 14px;
@@ -1219,34 +1121,40 @@ height: auto;
     }
     span.comment {
         height: 38px;
-        margin-top: 84px;
+        margin-top: 64px;
         border: none;
-        width: 120px;
-        background-color: @1;
+        width: 140px;
         color: @2;
-        opacity: @op2;
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px 10px 0 10px;
         position: relative;
+        z-index: 2;
 
         i {
             position: absolute;
             right: 10px;
             top: 3px;
+            color: @3;
         }
         p {
             position: absolute;
-            color: @1;
+            color: @2;
             right: 19px;
             top: 7px;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: bold;
+
         }
     }
     span.comment:hover {
         color: @3;
         cursor: pointer;
         // opacity: @ophover;
+    }
+    
+    span.comment:hover p{
+        color:@1;
+
     }
 }
 #present_article {
@@ -1279,36 +1187,16 @@ height: auto;
     }
     span.date {
         height: 100%;
-        padding-right: 10px;
-        padding-top: 16px;
+    
+        text-align: center;
+                line-height: 55.75px;
+
         width: 10%;
         float: right;
-        text-align: right;
         box-sizing: border-box;
         background-color: @1;
         opacity: @op2;
 
-        p.JJ {
-            width: 43px;
-            height: 20px;
-            line-height: 16px;
-            font-size: 29px;
-            padding-top: 4px;
-            margin-top: 2px;
-            float: left;
-        }
-        p.MM {
-            float: right;
-            font-size: 13px;
-            line-height: 13px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        p.AA {
-            float: right;
-            line-height: 11px;
-            font-size: 12px;
-        }
     }
 }
 #mainpro {
@@ -1378,14 +1266,14 @@ height: auto;
                 background-color: @1;
                 width: 100%;
                 display: block;
-                height: 65px;
+                height: 75px;
                 position: absolute;
                 bottom: 0px;
                 opacity: 0.75;
             }
             div.techno {
                 width: 100%;
-                height: 65px;
+                height: 75px;
                 position: absolute;
                 box-sizing: border-box;
                 bottom: 0px;
@@ -1398,7 +1286,7 @@ height: auto;
                     margin-right: 15px;
 
                     p {
-                        font-size: 13px;
+                        font-size: 12px;
                         line-height: 10px;
                         margin-bottom: 5px;
                         font-weight: normal;
@@ -1410,10 +1298,14 @@ height: auto;
                         display: inline-block;
                         width: 30px;
                         height: 30px;
-                        margin-right: 2px;
+                        margin-right: 4px;
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position: center;
+                        padding-top: 30px;
+                        font-size: 10px;
+
+
                     }
                     span:last-child {
                         margin-right: 0px;
@@ -1484,6 +1376,9 @@ height: auto;
                     span.arduino {
                         background-image: url(../img/techno/arduino.png)
                     }
+                    span.sinatra {
+                        background-image: url(../img/techno/sinatra.png)
+                    }
                 }
             }
         }
@@ -1491,15 +1386,18 @@ height: auto;
             padding: 0px;
             background-color: transparent;
 
-            #listsComments {
+            #listscomments {
                 box-sizing: border-box;
                 vertical-align: top;
                 display: inline-block;
                 width: 60%;
                 height: 100%;
                 color: @2;
-                background-color: @1;
-                opacity: @op1;
+                position: relative;
+               z-index: 1;
+                span.bgop{
+                    opacity: @op1;
+                }
 
                 ul {
                     -webkit-transition: all 0.5s ease;
@@ -1540,7 +1438,7 @@ height: auto;
                             color: @2;
                         }
                         a:hover {
-                            color: @4;
+                            color: @3;
                         }
                     }
                 }
@@ -1552,13 +1450,15 @@ height: auto;
                 width: 40%;
 
                 div.titlereponse {
-                    background-color: @1;
                     padding: 10px 10px 10px 20px;
-                    opacity: @op2;
                     position: relative;
                     height: 60px;
                     box-sizing: border-box;
-
+                    z-index: 1;
+                   
+                    span.bgop{
+                        opacity: @op2;
+                    }
                     i {
                         position: absolute;
                         right: 18px;
@@ -1572,9 +1472,11 @@ height: auto;
                 form {
                     text-align: right;
                     padding: 18px;
-                    background-color: @1;
-                    opacity: @op2;
-
+                    position: relative;
+  z-index: 1;
+                    span.bgop{
+                        opacity: @op2;
+                    }
                     label.textarea {
                         margin-bottom: 9px;
                         padding-left: 30px;
@@ -1636,7 +1538,7 @@ height: auto;
                             text-align: center;
                             width: 32px;
                             background-color: @3;
-                            color: @1;
+                            color: @2;
                         }
                         span.icotextarea {
                             height: 32px;
@@ -1646,7 +1548,7 @@ height: auto;
                             text-align: center;
                             width: 32px;
                             background-color: @3;
-                            color: @1;
+                            color: @2;
                         }
                         span.valid i, span.invalid i {
                             width: 50px;
@@ -1684,47 +1586,51 @@ height: auto;
                         transition: all 0.25s ease;
                     }
                     button:hover {
-                        color: @2;
+                        color: @3;
                     }
                     button.btnvalid {
                         opacity: @op1;
                     }
                     button.btnvalid:hover {
-                        color: @4;
+                        color: @1;
                         cursor: pointer;
                     }
                 }
             }
         }
         div.infos {
-            width: 120px;
-            height: 84px;
-            font-size: 14px;
+            width: 140px;
+            height: 102px;
+            font-size: 12px;
             right: 0px;
             top: 0px;
             position: absolute;
+            padding: 10px;
             box-sizing: border-box;
-            background-color: @1;
-            opacity: @op2;
+            z-index: 1;
+            br{display: none;}
+            span.bgop{
+                opacity: @op2;
+            }
 
             a {
                 box-sizing: border-box;
-                padding: 10px 10px 0 10px;
                 margin-bottom: 0px;
                 display: inline-block;
                 width: 100%;
-                height: 28px;
+                height: 21.5px;
                 cursor: pointer;
                 text-align: left;
                 text-decoration: none;
                 color: @2;
+                                padding: 0px;
+
 
                 i {
                     float: right;
 
                     span {
                         position: absolute;
-                        font-family: "Myriad pro";
                         font-size: 10px;
                         font-weight: bold;
                         left: 5px;

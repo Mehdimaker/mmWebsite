@@ -25,7 +25,7 @@
         <div id="present_article" href="<?php the_permalink() ?>" rel="bookmark">
                         <span class="title_article"><?php the_title(); ?></span>
                         <span class="resume_article"><?php the_excerpt() ;?></span>
-                        <span class="date"><p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></span>
+                        <span class="date"><?php the_time(d);?>-<?php the_time(m);?>-<?php the_time(y);?></span>
         </div>
      
     
@@ -39,8 +39,7 @@
     echo "</h1>";
     ?>
     
-<span class="date">
-   <p class="JJ"> <?php the_time(d);?> </p><p class="MM"><?php the_time(M);?></p><p class="AA"><?php the_time(Y);?></p></span>
+ <span class="date"><?php the_time(d);?>-<?php the_time(m);?>-<?php the_time(y);?></span>
     
     <?php   
     echo "<p>";
@@ -114,7 +113,7 @@ comments_number('0', '0 Comment', '%');
 
             } else {
                 $('nav li a.projects').addClass('active');
-                $(".menuprojects").css("height", "130px");
+                $(".menuprojects").css("height", "140px");
                 ctg = ctg.toLowerCase();  
                 $('div.menuprojects a.' + ctg).addClass('active2');       
                 $('#present_article').addClass('off');
@@ -122,8 +121,8 @@ comments_number('0', '0 Comment', '%');
                 $('#present_project').addClass('on');
                 
                  //section height
-                $("#mainpro").css("height", "378px");
-                $("label.textarea").css("height", "159px");
+                $("#mainpro").css("height", "398px");
+                $("label.textarea").css("height", "179px");
                 $decalagesingle = $("#mainpro").height();
                 
 
