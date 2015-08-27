@@ -30,9 +30,9 @@
                     <blockquote>
                         <span class="titlemm"></span>
                         <p>Passionné des nouvelles technologies  <br>
-                        Actuellement développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon.co</a>
+                        Actuellement apprenti développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon.co</a>
                         </p>                     
-                        <p class="right">Découvrez ici toutes mes réalisations<br> websites, applis mobile, ou encore objets connectés . . .</p>
+                        <p class="right">Découvrez ici toutes mes réalisations<br> sites web, applications, ou encore objets connectés . . .</p>
                     </blockquote>
                 </div>
                 <span class="sep"></span>
