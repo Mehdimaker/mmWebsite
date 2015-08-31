@@ -139,7 +139,7 @@
                     <div class="blocleft"><a name="graphics" class="loadctg graphics face" onclick="show('navapp')">
                         <span class="bgop"></span>
                         <i class="graphics"></i>
-                        <p class="ctgproject" >Design Graphiques</p>
+                        <p class="ctgproject" >Designs Graphique</p>
                             <p class="number">
                                 <?php echo count_cat_post( 'graphics' ); ?>
                             </p>
@@ -224,7 +224,7 @@ Télécharger mon CV</a>
             
 
               <div class="mmtechno">
-    <h3>www.mehdimaker.com</h3>
+    <h3>Ce site à été réalisé avec:</h3>
           <p>
              Front End: <br> Javascript | Jquery | Angular | Html | Css
   <br><br>Back End: <br>Wordpress | Php
