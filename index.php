@@ -190,9 +190,19 @@
                      <p>En cours ...</p>
                   
                 </div>
+
             <div id="about" class="off">
                 <span class="bgop"></span>
-                     <p>En cours ...</p>
+
+
+
+
+                
+                <div id="cv">
+                <img src="<?php echo get_bloginfo('template_directory');?>/img/cv_mehdimaker.jpg" >
+                <a href="<?php echo get_bloginfo('template_directory');?>/img/cv_mehdimaker.pdf"><i class="fa fa-download"></i>
+Télécharger mon CV</a>
+                </div>
                   
             </div>
 
@@ -206,19 +216,23 @@
             <div class="height100" ng-controller="appCtrl">
             
             
-             <div id="apropos">
-             <h3>A propos </h3>
-                <p>www.mehdimaker.com,<br> Website entièrement réalisé par Mehdi M.
-          <br>
-             Front End: <br> Javascript | Jquery | Angular | Html | Css
-  <br>Back End: <br>Wordpress | Php
-                </p>
+             <div id="mminfos">
+            
 
 
 
             
-             <div class="links">
- <h3>Links</h3>
+
+              <div class="mmtechno">
+    <h3>www.mehdimaker.com</h3>
+          <p>
+             Front End: <br> Javascript | Jquery | Angular | Html | Css
+  <br><br>Back End: <br>Wordpress | Php
+                </p>
+            </div>
+
+              <div class="links">
+                <h3>Links</h3>
                             <a href="https://www.thingiverse.com/MehdiMaker" target="_blank">
              <i class="fa fa-circle-o fa-lg"><span class="thingiverse">T</span></i>   Thingiverse : MehdiMaker
 
@@ -231,9 +245,9 @@
                 <i class="fa fa-envelope-square fa-lg"></i>
                   contact@mehdimaker.com
             </a>
-              
-            
-                 </div>
+             </div>
+                
+
                 
                   </div><!--
              
