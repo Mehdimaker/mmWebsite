@@ -11,6 +11,7 @@
 @ophover: 1;
 
 @media all and (max-width:1000px) {
+
     * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -182,9 +183,14 @@
                     display: none;
                 }
                 p {
-                    margin-top: 60px;
-                    text-align: left;
-                }
+                margin-left: 0px;
+                margin-top: 10px;
+                text-align: left;
+            }
+            p.right {
+                margin-top: 10px;
+                margin-left: 0px;
+            }
             }
         }
         div.recent {
@@ -308,6 +314,14 @@
                 a:last-of-type span.sepverpro {
                     display: none;
                 }
+                  a:hover span.thumbnail span.bgop {
+                opacity: 0;
+                //color: @2;
+            }
+              a:nth-of-type(odd):hover span.resumepro{
+                    opacity:0.75; 
+                }
+           
             }
         }
     }
