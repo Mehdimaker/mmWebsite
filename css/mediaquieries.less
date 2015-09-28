@@ -10,7 +10,8 @@
 @op1:0.75;
 @ophover: 1;
 
-@media all and (max-width:1000px) {
+@media all and (max-width:1038px) {
+// afaire
 
     * {
         -webkit-box-sizing: border-box;
@@ -39,6 +40,10 @@
         position: fixed;
         text-align: center;
         padding-top: 50px;
+        -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
     }
     #main-nav a {
         background-color: @2;
@@ -137,11 +142,18 @@
         padding: 0px;
         padding-top: 50px;
         height: 100vh;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
     }
     main {
         width: 100%;
         margin: 0px;
         padding: 0px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     #blocgauche {
         display: none

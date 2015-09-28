@@ -107,8 +107,8 @@ comments_number('0', '0 Comment', '%');
                  $('#present_article').addClass('on');
 
                 //section height
-                     $("#mainpro").css("height", "444px");
-                     $("label.textarea").css("height", "225px");
+                     $("#mainpro").css("height", "488px");
+                     $("label.textarea").css("height", "267px");
                             $decalagesingle = $("#mainpro").height();
 
             } else {
@@ -121,8 +121,8 @@ comments_number('0', '0 Comment', '%');
                 $('#present_project').addClass('on');
                 
                  //section height
-                $("#mainpro").css("height", "398px");
-                $("label.textarea").css("height", "179px");
+                $("#mainpro").css("height", "452px");
+                $("label.textarea").css("height", "233px");
                 $decalagesingle = $("#mainpro").height();
                 
 
