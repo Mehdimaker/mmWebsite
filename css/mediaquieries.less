@@ -13,6 +13,11 @@
 @media all and (max-width:1038px) {
 // afaire
 
+input{
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
     * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -148,6 +153,7 @@
   transition-duration: 0.5s;
     }
     main {
+
         width: 100%;
         margin: 0px;
         padding: 0px;
@@ -241,6 +247,20 @@
                 padding: 0px;
                 margin-left: 0px;
             height: 100%;
+
+            div.noproject {
+                color: @2;
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+                background-color: @1;
+                opacity: @op1;
+                display: block;
+                top: 0px;
+                position: absolute;
+                padding-top: 45vh;
+                 margin-top: -50px;
+            }
                 .ajaxload {
                position: absolute;
                height: 100vh;
@@ -417,6 +437,9 @@
     div.height100 {
         height: 100%;
     }
+      #mminfos {
+width: 100%;
+      }
     #apropos {
         height: auto;
         background-color: @1;
@@ -472,7 +495,10 @@
         color: @2;
         position: relative;
         overflow: hidden;
-
+z-index: 1;
+span.bgop {
+            opacity: 0.55;
+        }
         fieldset {
             background-color: @1;
             opacity: @op1;
@@ -677,10 +703,7 @@
                 display: block !important;
                 width: 100% !important;
                 height: 100% !important;
-                div.titlereponse {
-                    background-color: @1!important;
-                    opacity: 1;
-                    }
+                
             }
         }
     }

@@ -108,6 +108,7 @@ comments_number('0', '0 Comment', '%');
 
                 //section height
                      $("#mainpro").css("height", "488px");
+                     $("#mainpro div.description").css("width", "376px");
                      $("label.textarea").css("height", "267px");
                             $decalagesingle = $("#mainpro").height();
 
