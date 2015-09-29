@@ -122,8 +122,8 @@ comments_number('0', '0 Comment', '%');
                 $('#present_project').addClass('on');
                 
                  //section height
-                $("#mainpro").css("height", "452px");
-                $("label.textarea").css("height", "233px");
+                $("#mainpro").css("height", "461px");
+                $("label.textarea").css("height", "242px");
                 $decalagesingle = $("#mainpro").height();
                 
 
