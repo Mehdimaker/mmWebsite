@@ -15,7 +15,7 @@
   "-webkit-transform": "translate3D(-250px, 0, 0)",
   "transform": "translate3D(-250px, 0, 0)"});
 
-      $(this).removeClass('closed').addClass('open').html("<i class='fa fa-times'></i>");
+      $(this).removeClass('closed').addClass('open');
       $('.fade').fadeIn();
     }
     else if($('#navicon').hasClass('open')) {
@@ -29,7 +29,7 @@
   "transform": "translate3D(0px, 0, 0)"});
 
 
-      $(this).removeClass('open').addClass('closed').html('<i class="fa fa-bars"></i>');
+      $(this).removeClass('open').addClass('closed');
       $('.fade').fadeOut();
     }
     });
@@ -46,7 +46,7 @@ $('#main-nav a').click(function() {
   "-webkit-transform": "translate3D(0px, 0, 0)",
   "transform": "translate3D(0px, 0, 0)"});
 
-      $('#navicon').removeClass('open').addClass('closed').html('<i class="fa fa-bars"></i>');
+      $('#navicon').removeClass('open').addClass('closed');
       $('.fade').fadeOut();
   });
 

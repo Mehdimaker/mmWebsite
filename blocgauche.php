@@ -15,7 +15,7 @@
                 <a name="scripts" class=" scripts loadctg" onclick="show('navapp')">Scripts</a> 
                 <a name="graphics" class=" graphics loadctg" onclick="show('navapp')">Design graph.</a>
                 <a name="imps" class=" imps loadctg" onclick="show('navapp')">Imps. 3D</a>
-                <a name="objects" class=" objects loadctg" onclick="show('navapp')">Objects co. </a>
+                <a name="objects" class=" objects loadctg" onclick="show('navapp')">Objets co. </a>
                 <span class="bouchon"></span>
             </div>
             <li>

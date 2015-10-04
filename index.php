@@ -1,12 +1,20 @@
 <?php get_header();?>
 
 <body>
-
-    <header class="cf">
+     <header class="cf">
         <div class="logo"></div>
-        <div class="mmname"></div>
-        <a href="#" id="navicon" class="closed"><i class="fa fa-bars"></i>
-</a>
+        <a href="www.mehdimaker.com"class="mmname"></a>
+        <a href="#" id="navicon" class="closed btn">
+            <svg id="ht" viewBox="0 0 15 15">
+                <rect x="3" y="5" width="9" height="1"></rect>
+            </svg>
+            <svg id="hm" viewBox="0 0 15 15">
+                <rect x="3" y="7" width="9" height="1"></rect>
+            </svg>
+            <svg id="hb" viewBox="0 0 15 15">
+                <rect x="3" y="9" width="9" height="1"></rect>
+            </svg>
+        </a>
     </header>
     <nav id="main-nav">
         <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
@@ -30,7 +38,8 @@
                     <blockquote>
                         <span class="titlemm"></span>
                         <p>Passionné des nouvelles technologies  <br>
-                        Actuellement apprenti développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon.co</a>
+                        Actuellement apprenti développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon</a><br>
+                        et fabmannager chez<a href="http://zbis.fr" target='_blank' class="simplon"> zBis</a>, fablab à La Roche-sur-Yon !
                         </p>                     
                         <p class="right">Découvrez ici toutes mes réalisations<br> sites web, applications, ou encore objets connectés . . .</p>
                     </blockquote>
@@ -216,7 +225,7 @@ Télécharger mon CV</a>
             <div class="height100" ng-controller="appCtrl">
             
             
-             <div id="mminfos">
+            <!-- <div id="mminfos">
             
 
 
@@ -246,10 +255,11 @@ Télécharger mon CV</a>
                   contact@mehdimaker.com
             </a>
              </div>
+
                 
 
                 
-                  </div><!--
+                  </div>--><!--
              
               
             --><form name="FormContact" ng-submit="sendMessage()" novalidate >
@@ -258,7 +268,7 @@ Télécharger mon CV</a>
                      <fieldset>             <i class="fa fa-2x fa-paper-plane"></i>
                         <h3>Contacter moi par mail.</h3>
 
-                            N'hésitez pas à me contacter en remplissant ce formulaire, je répondrais au plus vite.</fieldset>
+                            N'hésitez pas à me contacter en remplissant ce formulaire, <br>je répondrais au plus vite.</fieldset>
                     <div class="formcontain">
                 <label>
                     <span class="ico"><i class="fa fa-user"></i></span><!--

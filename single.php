@@ -1,17 +1,27 @@
 <?php get_header();?>
 
 <body>
-   <header class="cf">
+    <header class="cf">
         <div class="logo"></div>
-        <div class="mmname"></div>
-        <a href="#" id="navicon" class="closed"><i class="fa fa-bars"></i>
-</a>
+        <a href="www.mehdimaker.com"class="mmname"></a>
+        <a href="#" id="navicon" class="closed btn">
+            <svg id="ht" viewBox="0 0 15 15">
+                <rect x="3" y="5" width="9" height="1"></rect>
+            </svg>
+            <svg id="hm" viewBox="0 0 15 15">
+                <rect x="3" y="7" width="9" height="1"></rect>
+            </svg>
+            <svg id="hb" viewBox="0 0 15 15">
+                <rect x="3" y="9" width="9" height="1"></rect>
+            </svg>
+        </a>
     </header>
     <nav id="main-nav">
         <a  name="home" onclick="show('home')" class="home active "><i class="fa  fa-lg fa-home"></i><span><br>Home</span></a>
         <a name="projects" onclick="show('projects')" class="projects displaylistprojects"><i class="fa fa-lg fa-folder-open"></i><span><br>Projects</span></a>
         <a name="articles" onclick="show('articles')" class="articles"><i class="fa fa-lg fa-file-text"></i><span><br>Articles</span></a>
-        <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>
+         <a name="about" onclick="show('about')" class="about"><i class="fa fa-lg fa-mortar-board"></i><span><br>Mon CV</span></a>
+       <!-- <a name="services" onclick="show('services')" class="services"><i class="fa fa-lg fa-briefcase"></i><span><br>Services</span></a>-->
         <a name="contact" onclick="show('contact')" class="contact"><i class="fa fa-lg fa-envelope"></i><span><br>Contact</span></a>
     </nav>
     <div class="fade"></div>
