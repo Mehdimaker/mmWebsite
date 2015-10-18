@@ -209,7 +209,7 @@
                 
                 <div id="cv">
                 <img src="<?php echo get_bloginfo('template_directory');?>/img/cv_mehdimaker.jpg" >
-                <a href="<?php echo get_bloginfo('template_directory');?>/pdf/cv_mehdimaker.pdf" download><i class="fa fa-download"></i>
+                <a href="<?php echo get_bloginfo('template_directory');?>/pdf/cv_mehdimaker.pdf.zip" download><i class="fa fa-download"></i>
 Télécharger mon CV</a>
                 </div>
                   
