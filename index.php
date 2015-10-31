@@ -38,8 +38,8 @@
                     <blockquote>
                         <span class="titlemm"></span>
                         <p>Passionné des nouvelles technologies  <br>
-                        Actuellement apprenti développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon</a><br>
-                        et fabmanager chez<a href="http://zbis.fr" target='_blank' class="simplon"> zBis</a>, fablab à La Roche-sur-Yon !
+                        Actuellement développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon</a>,<br>
+                        et fabmanager chez<a href="http://zbis.fr" target='_blank' class="simplon"> zBis</a> !
                         </p>                     
                         <p class="right">Découvrez ici toutes mes réalisations<br> sites web, applications, ou encore objets connectés . . .</p>
                     </blockquote>
