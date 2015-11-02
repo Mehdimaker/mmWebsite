@@ -37,22 +37,7 @@
     <div class="blocbas">
     </div>
 
-    <div class="reseau off">
-        <div class="menureseau cache">
-            <a>
-                <span class="fa-stack fa">
-  <i class="fa fa-circle-o fa-stack-2x"></i>
-  <strong class="fa-stack-1x circle-text">T</strong>
-</span>
 
-            </a>
-            <a>
-                <i class="fa fa-github fa-2x"></i>
-            </a>
-        </div>
-
-        <i class="fa fa-share-alt"></i>
-    </div>
 
 
 </div>

@@ -19,7 +19,7 @@ body {
 main {
   width: 804px;
   height: 100%;
-  background-image: url(../img/maps1.png);
+  background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -107,7 +107,7 @@ span.sep {
   text-align: center;
   padding-top: 20px;
   box-sizing: border-box;
-  background-image: url(../img/logo5.png);
+  background-image: url(../img/logo.png);
   background-size: 50px 50px;
   background-position: center;
   background-repeat: no-repeat;
@@ -243,35 +243,6 @@ span.sep {
 #blocdroit div.langue div.menulangue.cache {
   height: 0px;
 }
-#blocdroit div.reseau {
-  position: absolute;
-  bottom: 0px;
-  width: 40px;
-}
-#blocdroit div.reseau i.fa-share-alt {
-  width: 40px;
-  line-height: 40px;
-}
-#blocdroit div.reseau .fa-share-alt:hover {
-  color: #ecf0f1;
-  cursor: pointer;
-}
-#blocdroit div.reseau div.menureseau {
-  height: 80px;
-  overflow: hidden;
-}
-#blocdroit div.reseau div.menureseau a {
-  display: block;
-  margin-top: 5px;
-}
-#blocdroit div.reseau div.menureseau a i.thing {
-  font-size: 12px;
-  font-weight: bold;
-  margin-left: -1px;
-}
-#blocdroit div.reseau div.menureseau.cache {
-  height: 0px;
-}
 #blocdroit div.blochaut {
   border-top-right-radius: 10px;
   background-color: #000310;
@@ -317,8 +288,57 @@ span.sep {
 }
 /******** FOOTER *********/
 footer {
-  background-color: #000310;
   height: 100%;
+}
+footer .reseau {
+  border: 2px solid #fe5d43;
+  border-left: none;
+  height: 28px;
+  position: absolute;
+  bottom: 18px;
+  width: 105px;
+  background-color: #000310;
+  padding: 0px;
+  box-sizing: border-box;
+}
+footer .reseau ul {
+  padding-left: 6px;
+}
+footer .reseau li {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  height: 24px;
+  width: 30px;
+  margin: 0px;
+  text-align: center;
+}
+footer .reseau li a {
+  display: block;
+  padding-top: 1px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+footer .reseau li a:hover i {
+  color: #ecf0f1;
+}
+footer .reseau li i.twitter {
+  color: grey;
+}
+footer .reseau li a.thingiverse {
+  background-image: url(../img/thingiverse.png);
+  background-size: 16px;
+  background-position: center 3px;
+  background-repeat: no-repeat;
+}
+footer .reseau li a.thingiverse:hover {
+  background-image: url(../img/thingiverse_hover.png);
+}
+footer .reseau li i {
+  color: #fe5d43;
 }
 /******** HOME *********/
 #home div.presentation {
@@ -342,7 +362,7 @@ footer {
   text-decoration: none;
 }
 #home div.presentation blockquote span.titlemm {
-  background-image: url(../img/mehdimaker3.png);
+  background-image: url(../img/mehdimaker.png);
   background-repeat: no-repeat;
   display: block;
   width: 300px;
@@ -355,13 +375,11 @@ footer {
   line-height: 40px;
 }
 #home div.presentation blockquote p {
+  padding-left: 10px;
+  border-left: 4px solid #fe5d43;
   margin-left: 60px;
   margin-top: 60px;
   text-align: left;
-}
-#home div.presentation blockquote p.right {
-  margin-top: 30px;
-  margin-left: 60px;
 }
 #home div.presentation div.photo {
   z-index: 2;
@@ -371,7 +389,7 @@ footer {
   float: right;
   right: 0px;
   bottom: 0px;
-  background-image: url(../img/testmm3.png);
+  background-image: url(../img/mmpicture.png);
   background-size: cover;
   box-sizing: border-box;
   opacity: 1;
@@ -487,7 +505,7 @@ footer {
   display: block;
   height: 84.666666px;
   color: #ecf0f1;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 #articles #listarticles a.article span {
   box-sizing: border-box;
@@ -1340,6 +1358,10 @@ footer {
 #mainpro #etapes section.comment {
   padding: 0px;
   background-color: transparent;
+}
+#mainpro #etapes section.comment .aucuncom {
+  text-align: center;
+  margin-top: 9px;
 }
 #mainpro #etapes section.comment #listscomments {
   box-sizing: border-box;

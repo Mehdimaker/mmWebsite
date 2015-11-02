@@ -28,7 +28,7 @@ body {
 main {
     width: 804px;
     height: 100%;
-    background-image: url(../img/maps1.png);
+    background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -121,7 +121,7 @@ span.sep {
         text-align: center;
         padding-top: 20px;
         box-sizing: border-box;
-        background-image: url(../img/logo5.png);
+        background-image: url(../img/logo.png);
         background-size: 50px 50px;
         background-position: center;
         background-repeat: no-repeat;
@@ -265,38 +265,7 @@ span.sep {
         div.menulangue.cache {
             height: 0px
         }
-    }
-    div.reseau {
-        position: absolute;
-        bottom: 0px;
-        width: 40px;
-
-        i.fa-share-alt {
-            width: 40px;
-            line-height: 40px;
-        }
-        .fa-share-alt:hover {
-            color: @2;
-            cursor: pointer;
-        }
-        div.menureseau {
-            height: 80px;
-            overflow: hidden;
-
-            a {
-                display: block;
-                margin-top: 5px;
-
-                i.thing {
-                    font-size: 12px;
-                    font-weight: bold;
-                    margin-left: -1px;
-                }
-            }
-        }
-        div.menureseau.cache {
-            height: 0px
-        }
+    
     }
     div.blochaut {
         border-top-right-radius: 10px;
@@ -346,10 +315,63 @@ span.sep {
 
 /******** FOOTER *********/
 footer {
-    background-color: @1;
     height: 100%;
-}
 
+    .reseau {
+        border: 2px solid @3;
+        border-left: none;
+        height: 28px;
+        position: absolute;
+        bottom: 18px;
+        width: 105px;
+        background-color: @1;
+        padding: 0px;
+        box-sizing: border-box;
+
+        ul {
+            padding-left: 6px;
+        }
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+            height: 24px;
+            width: 30px;
+            margin: 0px;
+            text-align: center;
+
+            a {
+                display: block;
+                padding-top: 1px;
+                box-sizing: border-box;
+                height: 100%;
+                width: 100%;
+            }
+            a:hover {
+                i {
+                    color: @2;
+                }
+            }
+            i.twitter{
+                color: grey;
+            }
+            a.thingiverse {
+                background-image: url(../img/thingiverse.png);
+                background-size: 16px;
+                background-position: center 3px;
+                background-repeat: no-repeat;
+            }
+            a.thingiverse:hover {
+                background-image: url(../img/thingiverse_hover.png);
+            }
+            i {
+                color: @3;
+            }
+        }
+    }
+}
 /******** HOME *********/
 #home {
     div.presentation {
@@ -373,7 +395,7 @@ footer {
                 text-decoration: none;
             }
             span.titlemm {
-                background-image: url(../img/mehdimaker3.png);
+                background-image: url(../img/mehdimaker.png);
                 background-repeat: no-repeat;
                 display: block;
                 width: 300px;
@@ -386,14 +408,13 @@ footer {
                 line-height: 40px;
             }
             p {
+                padding-left: 10px;
+                border-left:4px solid @3;
                 margin-left: 60px;
                 margin-top: 60px;
                 text-align: left;
             }
-            p.right {
-                margin-top: 30px;
-                margin-left: 60px;
-            }
+          
         }
         div.photo {
             z-index: 2;
@@ -403,7 +424,7 @@ footer {
             float: right;
             right: 0px;
             bottom: 0px;
-            background-image: url(../img/testmm3.png);
+            background-image: url(../img/mmpicture.png);
             background-size: cover;
             box-sizing: border-box;
             opacity: 1;
@@ -527,7 +548,7 @@ opacity: 1;
             display: block;
             height: 84.666666px;
             color: @2;
-            opacity: @op2;
+            opacity: @op1;
 
             span {
                 box-sizing: border-box;
@@ -1442,6 +1463,10 @@ display: none;
         section.comment {
             padding: 0px;
             background-color: transparent;
+            .aucuncom{
+                text-align: center;
+                margin-top: 9px;
+            }
 
             #listscomments {
                 box-sizing: border-box;

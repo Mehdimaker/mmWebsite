@@ -38,10 +38,9 @@
                     <blockquote>
                         <span class="titlemm"></span>
                         <p>Passionné des nouvelles technologies  <br>
-                        Actuellement développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon</a>,<br>
-                        et fabmanager chez<a href="http://zbis.fr" target='_blank' class="simplon"> zBis</a> !
-                        </p>                     
-                        <p class="right">Découvrez ici toutes mes réalisations<br> sites web, applications, ou encore objets connectés . . .</p>
+                        Actuellement développeur au sein de <a href="http://simplon.co" target='_blank' class="simplon">Simplon</a><br>
+                        et fabmanager chez<a href="http://zbis.fr" target='_blank' class="simplon"> zBis</a> !<br>
+                       Découvrez ici toutes mes réalisations<br> sites web, applis mobile, impressions 3D <br>ou encore objets connectés . . .</p>
                     </blockquote>
                 </div>
                 <span class="sep"></span>
@@ -346,7 +345,7 @@ $scope.sendMessage = function () {
       data: FormData,
       headers: {'Content-Type': 'application/x-www-form-urlencoded'},
     }
-   $http(req).success(function(){alert("success");}).error(function(){alert("error");});
+   $http(req).success(function(){alert("Votre message s'est bien envoyé !");}).error(function(){alert("error");});
     return false;
   };           
 

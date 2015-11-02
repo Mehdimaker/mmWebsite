@@ -33,6 +33,20 @@
         </ul>
 
     </nav>
-   <footer></footer>
+   <footer>
+       <div class="reseau">
+
+        <ul>
+<li><a href="http://github.com/Mehdimaker" target="_blank"><i class="fa fa-github "></i> </a></li><!--
+--><li><a href="http://fr.linkedin.com/pub/mehdi-maker/104/674/328" target="_blank"><i class="fa fa-linkedin"></i> </a></li><!--
+--><li><a href="http://thingiverse.com/MehdiMaker/" target="_blank" class="thingiverse"></a></li><!--
+--><!--<li><a href="#" target="_blank" ><i class="fa fa-twitter twitter"></i> </a></li>-->
+
+        </ul>
+
+       </div>
+
+
+   </footer>
 
 </div>

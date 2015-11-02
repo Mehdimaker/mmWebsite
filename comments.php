@@ -12,9 +12,16 @@
 			<?php wp_list_comments( array( 'callback' => 'lists_comment', 'style' => 'ol' ) ); ?>
 		</ul><!-- .commentlist -->
 
-
 	
 <?php endif; // have_comments() ?>
+
+<?php if ( have_comments() == FALSE) : ?>
+
+<p class="aucuncom">Aucun commentaires ! </p>
+
+  <?php endif; // have_comments() ?>
+
+
 </div>
 
 
